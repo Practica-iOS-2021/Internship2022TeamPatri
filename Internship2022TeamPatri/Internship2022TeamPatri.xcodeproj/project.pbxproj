@@ -35,6 +35,177 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		59B7E838288ED75100588C1F /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		59B7E839288ED76300588C1F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				59B7E83A288ED76300588C1F /* Home */,
+				59B7E83E288ED76300588C1F /* Auth */,
+				59B7E841288ED76300588C1F /* Tests */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		59B7E83A288ED76300588C1F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				59B7E83B288ED76300588C1F /* Grades */,
+				59B7E83C288ED76300588C1F /* Courses */,
+				59B7E83D288ED76300588C1F /* Profile */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		59B7E83B288ED76300588C1F /* Grades */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Grades;
+			sourceTree = "<group>";
+		};
+		59B7E83C288ED76300588C1F /* Courses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Courses;
+			sourceTree = "<group>";
+		};
+		59B7E83D288ED76300588C1F /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		59B7E83E288ED76300588C1F /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				59B7E83F288ED76300588C1F /* Register */,
+				59B7E840288ED76300588C1F /* Login */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		59B7E83F288ED76300588C1F /* Register */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		59B7E840288ED76300588C1F /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		59B7E841288ED76300588C1F /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		59B7E842288ED76300588C1F /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				59B7E843288ED76300588C1F /* Services */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		59B7E843288ED76300588C1F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		59B7E844288ED76300588C1F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				59B7E845288ED76300588C1F /* Home */,
+				59B7E849288ED76300588C1F /* Auth */,
+				59B7E84C288ED76300588C1F /* Tests */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		59B7E845288ED76300588C1F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				59B7E846288ED76300588C1F /* Grades */,
+				59B7E847288ED76300588C1F /* Courses */,
+				59B7E848288ED76300588C1F /* Profile */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		59B7E846288ED76300588C1F /* Grades */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Grades;
+			sourceTree = "<group>";
+		};
+		59B7E847288ED76300588C1F /* Courses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Courses;
+			sourceTree = "<group>";
+		};
+		59B7E848288ED76300588C1F /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		59B7E849288ED76300588C1F /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				59B7E84A288ED76300588C1F /* Register */,
+				59B7E84B288ED76300588C1F /* Login */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		59B7E84A288ED76300588C1F /* Register */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		59B7E84B288ED76300588C1F /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		59B7E84C288ED76300588C1F /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		59B7E84D288ED76300588C1F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		AF79B84F288E7BD800AA99BD = {
 			isa = PBXGroup;
 			children = (
@@ -54,11 +225,11 @@
 		AF79B85A288E7BD800AA99BD /* Internship2022TeamPatri */ = {
 			isa = PBXGroup;
 			children = (
-				B074011A288ECF9900965072 /* Persistance */,
-				B0740119288ECF9100965072 /* Networking */,
-				B0740118288ECF8A00965072 /* Controllers */,
-				B0740117288ECF8400965072 /* Models */,
-				AF79B872288E7C3700AA99BD /* Views */,
+				59B7E844288ED76300588C1F /* Controllers */,
+				59B7E84D288ED76300588C1F /* Models */,
+				59B7E842288ED76300588C1F /* Networking */,
+				59B7E839288ED76300588C1F /* Views */,
+				59B7E838288ED75100588C1F /* Persistence */,
 				AF79B85B288E7BD800AA99BD /* AppDelegate.swift */,
 				AF79B85F288E7BD800AA99BD /* ViewController.swift */,
 				AF79B861288E7BD800AA99BD /* Main.storyboard */,
@@ -67,177 +238,6 @@
 				AF79B864288E7BD900AA99BD /* Assets.xcassets */,
 			);
 			path = Internship2022TeamPatri;
-			sourceTree = "<group>";
-		};
-		AF79B872288E7C3700AA99BD /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				B074011F288ECFCE00965072 /* Tests */,
-				B074011E288ECFCA00965072 /* Home */,
-				B074011B288ECFB200965072 /* Authentification */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		B0740117288ECF8400965072 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		B0740118288ECF8A00965072 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				B0740125288ED01200965072 /* Authentification */,
-				B0740124288ED00C00965072 /* Tests */,
-				B0740123288ED00700965072 /* Home */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		B0740119288ECF9100965072 /* Networking */ = {
-			isa = PBXGroup;
-			children = (
-				B074012B288ED07000965072 /* Services */,
-			);
-			path = Networking;
-			sourceTree = "<group>";
-		};
-		B074011A288ECF9900965072 /* Persistance */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Persistance;
-			sourceTree = "<group>";
-		};
-		B074011B288ECFB200965072 /* Authentification */ = {
-			isa = PBXGroup;
-			children = (
-				B074011D288ECFC300965072 /* Register */,
-				B074011C288ECFBE00965072 /* Login */,
-			);
-			path = Authentification;
-			sourceTree = "<group>";
-		};
-		B074011C288ECFBE00965072 /* Login */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Login;
-			sourceTree = "<group>";
-		};
-		B074011D288ECFC300965072 /* Register */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Register;
-			sourceTree = "<group>";
-		};
-		B074011E288ECFCA00965072 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				B0740122288ECFE900965072 /* Courses */,
-				B0740121288ECFDF00965072 /* Grades */,
-				B0740120288ECFD400965072 /* Profile */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		B074011F288ECFCE00965072 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		B0740120288ECFD400965072 /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Profile;
-			sourceTree = "<group>";
-		};
-		B0740121288ECFDF00965072 /* Grades */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Grades;
-			sourceTree = "<group>";
-		};
-		B0740122288ECFE900965072 /* Courses */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Courses;
-			sourceTree = "<group>";
-		};
-		B0740123288ED00700965072 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				B074012A288ED06000965072 /* Courses */,
-				B0740129288ED05700965072 /* Grades */,
-				B0740128288ED05100965072 /* Profile */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		B0740124288ED00C00965072 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		B0740125288ED01200965072 /* Authentification */ = {
-			isa = PBXGroup;
-			children = (
-				B0740127288ED04A00965072 /* Register */,
-				B0740126288ED04200965072 /* Login */,
-			);
-			path = Authentification;
-			sourceTree = "<group>";
-		};
-		B0740126288ED04200965072 /* Login */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Login;
-			sourceTree = "<group>";
-		};
-		B0740127288ED04A00965072 /* Register */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Register;
-			sourceTree = "<group>";
-		};
-		B0740128288ED05100965072 /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Profile;
-			sourceTree = "<group>";
-		};
-		B0740129288ED05700965072 /* Grades */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Grades;
-			sourceTree = "<group>";
-		};
-		B074012A288ED06000965072 /* Courses */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Courses;
-			sourceTree = "<group>";
-		};
-		B074012B288ED07000965072 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
