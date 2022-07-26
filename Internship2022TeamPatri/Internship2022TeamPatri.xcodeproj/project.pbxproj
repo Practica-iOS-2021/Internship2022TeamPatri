@@ -8,6 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		59233BF6288FD96E00C34D6C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 59233BF5288FD96E00C34D6C /* SnapKit */; };
+		596E90482890114A000AF800 /* GradesController.md in Resources */ = {isa = PBXBuildFile; fileRef = 596E90472890114A000AF800 /* GradesController.md */; };
+		596E904A2890119A000AF800 /* CoursesController.md in Resources */ = {isa = PBXBuildFile; fileRef = 596E90492890119A000AF800 /* CoursesController.md */; };
+		596E904C289011BB000AF800 /* ProfileController.md in Resources */ = {isa = PBXBuildFile; fileRef = 596E904B289011BB000AF800 /* ProfileController.md */; };
+		596E904E28901200000AF800 /* RegisterController.md in Resources */ = {isa = PBXBuildFile; fileRef = 596E904D28901200000AF800 /* RegisterController.md */; };
+		596E905028901249000AF800 /* LoginController.md in Resources */ = {isa = PBXBuildFile; fileRef = 596E904F28901249000AF800 /* LoginController.md */; };
+		596E90522890126E000AF800 /* TestsController.md in Resources */ = {isa = PBXBuildFile; fileRef = 596E90512890126E000AF800 /* TestsController.md */; };
+		596E9054289012A1000AF800 /* Model.md in Resources */ = {isa = PBXBuildFile; fileRef = 596E9053289012A1000AF800 /* Model.md */; };
+		596E9056289012BB000AF800 /* Service.md in Resources */ = {isa = PBXBuildFile; fileRef = 596E9055289012BB000AF800 /* Service.md */; };
+		596E9058289012EC000AF800 /* Storage.md in Resources */ = {isa = PBXBuildFile; fileRef = 596E9057289012EC000AF800 /* Storage.md */; };
+		596E905A28901303000AF800 /* GradesView.md in Resources */ = {isa = PBXBuildFile; fileRef = 596E905928901303000AF800 /* GradesView.md */; };
+		596E905C28901313000AF800 /* CoursesView.md in Resources */ = {isa = PBXBuildFile; fileRef = 596E905B28901313000AF800 /* CoursesView.md */; };
+		596E905E28901324000AF800 /* ProfileView.md in Resources */ = {isa = PBXBuildFile; fileRef = 596E905D28901324000AF800 /* ProfileView.md */; };
+		596E906028901333000AF800 /* RegisterView.md in Resources */ = {isa = PBXBuildFile; fileRef = 596E905F28901333000AF800 /* RegisterView.md */; };
+		596E90622890133F000AF800 /* LoginView.md in Resources */ = {isa = PBXBuildFile; fileRef = 596E90612890133F000AF800 /* LoginView.md */; };
+		596E90642890134C000AF800 /* TestsView.md in Resources */ = {isa = PBXBuildFile; fileRef = 596E90632890134C000AF800 /* TestsView.md */; };
 		AF79B85C288E7BD800AA99BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF79B85B288E7BD800AA99BD /* AppDelegate.swift */; };
 		AF79B860288E7BD800AA99BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF79B85F288E7BD800AA99BD /* ViewController.swift */; };
 		AF79B863288E7BD800AA99BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF79B861288E7BD800AA99BD /* Main.storyboard */; };
@@ -16,6 +31,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		596E90472890114A000AF800 /* GradesController.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = GradesController.md; sourceTree = "<group>"; };
+		596E90492890119A000AF800 /* CoursesController.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CoursesController.md; sourceTree = "<group>"; };
+		596E904B289011BB000AF800 /* ProfileController.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ProfileController.md; sourceTree = "<group>"; };
+		596E904D28901200000AF800 /* RegisterController.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = RegisterController.md; sourceTree = "<group>"; };
+		596E904F28901249000AF800 /* LoginController.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LoginController.md; sourceTree = "<group>"; };
+		596E90512890126E000AF800 /* TestsController.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = TestsController.md; sourceTree = "<group>"; };
+		596E9053289012A1000AF800 /* Model.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Model.md; sourceTree = "<group>"; };
+		596E9055289012BB000AF800 /* Service.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Service.md; sourceTree = "<group>"; };
+		596E9057289012EC000AF800 /* Storage.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = Storage.md; sourceTree = "<group>"; };
+		596E905928901303000AF800 /* GradesView.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = GradesView.md; sourceTree = "<group>"; };
+		596E905B28901313000AF800 /* CoursesView.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CoursesView.md; sourceTree = "<group>"; };
+		596E905D28901324000AF800 /* ProfileView.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ProfileView.md; sourceTree = "<group>"; };
+		596E905F28901333000AF800 /* RegisterView.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = RegisterView.md; sourceTree = "<group>"; };
+		596E90612890133F000AF800 /* LoginView.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LoginView.md; sourceTree = "<group>"; };
+		596E90632890134C000AF800 /* TestsView.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = TestsView.md; sourceTree = "<group>"; };
 		AF79B858288E7BD800AA99BD /* Internship2022TeamPatri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Internship2022TeamPatri.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF79B85B288E7BD800AA99BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF79B85F288E7BD800AA99BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,6 +70,7 @@
 		59B7E838288ED75100588C1F /* Persistence */ = {
 			isa = PBXGroup;
 			children = (
+				596E9057289012EC000AF800 /* Storage.md */,
 			);
 			path = Persistence;
 			sourceTree = "<group>";
@@ -67,6 +98,7 @@
 		59B7E83B288ED76300588C1F /* Grades */ = {
 			isa = PBXGroup;
 			children = (
+				596E905928901303000AF800 /* GradesView.md */,
 			);
 			path = Grades;
 			sourceTree = "<group>";
@@ -74,6 +106,7 @@
 		59B7E83C288ED76300588C1F /* Courses */ = {
 			isa = PBXGroup;
 			children = (
+				596E905B28901313000AF800 /* CoursesView.md */,
 			);
 			path = Courses;
 			sourceTree = "<group>";
@@ -81,6 +114,7 @@
 		59B7E83D288ED76300588C1F /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				596E905D28901324000AF800 /* ProfileView.md */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -97,6 +131,7 @@
 		59B7E83F288ED76300588C1F /* Register */ = {
 			isa = PBXGroup;
 			children = (
+				596E905F28901333000AF800 /* RegisterView.md */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -104,6 +139,7 @@
 		59B7E840288ED76300588C1F /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				596E90612890133F000AF800 /* LoginView.md */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -111,6 +147,7 @@
 		59B7E841288ED76300588C1F /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				596E90632890134C000AF800 /* TestsView.md */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -126,6 +163,7 @@
 		59B7E843288ED76300588C1F /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				596E9055289012BB000AF800 /* Service.md */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -153,6 +191,7 @@
 		59B7E846288ED76300588C1F /* Grades */ = {
 			isa = PBXGroup;
 			children = (
+				596E90472890114A000AF800 /* GradesController.md */,
 			);
 			path = Grades;
 			sourceTree = "<group>";
@@ -160,6 +199,7 @@
 		59B7E847288ED76300588C1F /* Courses */ = {
 			isa = PBXGroup;
 			children = (
+				596E90492890119A000AF800 /* CoursesController.md */,
 			);
 			path = Courses;
 			sourceTree = "<group>";
@@ -167,6 +207,7 @@
 		59B7E848288ED76300588C1F /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				596E904B289011BB000AF800 /* ProfileController.md */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -183,6 +224,7 @@
 		59B7E84A288ED76300588C1F /* Register */ = {
 			isa = PBXGroup;
 			children = (
+				596E904D28901200000AF800 /* RegisterController.md */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -190,6 +232,7 @@
 		59B7E84B288ED76300588C1F /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				596E904F28901249000AF800 /* LoginController.md */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -197,6 +240,7 @@
 		59B7E84C288ED76300588C1F /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				596E90512890126E000AF800 /* TestsController.md */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -204,6 +248,7 @@
 		59B7E84D288ED76300588C1F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				596E9053289012A1000AF800 /* Model.md */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -306,9 +351,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				596E90482890114A000AF800 /* GradesController.md in Resources */,
 				AF79B868288E7BD900AA99BD /* LaunchScreen.storyboard in Resources */,
 				AF79B865288E7BD900AA99BD /* Assets.xcassets in Resources */,
+				596E90522890126E000AF800 /* TestsController.md in Resources */,
+				596E90622890133F000AF800 /* LoginView.md in Resources */,
+				596E904E28901200000AF800 /* RegisterController.md in Resources */,
 				AF79B863288E7BD800AA99BD /* Main.storyboard in Resources */,
+				596E9058289012EC000AF800 /* Storage.md in Resources */,
+				596E9054289012A1000AF800 /* Model.md in Resources */,
+				596E90642890134C000AF800 /* TestsView.md in Resources */,
+				596E904C289011BB000AF800 /* ProfileController.md in Resources */,
+				596E905028901249000AF800 /* LoginController.md in Resources */,
+				596E905C28901313000AF800 /* CoursesView.md in Resources */,
+				596E904A2890119A000AF800 /* CoursesController.md in Resources */,
+				596E905A28901303000AF800 /* GradesView.md in Resources */,
+				596E9056289012BB000AF800 /* Service.md in Resources */,
+				596E906028901333000AF800 /* RegisterView.md in Resources */,
+				596E905E28901324000AF800 /* ProfileView.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
