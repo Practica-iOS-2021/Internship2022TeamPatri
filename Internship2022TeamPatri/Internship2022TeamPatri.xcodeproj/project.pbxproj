@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D31C5E228913DC1002A670B /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D31C5E128913DC1002A670B /* LogInViewController.swift */; };
+		4D31C5E428913E2F002A670B /* LogIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D31C5E328913E2F002A670B /* LogIn.storyboard */; };
 		59233BF6288FD96E00C34D6C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 59233BF5288FD96E00C34D6C /* SnapKit */; };
 		596E90482890114A000AF800 /* GradesController.md in Resources */ = {isa = PBXBuildFile; fileRef = 596E90472890114A000AF800 /* GradesController.md */; };
 		596E904A2890119A000AF800 /* CoursesController.md in Resources */ = {isa = PBXBuildFile; fileRef = 596E90492890119A000AF800 /* CoursesController.md */; };
@@ -31,6 +33,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D31C5E128913DC1002A670B /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		4D31C5E328913E2F002A670B /* LogIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LogIn.storyboard; sourceTree = "<group>"; };
 		596E90472890114A000AF800 /* GradesController.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = GradesController.md; sourceTree = "<group>"; };
 		596E90492890119A000AF800 /* CoursesController.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CoursesController.md; sourceTree = "<group>"; };
 		596E904B289011BB000AF800 /* ProfileController.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ProfileController.md; sourceTree = "<group>"; };
@@ -140,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				596E90612890133F000AF800 /* LoginView.md */,
+				4D31C5E328913E2F002A670B /* LogIn.storyboard */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -232,6 +237,7 @@
 		59B7E84B288ED76300588C1F /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				4D31C5E128913DC1002A670B /* LogInViewController.swift */,
 				596E904F28901249000AF800 /* LoginController.md */,
 			);
 			path = Login;
@@ -355,6 +361,7 @@
 				AF79B868288E7BD900AA99BD /* LaunchScreen.storyboard in Resources */,
 				AF79B865288E7BD900AA99BD /* Assets.xcassets in Resources */,
 				596E90522890126E000AF800 /* TestsController.md in Resources */,
+				4D31C5E428913E2F002A670B /* LogIn.storyboard in Resources */,
 				596E90622890133F000AF800 /* LoginView.md in Resources */,
 				596E904E28901200000AF800 /* RegisterController.md in Resources */,
 				AF79B863288E7BD800AA99BD /* Main.storyboard in Resources */,
@@ -381,6 +388,7 @@
 			files = (
 				AF79B860288E7BD800AA99BD /* ViewController.swift in Sources */,
 				AF79B85C288E7BD800AA99BD /* AppDelegate.swift in Sources */,
+				4D31C5E228913DC1002A670B /* LogInViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,9 +541,10 @@
 				INFOPLIST_FILE = Internship2022TeamPatri/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LogIn;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -563,9 +572,10 @@
 				INFOPLIST_FILE = Internship2022TeamPatri/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LogIn;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
