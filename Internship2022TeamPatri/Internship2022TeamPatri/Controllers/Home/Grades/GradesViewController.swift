@@ -8,16 +8,14 @@
 import UIKit
 
 class GradesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-  
-    @IBOutlet weak var table: UITableView!
-
+    
+    @IBOutlet private weak var table: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         table.dataSource = self
         table.delegate = self
         table.separatorStyle = .none
-       
-       
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -27,14 +25,6 @@ class GradesViewController: UIViewController, UITableViewDataSource, UITableView
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let inf = data[indexPath.row]
         let courses = Course(iconName: inf.iconName, title: inf.title, grade: inf.grade)
-        
         return CustomTableViewCell(course: courses)
-
-        
-        }
-    
     }
-
-
-
-
+}

@@ -11,7 +11,6 @@ struct Course {
     let iconName: String
     let title: String
     let grade: String
-   
 }
 
 let data: [Course] = [
@@ -19,5 +18,4 @@ let data: [Course] = [
     Course(iconName: "Biology", title: "Biology", grade: "9"),
     Course(iconName: "Chemistry", title: "Chemistry", grade: "/"),
     Course(iconName: "Informatics", title: "Informatics", grade: "/"),
-    
 ]

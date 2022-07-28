@@ -23,7 +23,6 @@ class CustomTableViewCell: UITableViewCell {
         containerView.layer.cornerRadius = 20
         containerView.layer.backgroundColor = .init(red: 0.751, green: 0.936, blue: 0.954, alpha: 1)
         
-        
         super.init(style: .default, reuseIdentifier: nil)
         
         contentView.addSubview(containerView)
@@ -41,13 +40,11 @@ class CustomTableViewCell: UITableViewCell {
 
 extension CustomTableViewCell {
     func applyLayout() {
-        
         contentView.layoutMargins = UIEdgeInsets(top: 8, left: 16, bottom: 8, right: 16)
-        
+    
         containerView.snp.makeConstraints { make in
             make.top.trailing.leading.bottom.equalTo(contentView.layoutMargins)
         }
-        
         
         iconImageView.snp.makeConstraints { make in
             make.top.equalTo(containerView).offset(16)
@@ -55,24 +52,16 @@ extension CustomTableViewCell {
             make.height.equalTo(40)
             make.width.equalTo(40)
             make.bottom.equalToSuperview().inset(16)
-            
         }
         
         title.snp.makeConstraints { make in
             make.leading.equalTo(iconImageView.snp.trailing).offset(35)
             make.centerY.equalTo(iconImageView.snp.centerY)
-            
         }
         
         grade.snp.makeConstraints { make in
             make.trailing.equalToSuperview().inset(16)
             make.centerY.equalTo(title.snp.centerY)
-            
         }
-        
-        
-        
-        
-        
     }
 }
