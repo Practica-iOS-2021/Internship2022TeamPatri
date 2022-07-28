@@ -1,8 +1,8 @@
 ### Summary
-_Provide a short overview of what this PR does..._
+<!--Provide a short overview of what this PR does-->
 
 ### Details
-_Add more context to describe the changes..._
+<!--Add more context to describe the changes-->
 
 ### Metadata
 - Ticket link: [Ticket Name](https://trello.com/c/TICKET_KEY)
