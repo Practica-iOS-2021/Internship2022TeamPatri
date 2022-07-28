@@ -9,6 +9,7 @@ import UIKit
 import SnapKit
 
 class ViewController: UIViewController {
+
     
     let label: UILabel = {
         let label = UILabel()
@@ -29,6 +30,7 @@ class ViewController: UIViewController {
             label.width.equalTo(200)
             label.height.equalTo(140)
         }
+        
     }
     
 }
