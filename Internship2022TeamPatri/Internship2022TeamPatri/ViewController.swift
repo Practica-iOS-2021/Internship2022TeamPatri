@@ -8,6 +8,7 @@
 import UIKit
 import SnapKit
 
+
 final class ViewController: UIViewController {
     let label: UILabel = {
         let label = UILabel()
@@ -28,5 +29,6 @@ final class ViewController: UIViewController {
             label.width.equalTo(200)
             label.height.equalTo(140)
         }
+        
     }
 }
