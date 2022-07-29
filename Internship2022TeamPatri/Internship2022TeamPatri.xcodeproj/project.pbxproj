@@ -28,7 +28,7 @@
 		69AD4C472893D6A40007731E /* RegisterCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AD4C462893D6A40007731E /* RegisterCustomView.swift */; };
 		69AD4C492893D6D90007731E /* RegisterCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69AD4C482893D6D90007731E /* RegisterCustomView.xib */; };
 		69AD4C4B2893D8020007731E /* UIRegisterViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AD4C4A2893D8020007731E /* UIRegisterViewExtension.swift */; };
-		69AD4C4F2893FE680007731E /* ReViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AD4C4E2893FE680007731E /* ReViewController.swift */; };
+		69AD4C4F2893FE680007731E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AD4C4E2893FE680007731E /* RegisterViewController.swift */; };
 		AF79B85C288E7BD800AA99BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF79B85B288E7BD800AA99BD /* AppDelegate.swift */; };
 		AF79B860288E7BD800AA99BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF79B85F288E7BD800AA99BD /* ViewController.swift */; };
 		AF79B863288E7BD800AA99BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF79B861288E7BD800AA99BD /* Main.storyboard */; };
@@ -56,7 +56,7 @@
 		69AD4C462893D6A40007731E /* RegisterCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCustomView.swift; sourceTree = "<group>"; };
 		69AD4C482893D6D90007731E /* RegisterCustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterCustomView.xib; sourceTree = "<group>"; };
 		69AD4C4A2893D8020007731E /* UIRegisterViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIRegisterViewExtension.swift; sourceTree = "<group>"; };
-		69AD4C4E2893FE680007731E /* ReViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReViewController.swift; sourceTree = "<group>"; };
+		69AD4C4E2893FE680007731E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		AF79B858288E7BD800AA99BD /* Internship2022TeamPatri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Internship2022TeamPatri.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF79B85B288E7BD800AA99BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF79B85F288E7BD800AA99BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -239,7 +239,7 @@
 				596E904D28901200000AF800 /* RegisterController.md */,
 				69AD4C482893D6D90007731E /* RegisterCustomView.xib */,
 				69A01D84289291660006B930 /* Register.storyboard */,
-				69AD4C4E2893FE680007731E /* ReViewController.swift */,
+				69AD4C4E2893FE680007731E /* RegisterViewController.swift */,
 				69AD4C462893D6A40007731E /* RegisterCustomView.swift */,
 				69AD4C4A2893D8020007731E /* UIRegisterViewExtension.swift */,
 			);
@@ -402,7 +402,7 @@
 			files = (
 				69AD4C4B2893D8020007731E /* UIRegisterViewExtension.swift in Sources */,
 				AF79B860288E7BD800AA99BD /* ViewController.swift in Sources */,
-				69AD4C4F2893FE680007731E /* ReViewController.swift in Sources */,
+				69AD4C4F2893FE680007731E /* RegisterViewController.swift in Sources */,
 				69AD4C472893D6A40007731E /* RegisterCustomView.swift in Sources */,
 				AF79B85C288E7BD800AA99BD /* AppDelegate.swift in Sources */,
 			);
