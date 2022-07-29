@@ -39,18 +39,15 @@ class RegisterViewController: UIViewController {
         
         // set the text color
         registerButton.titleLabel?.textColor = colorText
-        titleLabel.textColor = colorText
-        emailLabel.textColor = colorText
-        personalIDLabel.textColor = colorText
-        studentIDLabel.textColor = colorText
-        passwordLabel.textColor = colorText
+        [titleLabel, emailLabel, personalIDLabel, studentIDLabel, passwordLabel].forEach  {
+               $0.textColor = colorText
+        }
         
         // set the view colors
         let colorView = UIColor(red: 124/255, green: 122/255, blue: 122/255, alpha: 1)
-        view1.backgroundColor = colorView
-        view2.backgroundColor = colorView
-        view3.backgroundColor = colorView
-        view4.backgroundColor = colorView
+        [view1, view2, view3, view4].forEach  {
+               $0.backgroundColor = colorView
+        }
         
         // set the color and round corners for the register button
         registerButton.backgroundColor = .white
