@@ -32,6 +32,7 @@
 		E490A8042892AF2C0056EC8C /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E490A8032892AF2C0056EC8C /* CustomTableViewCell.swift */; };
 		E490A8062892AF3D0056EC8C /* CourseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E490A8052892AF3D0056EC8C /* CourseModel.swift */; };
 		E490A8082892AF5D0056EC8C /* GradesView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E490A8072892AF5D0056EC8C /* GradesView.storyboard */; };
+		E490A80C2894081E0056EC8C /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E490A80B2894081E0056EC8C /* ColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,7 @@
 		E490A8032892AF2C0056EC8C /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		E490A8052892AF3D0056EC8C /* CourseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseModel.swift; sourceTree = "<group>"; };
 		E490A8072892AF5D0056EC8C /* GradesView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GradesView.storyboard; sourceTree = "<group>"; };
+		E490A80B2894081E0056EC8C /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,6 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				E490A8052892AF3D0056EC8C /* CourseModel.swift */,
+				E490A80B2894081E0056EC8C /* ColorExtension.swift */,
 				596E9053289012A1000AF800 /* Model.md */,
 			);
 			path = Models;
@@ -395,6 +398,7 @@
 				E490A8022892AEAE0056EC8C /* GradesViewController.swift in Sources */,
 				AF79B860288E7BD800AA99BD /* ViewController.swift in Sources */,
 				E490A8062892AF3D0056EC8C /* CourseModel.swift in Sources */,
+				E490A80C2894081E0056EC8C /* ColorExtension.swift in Sources */,
 				E490A8042892AF2C0056EC8C /* CustomTableViewCell.swift in Sources */,
 				AF79B85C288E7BD800AA99BD /* AppDelegate.swift in Sources */,
 			);

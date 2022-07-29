@@ -18,13 +18,13 @@ class GradesViewController: UIViewController, UITableViewDataSource, UITableView
         table.separatorStyle = .none
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let inf = data[indexPath.row]
-        let courses = Course(iconName: inf.iconName, title: inf.title, grade: inf.grade)
+   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = data[indexPath.row]
+        let courses = Course(iconName: cell.iconName, title: cell.title, grade: cell.grade)
         return CustomTableViewCell(course: courses)
     }
 }

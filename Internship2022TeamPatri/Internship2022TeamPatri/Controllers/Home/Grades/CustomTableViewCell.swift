@@ -21,7 +21,7 @@ class CustomTableViewCell: UITableViewCell {
         grade.text = course.grade
         grade.font = UIFont.systemFont(ofSize: 20, weight: .bold)
         containerView.layer.cornerRadius = 20
-        containerView.layer.backgroundColor = .init(red: 0.751, green: 0.936, blue: 0.954, alpha: 1)
+        containerView.backgroundColor = UIColor.themeColor
         
         super.init(style: .default, reuseIdentifier: nil)
         
@@ -38,7 +38,7 @@ class CustomTableViewCell: UITableViewCell {
     }
 }
 
-extension CustomTableViewCell {
+private extension CustomTableViewCell {
     func applyLayout() {
         contentView.layoutMargins = UIEdgeInsets(top: 8, left: 16, bottom: 8, right: 16)
     
@@ -65,3 +65,4 @@ extension CustomTableViewCell {
         }
     }
 }
+
