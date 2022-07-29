@@ -1,53 +1,36 @@
 //
-//  RegisterViewController.swift
+//  ReViewController.swift
 //  Internship2022TeamPatri
 //
-//  Created by Coralia Diana Muresan on 28.07.2022.
+//  Created by Coralia Diana Muresan on 29.07.2022.
 //
 
 import UIKit
 
 class RegisterViewController: UIViewController {
-    
-    @IBOutlet weak private var registerButton: UIButton!
+
+    @IBOutlet private weak var view1: RegisterCustomView!
+    @IBOutlet private weak var view2: RegisterCustomView!
+    @IBOutlet private weak var view3: RegisterCustomView!
+    @IBOutlet private weak var view4: RegisterCustomView!
     @IBOutlet private var backgroundView: UIView!
-    @IBOutlet private weak var titleLabel: UILabel!
-    @IBOutlet private weak var emailLabel: UILabel!
-    @IBOutlet private weak var personalIDLabel: UILabel!
-    @IBOutlet private weak var studentIDLabel: UILabel!
-    @IBOutlet private weak var passwordLabel: UILabel!
-    @IBOutlet private weak var view1: UIView!
-    @IBOutlet private weak var view2: UIView!
-    @IBOutlet private weak var view3: UIView!
-    @IBOutlet private weak var view4: UIView!
-    @IBOutlet private weak var emailTextField: UITextField!
-    @IBOutlet private weak var personalIDTextField: UITextField!
-    @IBOutlet private weak var studentIDTextField: UITextField!
-    @IBOutlet private weak var passwordTextField: UITextField!
-    
-    let colorText = UIColor(red: 37/255, green: 22/255, blue: 5/255, alpha: 1)
+    @IBOutlet private weak var registerButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.view1.configureView(title: "Email:")
+        self.view2.configureView(title: "Personal ID:")
+        self.view3.configureView(title: "Student ID:")
+        self.view4.configureView(title: "Password:")
+        view4.contentTextField.isSecureTextEntry = true
         config()
     }
     
     private func config(){
+        
         // set background color
         backgroundView.backgroundColor = UIColor(red: 192/255, green: 239/255, blue: 243/255, alpha: 1)
-        
-        // set the text color
-        registerButton.titleLabel?.textColor = colorText
-        [titleLabel, emailLabel, personalIDLabel, studentIDLabel, passwordLabel].forEach  {
-               $0.textColor = colorText
-        }
-        
-        // set the view colors
-        let colorView = UIColor(red: 124/255, green: 122/255, blue: 122/255, alpha: 1)
-        [view1, view2, view3, view4].forEach  {
-               $0.backgroundColor = colorView
-        }
         
         // set the color and round corners for the register button
         registerButton.backgroundColor = .white
@@ -62,11 +45,13 @@ class RegisterViewController: UIViewController {
         registerButton.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
     }
     
-    @IBAction private func registerFunc(_ sender: Any) {
-        let userEmail = emailTextField.text
-        let userPersonalID = personalIDTextField.text
-        let userStudentID = studentIDTextField.text
-        let userPassword = passwordTextField.text
+    @IBAction private func registerFunction(_ sender: Any) {
+
+        let userEmail = view1.contentTextField.text
+        let userPersonalID = view2.contentTextField.text
+        let userStudentID = view3.contentTextField.text
+        let userPassword = view4.contentTextField.text
+        let colorText = UIColor(red: 37/255, green: 22/255, blue: 5/255, alpha: 1)
         
         // check for empty fields
         if userEmail?.isEmpty == true || userPersonalID?.isEmpty == true || userStudentID?.isEmpty == true || userPassword?.isEmpty == true {
@@ -76,18 +61,20 @@ class RegisterViewController: UIViewController {
             // check for email validation
             if isValidEmail(emailID: userEmail ?? "") == false {
                 alertMessage(userMessage: "Please enter valid email address!")
-                emailLabel.textColor = .red
+                view1.titleLabel.textColor = .red
+                view4.titleLabel.textColor = colorText
             } else {
                 // check for password validation
                 // minimum eight characters, at least one letter, one number and one special character
                 if isValidPassword(password: userPassword ?? "") == false {
                     alertMessage(userMessage: "Please enter a valid password! (min 8 characters, one letter, one number and one special character)")
-                    emailLabel.textColor = colorText
-                    passwordLabel.textColor = .red
+                    view1.titleLabel.textColor = colorText
+                    view4.titleLabel.textColor = .red
                 } else {
                     // register data is all good
                     alertMessage(userMessage: "All good! :)")
-                    passwordLabel.textColor = colorText
+                    view1.titleLabel.textColor = colorText
+                    view4.titleLabel.textColor = colorText
                 }
             }
         }
@@ -115,17 +102,16 @@ class RegisterViewController: UIViewController {
         myAllert.addAction(ok)
         present(myAllert, animated: true, completion: nil)
     }
-
 }
 
 // for keyboard issues
 extension RegisterViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         // dismiss keyboard
-        emailTextField.resignFirstResponder()
-        personalIDTextField.resignFirstResponder()
-        studentIDTextField.resignFirstResponder()
-        passwordTextField.resignFirstResponder()
+        view1.contentTextField.resignFirstResponder()
+        view2.contentTextField.resignFirstResponder()
+        view3.contentTextField.resignFirstResponder()
+        view4.contentTextField.resignFirstResponder()
         return true
     }
 }
