@@ -98,7 +98,7 @@ class LogInViewController: UIViewController {
         }
     }
     
-    @IBAction func signupTapped(_ sender: Any) {
+    @IBAction private func signupTapped(_ sender: Any) {
     }
 
     //Email validation
