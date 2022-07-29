@@ -9,21 +9,21 @@ import UIKit
 
 class RegisterViewController: UIViewController {
     
-    @IBOutlet weak var registerButton: UIButton!
-    @IBOutlet var backgroundView: UIView!
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var emailLabel: UILabel!
-    @IBOutlet weak var personalIDLabel: UILabel!
-    @IBOutlet weak var studentIDLabel: UILabel!
-    @IBOutlet weak var passwordLabel: UILabel!
-    @IBOutlet weak var view1: UIView!
-    @IBOutlet weak var view2: UIView!
-    @IBOutlet weak var view3: UIView!
-    @IBOutlet weak var view4: UIView!
-    @IBOutlet weak var emailText: UITextField!
-    @IBOutlet weak var personalIDText: UITextField!
-    @IBOutlet weak var studentIDText: UITextField!
-    @IBOutlet weak var passwordText: UITextField!
+    @IBOutlet weak private var registerButton: UIButton!
+    @IBOutlet private var backgroundView: UIView!
+    @IBOutlet private weak var titleLabel: UILabel!
+    @IBOutlet private weak var emailLabel: UILabel!
+    @IBOutlet private weak var personalIDLabel: UILabel!
+    @IBOutlet private weak var studentIDLabel: UILabel!
+    @IBOutlet private weak var passwordLabel: UILabel!
+    @IBOutlet private weak var view1: UIView!
+    @IBOutlet private weak var view2: UIView!
+    @IBOutlet private weak var view3: UIView!
+    @IBOutlet private weak var view4: UIView!
+    @IBOutlet private weak var emailText: UITextField!
+    @IBOutlet private weak var personalIDText: UITextField!
+    @IBOutlet private weak var studentIDText: UITextField!
+    @IBOutlet private weak var passwordText: UITextField!
     
     let colorText = UIColor(red: 37/255, green: 22/255, blue: 5/255, alpha: 1)
     
