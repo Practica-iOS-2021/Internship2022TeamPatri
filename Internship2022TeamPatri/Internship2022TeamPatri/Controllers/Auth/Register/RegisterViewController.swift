@@ -20,10 +20,10 @@ class RegisterViewController: UIViewController {
     @IBOutlet private weak var view2: UIView!
     @IBOutlet private weak var view3: UIView!
     @IBOutlet private weak var view4: UIView!
-    @IBOutlet private weak var emailText: UITextField!
-    @IBOutlet private weak var personalIDText: UITextField!
-    @IBOutlet private weak var studentIDText: UITextField!
-    @IBOutlet private weak var passwordText: UITextField!
+    @IBOutlet private weak var emailTextField: UITextField!
+    @IBOutlet private weak var personalIDTextField: UITextField!
+    @IBOutlet private weak var studentIDTextField: UITextField!
+    @IBOutlet private weak var passwordTextField: UITextField!
     
     let colorText = UIColor(red: 37/255, green: 22/255, blue: 5/255, alpha: 1)
     
@@ -33,7 +33,7 @@ class RegisterViewController: UIViewController {
         config()
     }
     
-    func config(){
+    private func config(){
         // set background color
         backgroundView.backgroundColor = UIColor(red: 192/255, green: 239/255, blue: 243/255, alpha: 1)
         
@@ -65,27 +65,25 @@ class RegisterViewController: UIViewController {
         registerButton.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
     }
     
-    @IBAction func registerFunc(_ sender: Any) {
-        
-        let userEmail = emailText.text
-        let userPersonalID = personalIDText.text
-        let userStudentID = studentIDText.text
-        let userPassword = passwordText.text
+    @IBAction private func registerFunc(_ sender: Any) {
+        let userEmail = emailTextField.text
+        let userPersonalID = personalIDTextField.text
+        let userStudentID = studentIDTextField.text
+        let userPassword = passwordTextField.text
         
         // check for empty fields
-        if (userEmail == "" || userPersonalID == "" || userStudentID == "" || userPassword == "") {
+        if userEmail?.isEmpty == true || userPersonalID?.isEmpty == true || userStudentID?.isEmpty == true || userPassword?.isEmpty == true {
             alertMessage(userMessage: "All fields are required !!!")
         }
         else {
             // check for email validation
-            let mail = isValidEmail(emailID: userEmail!)
-            if (mail == false) {
+            if isValidEmail(emailID: userEmail ?? "") == false {
                 alertMessage(userMessage: "Please enter valid email address!")
                 emailLabel.textColor = .red
             } else {
                 // check for password validation
                 // minimum eight characters, at least one letter, one number and one special character
-                if (isValidPassword(password: userPassword!) == false) {
+                if isValidPassword(password: userPassword ?? "") == false {
                     alertMessage(userMessage: "Please enter a valid password! (min 8 characters, one letter, one number and one special character)")
                     emailLabel.textColor = colorText
                     passwordLabel.textColor = .red
@@ -127,10 +125,10 @@ class RegisterViewController: UIViewController {
 extension RegisterViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         // dismiss keyboard
-        emailText.resignFirstResponder()
-        personalIDText.resignFirstResponder()
-        studentIDText.resignFirstResponder()
-        passwordText.resignFirstResponder()
+        emailTextField.resignFirstResponder()
+        personalIDTextField.resignFirstResponder()
+        studentIDTextField.resignFirstResponder()
+        passwordTextField.resignFirstResponder()
         return true
     }
 }

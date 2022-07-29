@@ -233,14 +233,14 @@
                     <connections>
                         <outlet property="backgroundView" destination="VRz-EH-Vse" id="Owf-Ub-IeM"/>
                         <outlet property="emailLabel" destination="rag-XE-JtD" id="cI1-VT-7TS"/>
-                        <outlet property="emailText" destination="af9-2e-aQu" id="1G0-rK-Jq9"/>
+                        <outlet property="emailTextField" destination="af9-2e-aQu" id="8A9-AX-o1M"/>
                         <outlet property="passwordLabel" destination="Enh-5b-kS1" id="jep-td-38O"/>
-                        <outlet property="passwordText" destination="pfB-hS-7DZ" id="vZO-fE-czS"/>
+                        <outlet property="passwordTextField" destination="pfB-hS-7DZ" id="EBD-qF-ds0"/>
                         <outlet property="personalIDLabel" destination="Dvi-fS-KJy" id="CuI-Xr-1Yk"/>
-                        <outlet property="personalIDText" destination="iqH-ZZ-MI1" id="ett-9E-89h"/>
+                        <outlet property="personalIDTextField" destination="iqH-ZZ-MI1" id="NTf-SK-7Rp"/>
                         <outlet property="registerButton" destination="3Wt-P0-ODV" id="taT-vH-2F3"/>
                         <outlet property="studentIDLabel" destination="MqW-VL-19u" id="Yei-ON-qtf"/>
-                        <outlet property="studentIDText" destination="WRr-XB-UGE" id="2ht-Xa-4fC"/>
+                        <outlet property="studentIDTextField" destination="WRr-XB-UGE" id="xyr-Ma-8Fe"/>
                         <outlet property="titleLabel" destination="AZi-ju-4qd" id="5Kd-0r-iT0"/>
                         <outlet property="view1" destination="Mia-EM-ZdA" id="b1p-OL-oxF"/>
                         <outlet property="view2" destination="XA4-a7-uQn" id="geN-Pz-uzu"/>
