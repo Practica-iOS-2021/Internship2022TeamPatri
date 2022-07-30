@@ -30,7 +30,7 @@ class RegisterViewController: UIViewController {
     private func config(){
         
         // set background color
-        backgroundView.backgroundColor = UIColor(red: 192/255, green: 239/255, blue: 243/255, alpha: 1)
+        backgroundView.backgroundColor = UIColor.colorBackground
         
         // set the color and round corners for the register button
         registerButton.backgroundColor = .white
@@ -51,7 +51,6 @@ class RegisterViewController: UIViewController {
         let userPersonalID = view2.contentTextField.text
         let userStudentID = view3.contentTextField.text
         let userPassword = view4.contentTextField.text
-        let colorText = UIColor(red: 37/255, green: 22/255, blue: 5/255, alpha: 1)
         
         // check for empty fields
         if userEmail?.isEmpty == true || userPersonalID?.isEmpty == true || userStudentID?.isEmpty == true || userPassword?.isEmpty == true {
@@ -62,19 +61,19 @@ class RegisterViewController: UIViewController {
             if isValidEmail(emailID: userEmail ?? "") == false {
                 alertMessage(userMessage: "Please enter valid email address!")
                 view1.titleLabel.textColor = .red
-                view4.titleLabel.textColor = colorText
+                view4.titleLabel.textColor = UIColor.colorText
             } else {
                 // check for password validation
                 // minimum eight characters, at least one letter, one number and one special character
                 if isValidPassword(password: userPassword ?? "") == false {
                     alertMessage(userMessage: "Please enter a valid password! (min 8 characters, one letter, one number and one special character)")
-                    view1.titleLabel.textColor = colorText
+                    view1.titleLabel.textColor = UIColor.colorText
                     view4.titleLabel.textColor = .red
                 } else {
                     // register data is all good
                     alertMessage(userMessage: "All good! :)")
-                    view1.titleLabel.textColor = colorText
-                    view4.titleLabel.textColor = colorText
+                    view1.titleLabel.textColor = UIColor.colorText
+                    view4.titleLabel.textColor = UIColor.colorText
                 }
             }
         }

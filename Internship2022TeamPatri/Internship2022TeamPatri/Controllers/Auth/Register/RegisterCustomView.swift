@@ -15,11 +15,6 @@ final class RegisterCustomView: UIView {
     @IBOutlet private weak var lineView: UIView!
     @IBOutlet private var backgroundView: UIView!
     
-    let colorView = UIColor(red: 124/255, green: 122/255, blue: 122/255, alpha: 1)
-    let colorText = UIColor(red: 37/255, green: 22/255, blue: 5/255, alpha: 1)
-    
-    var view: UIView!
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.configureView()
@@ -38,9 +33,9 @@ final class RegisterCustomView: UIView {
     
     func configureView(title: String){
         self.titleLabel.text = title
-        self.titleLabel.textColor = colorText
-        self.lineView.backgroundColor = colorView
-        backgroundView.backgroundColor = UIColor(red: 192/255, green: 239/255, blue: 243/255, alpha: 1)
+        self.titleLabel.textColor = UIColor.colorText
+        self.lineView.backgroundColor = UIColor.colorView
+        backgroundView.backgroundColor = UIColor.colorBackground
     }
 }
 
