@@ -8,8 +8,8 @@
 import UIKit
 import SnapKit
 
-class ViewController: UIViewController {
-    
+
+final class ViewController: UIViewController {
     let label: UILabel = {
         let label = UILabel()
         label.text = "SnapKit label example"
@@ -29,7 +29,6 @@ class ViewController: UIViewController {
             label.width.equalTo(200)
             label.height.equalTo(140)
         }
+        
     }
-    
 }
-
