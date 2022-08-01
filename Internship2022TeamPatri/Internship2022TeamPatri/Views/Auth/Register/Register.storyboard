@@ -17,10 +17,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="U5Q-n7-f5L">
-                                <rect key="frame" x="55" y="174" width="327" height="408"/>
+                                <rect key="frame" x="55" y="114" width="327" height="510"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cj5-Oq-kqp" customClass="RegisterCustomView" customModule="Internship2022TeamPatri" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nVU-NW-Ea6" customClass="RegisterCustomView" customModule="Internship2022TeamPatri" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="327" height="102"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="327" id="YdD-NJ-FcH"/>
+                                            <constraint firstAttribute="height" constant="102" id="kVO-Qt-daz"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cj5-Oq-kqp" customClass="RegisterCustomView" customModule="Internship2022TeamPatri" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="102" width="327" height="102"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="102" id="K0g-tZ-ajp"/>
@@ -28,7 +36,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pww-7n-dIP" customClass="RegisterCustomView" customModule="Internship2022TeamPatri" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="102" width="327" height="102"/>
+                                        <rect key="frame" x="0.0" y="204" width="327" height="102"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="102" id="aJN-6R-IGT"/>
@@ -36,7 +44,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ubd-xo-Oof" customClass="RegisterCustomView" customModule="Internship2022TeamPatri" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="204" width="327" height="102"/>
+                                        <rect key="frame" x="0.0" y="306" width="327" height="102"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="327" id="hdv-Xc-QVf"/>
@@ -44,7 +52,7 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pl5-nm-Npl" customClass="RegisterCustomView" customModule="Internship2022TeamPatri" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="306" width="327" height="102"/>
+                                        <rect key="frame" x="0.0" y="408" width="327" height="102"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="102" id="pqf-op-FMB"/>
@@ -55,21 +63,24 @@
                                 <constraints>
                                     <constraint firstItem="Pl5-nm-Npl" firstAttribute="top" secondItem="Ubd-xo-Oof" secondAttribute="bottom" id="4oi-IP-pJD"/>
                                     <constraint firstAttribute="bottom" secondItem="Pl5-nm-Npl" secondAttribute="bottom" id="874-9S-37C"/>
-                                    <constraint firstItem="cj5-Oq-kqp" firstAttribute="top" secondItem="U5Q-n7-f5L" secondAttribute="top" id="A6z-OY-gOk"/>
+                                    <constraint firstItem="cj5-Oq-kqp" firstAttribute="leading" secondItem="U5Q-n7-f5L" secondAttribute="leading" id="AfW-G1-WWl"/>
                                     <constraint firstItem="Pl5-nm-Npl" firstAttribute="leading" secondItem="U5Q-n7-f5L" secondAttribute="leading" id="DPh-Od-Lys"/>
-                                    <constraint firstItem="Ubd-xo-Oof" firstAttribute="top" secondItem="Pww-7n-dIP" secondAttribute="bottom" id="HnN-1o-Bei"/>
-                                    <constraint firstItem="cj5-Oq-kqp" firstAttribute="leading" secondItem="U5Q-n7-f5L" secondAttribute="leading" id="OPT-JJ-k0B"/>
-                                    <constraint firstAttribute="trailing" secondItem="Pww-7n-dIP" secondAttribute="trailing" id="Rhd-WY-Qwl"/>
-                                    <constraint firstItem="Pww-7n-dIP" firstAttribute="leading" secondItem="U5Q-n7-f5L" secondAttribute="leading" id="dW6-yv-eMB"/>
+                                    <constraint firstItem="cj5-Oq-kqp" firstAttribute="top" secondItem="nVU-NW-Ea6" secondAttribute="bottom" id="GXv-qj-Xe3"/>
+                                    <constraint firstItem="Pww-7n-dIP" firstAttribute="top" secondItem="cj5-Oq-kqp" secondAttribute="bottom" id="ISj-Q4-U8U"/>
+                                    <constraint firstItem="Ubd-xo-Oof" firstAttribute="top" secondItem="Pww-7n-dIP" secondAttribute="bottom" id="Ybj-jA-8hI"/>
                                     <constraint firstAttribute="trailing" secondItem="Ubd-xo-Oof" secondAttribute="trailing" id="eBw-Jt-xtf"/>
+                                    <constraint firstAttribute="trailing" secondItem="cj5-Oq-kqp" secondAttribute="trailing" id="kLa-Hh-s6h"/>
                                     <constraint firstItem="Ubd-xo-Oof" firstAttribute="leading" secondItem="U5Q-n7-f5L" secondAttribute="leading" id="ka3-km-2rF"/>
-                                    <constraint firstItem="Pww-7n-dIP" firstAttribute="top" secondItem="cj5-Oq-kqp" secondAttribute="bottom" id="kbq-84-xr4"/>
-                                    <constraint firstAttribute="trailing" secondItem="cj5-Oq-kqp" secondAttribute="trailing" id="lbl-FN-E2z"/>
+                                    <constraint firstAttribute="trailing" secondItem="Pww-7n-dIP" secondAttribute="trailing" id="l4t-Zh-abK"/>
+                                    <constraint firstItem="nVU-NW-Ea6" firstAttribute="leading" secondItem="U5Q-n7-f5L" secondAttribute="leading" id="mCV-tk-Roq"/>
                                     <constraint firstAttribute="trailing" secondItem="Pl5-nm-Npl" secondAttribute="trailing" id="pl6-be-hZu"/>
+                                    <constraint firstItem="Pww-7n-dIP" firstAttribute="leading" secondItem="U5Q-n7-f5L" secondAttribute="leading" id="qoD-C5-lxr"/>
+                                    <constraint firstAttribute="trailing" secondItem="nVU-NW-Ea6" secondAttribute="trailing" id="rHB-T2-urn"/>
+                                    <constraint firstItem="nVU-NW-Ea6" firstAttribute="top" secondItem="U5Q-n7-f5L" secondAttribute="top" id="zzl-5F-7fz"/>
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l1p-JL-XnM">
-                                <rect key="frame" x="82.5" y="84" width="249" height="50"/>
+                                <rect key="frame" x="82.5" y="64" width="249" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="249" id="h10-ed-Jd9"/>
                                     <constraint firstAttribute="height" constant="50" id="jce-cc-LdI"/>
@@ -78,7 +89,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="856-bB-NBD">
-                                <rect key="frame" x="67" y="602" width="280" height="62"/>
+                                <rect key="frame" x="67" y="644" width="280" height="62"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="62" id="TN0-6W-QP8"/>
                                     <constraint firstAttribute="width" constant="280" id="sM8-Lm-fYN"/>
@@ -102,24 +113,25 @@
                             <constraint firstItem="U5Q-n7-f5L" firstAttribute="leading" secondItem="YVH-Jm-Hal" secondAttribute="leading" constant="55" id="0Ta-TL-nw4"/>
                             <constraint firstItem="YVH-Jm-Hal" firstAttribute="trailing" secondItem="U5Q-n7-f5L" secondAttribute="trailing" constant="32" id="3fr-65-Od5"/>
                             <constraint firstItem="856-bB-NBD" firstAttribute="centerX" secondItem="ZSi-rK-2xD" secondAttribute="centerX" id="8kw-vq-C7y"/>
-                            <constraint firstItem="U5Q-n7-f5L" firstAttribute="top" secondItem="YVH-Jm-Hal" secondAttribute="top" constant="130" id="KlW-HD-ONA"/>
+                            <constraint firstItem="U5Q-n7-f5L" firstAttribute="top" secondItem="YVH-Jm-Hal" secondAttribute="top" constant="70" id="KlW-HD-ONA"/>
                             <constraint firstItem="l1p-JL-XnM" firstAttribute="centerX" secondItem="ZSi-rK-2xD" secondAttribute="centerX" id="LuZ-5d-uzj"/>
-                            <constraint firstItem="l1p-JL-XnM" firstAttribute="top" secondItem="YVH-Jm-Hal" secondAttribute="top" constant="40" id="YZE-cS-oxR"/>
-                            <constraint firstItem="856-bB-NBD" firstAttribute="top" secondItem="U5Q-n7-f5L" secondAttribute="bottom" constant="20" id="gZk-SQ-3z2"/>
+                            <constraint firstItem="l1p-JL-XnM" firstAttribute="top" secondItem="YVH-Jm-Hal" secondAttribute="top" constant="20" id="YZE-cS-oxR"/>
+                            <constraint firstItem="856-bB-NBD" firstAttribute="top" secondItem="U5Q-n7-f5L" secondAttribute="bottom" constant="20" id="rpm-I6-7VF"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="backgroundView" destination="ZSi-rK-2xD" id="B3B-sh-3up"/>
                         <outlet property="registerButton" destination="856-bB-NBD" id="G4t-5h-ytk"/>
-                        <outlet property="view1" destination="cj5-Oq-kqp" id="k3p-br-0On"/>
-                        <outlet property="view2" destination="Pww-7n-dIP" id="UTi-jB-p9l"/>
-                        <outlet property="view3" destination="Ubd-xo-Oof" id="M90-fw-Roc"/>
-                        <outlet property="view4" destination="Pl5-nm-Npl" id="mVn-2U-sPz"/>
+                        <outlet property="view1" destination="nVU-NW-Ea6" id="csL-Ul-7UZ"/>
+                        <outlet property="view2" destination="cj5-Oq-kqp" id="FpY-ZF-5F5"/>
+                        <outlet property="view3" destination="Pww-7n-dIP" id="ZU8-Jg-nhg"/>
+                        <outlet property="view4" destination="Ubd-xo-Oof" id="vTW-rO-nWh"/>
+                        <outlet property="view5" destination="Pl5-nm-Npl" id="RMZ-Xf-acD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cDW-Jg-B3P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="938" y="88"/>
+            <point key="canvasLocation" x="937.68115942028987" y="87.723214285714278"/>
         </scene>
     </scenes>
     <resources>

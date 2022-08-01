@@ -13,17 +13,19 @@ class RegisterViewController: UIViewController {
     @IBOutlet private weak var view2: RegisterCustomView!
     @IBOutlet private weak var view3: RegisterCustomView!
     @IBOutlet private weak var view4: RegisterCustomView!
+    @IBOutlet private weak var view5: RegisterCustomView!
     @IBOutlet private var backgroundView: UIView!
     @IBOutlet private weak var registerButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view1.configureView(title: "Email:")
-        view2.configureView(title: "Personal ID:")
-        view3.configureView(title: "Student ID:")
-        view4.configureView(title: "Password:")
-        view4.contentTextField.isSecureTextEntry = true
+        view1.configureView(title: "Name:")
+        view2.configureView(title: "Email:")
+        view3.configureView(title: "Personal ID:")
+        view4.configureView(title: "Student ID:")
+        view5.configureView(title: "Password:")
+        view5.contentTextField.isSecureTextEntry = true
         config()
     }
     
@@ -47,33 +49,34 @@ class RegisterViewController: UIViewController {
     
     @IBAction private func registerFunction(_ sender: Any) {
 
-        let userEmail = view1.contentTextField.text
-        let userPersonalID = view2.contentTextField.text
-        let userStudentID = view3.contentTextField.text
-        let userPassword = view4.contentTextField.text
+        let userName = view1.contentTextField.text
+        let userEmail = view2.contentTextField.text
+        let userPersonalID = view3.contentTextField.text
+        let userStudentID = view4.contentTextField.text
+        let userPassword = view5.contentTextField.text
         
         // check for empty fields
-        if userEmail?.isEmpty == true || userPersonalID?.isEmpty == true || userStudentID?.isEmpty == true || userPassword?.isEmpty == true {
+        if userName?.isEmpty == true || userEmail?.isEmpty == true || userPersonalID?.isEmpty == true || userStudentID?.isEmpty == true || userPassword?.isEmpty == true {
             alertMessage(userMessage: "All fields are required !!!")
         }
         else {
             // check for email validation
             if isValidEmail(emailID: userEmail ?? "") == false {
                 alertMessage(userMessage: "Please enter valid email address!")
-                view1.titleLabel.textColor = .red
-                view4.titleLabel.textColor = UIColor.colorText
+                view2.titleLabel.textColor = .red
+                view5.titleLabel.textColor = UIColor.colorText
             } else {
                 // check for password validation
                 // minimum eight characters, at least one letter, one number and one special character
                 if isValidPassword(password: userPassword ?? "") == false {
                     alertMessage(userMessage: "Please enter a valid password! (min 8 characters, one letter, one number and one special character)")
-                    view1.titleLabel.textColor = UIColor.colorText
-                    view4.titleLabel.textColor = .red
+                    view2.titleLabel.textColor = UIColor.colorText
+                    view5.titleLabel.textColor = .red
                 } else {
                     // register data is all good
                     alertMessage(userMessage: "All good! :)")
-                    view1.titleLabel.textColor = UIColor.colorText
-                    view4.titleLabel.textColor = UIColor.colorText
+                    view2.titleLabel.textColor = UIColor.colorText
+                    view5.titleLabel.textColor = UIColor.colorText
                 }
             }
         }
@@ -111,6 +114,7 @@ extension RegisterViewController: UITextFieldDelegate {
         view2.contentTextField.resignFirstResponder()
         view3.contentTextField.resignFirstResponder()
         view4.contentTextField.resignFirstResponder()
+        view5.contentTextField.resignFirstResponder()
         return true
     }
 }
