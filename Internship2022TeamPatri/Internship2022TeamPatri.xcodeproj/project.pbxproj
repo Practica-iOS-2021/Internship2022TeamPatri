@@ -23,7 +23,7 @@
 		596E906028901333000AF800 /* RegisterView.md in Resources */ = {isa = PBXBuildFile; fileRef = 596E905F28901333000AF800 /* RegisterView.md */; };
 		596E90622890133F000AF800 /* LoginView.md in Resources */ = {isa = PBXBuildFile; fileRef = 596E90612890133F000AF800 /* LoginView.md */; };
 		596E90642890134C000AF800 /* TestsView.md in Resources */ = {isa = PBXBuildFile; fileRef = 596E90632890134C000AF800 /* TestsView.md */; };
-		6948DDF12895846C00D05F76 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6948DDF02895846C00D05F76 /* ColorExtension.swift */; };
+		6948DDF12895846C00D05F76 /* RegisterColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6948DDF02895846C00D05F76 /* RegisterColorExtension.swift */; };
 		69A01D85289291660006B930 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69A01D84289291660006B930 /* Register.storyboard */; };
 		69AD4C472893D6A40007731E /* RegisterCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AD4C462893D6A40007731E /* RegisterCustomView.swift */; };
 		69AD4C492893D6D90007731E /* RegisterCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69AD4C482893D6D90007731E /* RegisterCustomView.xib */; };
@@ -55,7 +55,7 @@
 		596E905F28901333000AF800 /* RegisterView.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = RegisterView.md; sourceTree = "<group>"; };
 		596E90612890133F000AF800 /* LoginView.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LoginView.md; sourceTree = "<group>"; };
 		596E90632890134C000AF800 /* TestsView.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = TestsView.md; sourceTree = "<group>"; };
-		6948DDF02895846C00D05F76 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		6948DDF02895846C00D05F76 /* RegisterColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterColorExtension.swift; sourceTree = "<group>"; };
 		69A01D84289291660006B930 /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
 		69AD4C462893D6A40007731E /* RegisterCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCustomView.swift; sourceTree = "<group>"; };
 		69AD4C482893D6D90007731E /* RegisterCustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterCustomView.xib; sourceTree = "<group>"; };
@@ -248,7 +248,7 @@
 				596E904D28901200000AF800 /* RegisterController.md */,
 				69AD4C4E2893FE680007731E /* RegisterViewController.swift */,
 				69AD4C4A2893D8020007731E /* UIRegisterViewExtension.swift */,
-				6948DDF02895846C00D05F76 /* ColorExtension.swift */,
+				6948DDF02895846C00D05F76 /* RegisterColorExtension.swift */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -435,7 +435,7 @@
 				69AD4C4B2893D8020007731E /* UIRegisterViewExtension.swift in Sources */,
 				AF79B860288E7BD800AA99BD /* ViewController.swift in Sources */,
 				69AD4C4F2893FE680007731E /* RegisterViewController.swift in Sources */,
-				6948DDF12895846C00D05F76 /* ColorExtension.swift in Sources */,
+				6948DDF12895846C00D05F76 /* RegisterColorExtension.swift in Sources */,
 				69AD4C472893D6A40007731E /* RegisterCustomView.swift in Sources */,
 				AF79B85C288E7BD800AA99BD /* AppDelegate.swift in Sources */,
 			);
