@@ -19,22 +19,19 @@ final class RegisterCustomView: UIView {
         super.init(frame: frame)
         self.configureView()
     }
-        
     required init?(coder: NSCoder){
         super.init(coder: coder)
         self.configureView()
     }
-    
     private func configureView(){
         guard let view = self.loadViewFromNib(nibName: "RegisterCustomView") else {return}
         view.frame = self.bounds
         self.addSubview(view)
     }
-    
     func configureView(title: String){
-        self.titleLabel.text = title
-        self.titleLabel.textColor = UIColor.colorText
-        self.lineView.backgroundColor = UIColor.colorView
+        titleLabel.text = title
+        titleLabel.textColor = UIColor.colorText
+        lineView.backgroundColor = UIColor.colorView
         backgroundView.backgroundColor = UIColor.colorBackground
     }
 }

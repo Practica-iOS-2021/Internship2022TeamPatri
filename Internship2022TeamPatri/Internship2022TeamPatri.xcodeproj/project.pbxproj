@@ -24,7 +24,6 @@
 		596E90622890133F000AF800 /* LoginView.md in Resources */ = {isa = PBXBuildFile; fileRef = 596E90612890133F000AF800 /* LoginView.md */; };
 		596E90642890134C000AF800 /* TestsView.md in Resources */ = {isa = PBXBuildFile; fileRef = 596E90632890134C000AF800 /* TestsView.md */; };
 		6948DDF12895846C00D05F76 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6948DDF02895846C00D05F76 /* ColorExtension.swift */; };
-		69A01D81289290F60006B930 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 69A01D80289290F60006B930 /* SnapKit */; };
 		69A01D85289291660006B930 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69A01D84289291660006B930 /* Register.storyboard */; };
 		69AD4C472893D6A40007731E /* RegisterCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AD4C462893D6A40007731E /* RegisterCustomView.swift */; };
 		69AD4C492893D6D90007731E /* RegisterCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69AD4C482893D6D90007731E /* RegisterCustomView.xib */; };
