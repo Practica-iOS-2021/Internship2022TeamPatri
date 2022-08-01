@@ -18,13 +18,12 @@ class GradesViewController: UIViewController, UITableViewDataSource, UITableView
         table.separatorStyle = .none
     }
     
-   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data.count
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return Course.mock.count
     }
     
-   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = data[indexPath.row]
-        let courses = Course(iconName: cell.iconName, title: cell.title, grade: cell.grade)
-        return CustomTableViewCell(course: courses)
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let course = Course.mock[indexPath.row]
+        return CustomTableViewCell(course: Course(iconName: course.iconName, title: course.title, grade: course.grade))
     }
 }
