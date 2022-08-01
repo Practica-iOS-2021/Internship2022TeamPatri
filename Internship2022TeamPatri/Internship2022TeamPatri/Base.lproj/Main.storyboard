@@ -143,22 +143,5 @@
             </objects>
             <point key="canvasLocation" x="944.85981308411215" y="97.192224622030238"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="AQP-qb-un9">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="bj1-Dx-hew" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uJ1-tJ-kR3">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="BSM-jY-eh6"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DXb-JU-xtl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="34.782608695652179" y="97.767857142857139"/>
-        </scene>
     </scenes>
 </document>

@@ -20,11 +20,11 @@ class LogInViewController: UIViewController {
     @IBOutlet weak private var signupButton: UIButton!
     @IBOutlet weak private var forgotPasswordButton: UIButton!
     
-    let yourAttributesSignUp: [NSAttributedString.Key: Any] = [
+    let styleSignUp: [NSAttributedString.Key: Any] = [
           .underlineStyle: NSUnderlineStyle.single.rawValue,
           .font: UIFont.boldSystemFont(ofSize: 18),
       ]
-    let yourAttributes: [NSAttributedString.Key: Any] = [
+    let styleForgotPassword: [NSAttributedString.Key: Any] = [
           .underlineStyle: NSUnderlineStyle.single.rawValue
       ]
     
@@ -36,15 +36,15 @@ class LogInViewController: UIViewController {
         view.addGestureRecognizer(tapGesture)
         
         // Styling Sign up and forgot password buttons
-        let attributeString = NSMutableAttributedString(
+        let attributeStringSignUp = NSMutableAttributedString(
               string: "Sign up",
-              attributes: yourAttributesSignUp
+              attributes: styleSignUp
            )
         let attributeStringForgotPassword = NSMutableAttributedString(
               string: "Forgot password?",
-              attributes: yourAttributes
+              attributes: styleForgotPassword
            )
-        signupButton.setAttributedTitle(attributeString, for: .normal)
+        signupButton.setAttributedTitle(attributeStringSignUp, for: .normal)
         forgotPasswordButton.setAttributedTitle(attributeStringForgotPassword, for: .normal)
         
         setUpElements()
@@ -78,10 +78,10 @@ class LogInViewController: UIViewController {
         let userEmail = emailTextField.text
         let userPassword = passwordTextField.text
         
-        if userEmail == "" || userPassword == "" {
+        if (userEmail?.isEmpty ?? true) || (userPassword?.isEmpty ?? true) {
             alertMessage(userMessage: "All fields are required")
         } else {
-            let mail = isValidEmail(emailID: userEmail)
+            let mail = isValidEmail(email: userEmail)
             if mail == false {
                 alertMessage(userMessage: "Please enter a valid email addres!")
                 emailLabel.textColor = .red
@@ -102,29 +102,29 @@ class LogInViewController: UIViewController {
     }
 
     //Email validation
-    private func isValidEmail(emailID: String?) ->Bool {
+    private func isValidEmail(email: String?) ->Bool {
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
         let emailTest = NSPredicate(format: "SELF MATCHES %@", emailRegEx)
-        return emailTest.evaluate(with: emailID)
+        return emailTest.evaluate(with: email)
     }
     
     //Password validation
     private func isValidPassword(password: String?) ->Bool{
         let passwordReg = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]{8,}$"
-        let passwordTesting = NSPredicate(format: "SELF MATCHES %@", passwordReg)
-        return passwordTesting.evaluate(with: password)
+        let passwordTest = NSPredicate(format: "SELF MATCHES %@", passwordReg)
+        return passwordTest.evaluate(with: password)
     }
     
     //Alert
     private func alertMessage(userMessage: String) {
-        let myAllert = UIAlertController(title: "Something went wrong", message: userMessage, preferredStyle: UIAlertController.Style.alert)
+        let myAllert = UIAlertController(title: "Alert", message: userMessage, preferredStyle: UIAlertController.Style.alert)
         let ok = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler:  nil)
         myAllert.addAction(ok)
         present(myAllert, animated: true, completion: nil)
     }
    
     class Utilities {
-    //Style the text fields
+        
     final class func styleTextField(textfield:UITextField) {
         // Create the bottom line
         let bottomLine = CALayer()
@@ -138,14 +138,13 @@ class LogInViewController: UIViewController {
         textfield.layer.addSublayer(bottomLine)
     }
     
-    //Style the Log in Button
     final class func styleLogInButton(button: UIButton) {
         button.backgroundColor = UIColor.white
         button.layer.cornerRadius = 15
         button.tintColor = UIColor.black
     }
     
-    // Adding shadow to the button
+    
     final class func styleShadowButton(button: UIButton) {
         button.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.25).cgColor
         button.layer.shadowOffset = CGSize(width: 0.0, height: 3.0)
