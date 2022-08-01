@@ -150,6 +150,9 @@
 			isa = PBXGroup;
 			children = (
 				596E905F28901333000AF800 /* RegisterView.md */,
+				69AD4C462893D6A40007731E /* RegisterCustomView.swift */,
+				69AD4C482893D6D90007731E /* RegisterCustomView.xib */,
+				69A01D84289291660006B930 /* Register.storyboard */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -243,10 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				596E904D28901200000AF800 /* RegisterController.md */,
-				69AD4C482893D6D90007731E /* RegisterCustomView.xib */,
-				69A01D84289291660006B930 /* Register.storyboard */,
 				69AD4C4E2893FE680007731E /* RegisterViewController.swift */,
-				69AD4C462893D6A40007731E /* RegisterCustomView.swift */,
 				69AD4C4A2893D8020007731E /* UIRegisterViewExtension.swift */,
 				6948DDF02895846C00D05F76 /* ColorExtension.swift */,
 			);
