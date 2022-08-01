@@ -18,7 +18,7 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" image="grades075x" id="dYf-n4-n5r"/>
+                    <tabBarItem key="tabBarItem" title="" image="Vectorgrades075" id="dYf-n4-n5r"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -33,7 +33,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="selectedImageTintColor" red="0.75294117647058822" green="0.93725490196078431" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.47058823529411764" green="0.792156862745098" blue="0.82352941176470584" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <tabBarAppearance key="standardAppearance"/>
                         <tabBarAppearance key="scrollEdgeAppearance"/>
                     </tabBar>
@@ -57,7 +57,7 @@
                         <viewLayoutGuide key="safeArea" id="zrw-dI-OhL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" image="courses075x" id="W2D-lt-eL6"/>
+                    <tabBarItem key="tabBarItem" title="" image="Vectorcourses075" id="W2D-lt-eL6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Zz-n7-XsH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -73,7 +73,7 @@
                         <viewLayoutGuide key="safeArea" id="pNK-2Z-0y9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" image="profile075x" id="xSz-C5-dBP"/>
+                    <tabBarItem key="tabBarItem" title="" image="Vectorprofile075" id="xSz-C5-dBP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="da4-E1-7Xt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -81,9 +81,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="courses075x" width="30" height="31"/>
-        <image name="grades075x" width="33" height="27"/>
-        <image name="profile075x" width="24" height="25"/>
+        <image name="Vectorcourses075" width="30" height="31"/>
+        <image name="Vectorgrades075" width="34" height="27"/>
+        <image name="Vectorprofile075" width="24" height="25"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
