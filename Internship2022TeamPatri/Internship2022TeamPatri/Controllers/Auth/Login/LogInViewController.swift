@@ -154,9 +154,3 @@ class LogInViewController: UIViewController {
         }
     }
 }
-
-extension UIColor{
-    static let colorText = UIColor(red: 37/255, green: 22/255, blue: 5/255, alpha: 1)
-    static let colorView = UIColor(red: 124/255, green: 122/255, blue: 122/255, alpha: 1)
-}
-
