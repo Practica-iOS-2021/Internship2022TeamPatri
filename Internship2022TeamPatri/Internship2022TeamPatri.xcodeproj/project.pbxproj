@@ -25,7 +25,7 @@
 		596E906028901333000AF800 /* RegisterView.md in Resources */ = {isa = PBXBuildFile; fileRef = 596E905F28901333000AF800 /* RegisterView.md */; };
 		596E90622890133F000AF800 /* LoginView.md in Resources */ = {isa = PBXBuildFile; fileRef = 596E90612890133F000AF800 /* LoginView.md */; };
 		596E90642890134C000AF800 /* TestsView.md in Resources */ = {isa = PBXBuildFile; fileRef = 596E90632890134C000AF800 /* TestsView.md */; };
-		698FDFD228992C3C00299B7E /* UIRegisterViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698FDFD128992C3C00299B7E /* UIRegisterViewControllerExtension.swift */; };
+		698FDFD228992C3C00299B7E /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698FDFD128992C3C00299B7E /* UIViewControllerExtension.swift */; };
 		69AD4C472893D6A40007731E /* RegisterCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AD4C462893D6A40007731E /* RegisterCustomView.swift */; };
 		69AD4C492893D6D90007731E /* RegisterCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69AD4C482893D6D90007731E /* RegisterCustomView.xib */; };
 		69AD4C4B2893D8020007731E /* UIRegisterViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AD4C4A2893D8020007731E /* UIRegisterViewExtension.swift */; };
@@ -64,7 +64,7 @@
 		596E905F28901333000AF800 /* RegisterView.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = RegisterView.md; sourceTree = "<group>"; };
 		596E90612890133F000AF800 /* LoginView.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LoginView.md; sourceTree = "<group>"; };
 		596E90632890134C000AF800 /* TestsView.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = TestsView.md; sourceTree = "<group>"; };
-		698FDFD128992C3C00299B7E /* UIRegisterViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIRegisterViewControllerExtension.swift; sourceTree = "<group>"; };
+		698FDFD128992C3C00299B7E /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		69AD4C462893D6A40007731E /* RegisterCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCustomView.swift; sourceTree = "<group>"; };
 		69AD4C482893D6D90007731E /* RegisterCustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterCustomView.xib; sourceTree = "<group>"; };
 		69AD4C4A2893D8020007731E /* UIRegisterViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIRegisterViewExtension.swift; sourceTree = "<group>"; };
@@ -266,7 +266,7 @@
 				69C3B36128984F9B00BC697F /* RegisterViewController.xib */,
 				69AD4C4E2893FE680007731E /* RegisterViewController.swift */,
 				69AD4C4A2893D8020007731E /* UIRegisterViewExtension.swift */,
-				698FDFD128992C3C00299B7E /* UIRegisterViewControllerExtension.swift */,
+				698FDFD128992C3C00299B7E /* UIViewControllerExtension.swift */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -465,7 +465,7 @@
 				E490A8042892AF2C0056EC8C /* CustomTableViewCell.swift in Sources */,
 				AF79B85C288E7BD800AA99BD /* AppDelegate.swift in Sources */,
 				4D31C5E228913DC1002A670B /* LogInViewController.swift in Sources */,
-				698FDFD228992C3C00299B7E /* UIRegisterViewControllerExtension.swift in Sources */,
+				698FDFD228992C3C00299B7E /* UIViewControllerExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
