@@ -93,6 +93,7 @@ class LogInViewController: UIViewController {
                 } else {
                     alertMessage(title: "You are successfully logged in", userMessage: "Success!")
                     passwordLabel.textColor = .colorText
+                    emailLabel.textColor = .colorText
                 }
             }
         }
