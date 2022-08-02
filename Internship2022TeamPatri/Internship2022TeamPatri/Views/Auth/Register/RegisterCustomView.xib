@@ -9,7 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterCustomView" customModule="Internship2022TeamPatri" customModuleProvider="target">
             <connections>
-                <outlet property="backgroundView" destination="iN0-l3-epB" id="YFU-GN-v34"/>
+                <outlet property="backgroundCustomView" destination="iN0-l3-epB" id="zJg-o2-ap5"/>
                 <outlet property="contentTextField" destination="CgU-dC-6wK" id="qRw-D4-JEG"/>
                 <outlet property="lineView" destination="kdl-Tq-dI1" id="yeA-5h-rxS"/>
                 <outlet property="titleLabel" destination="N8t-9n-b4C" id="djs-3l-Nar"/>
@@ -17,28 +17,28 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="327" height="102"/>
+            <rect key="frame" x="0.0" y="0.0" width="327" height="86"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N8t-9n-b4C">
-                    <rect key="frame" x="0.0" y="20" width="327" height="35"/>
+                    <rect key="frame" x="0.0" y="15" width="327" height="30"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="35" id="r4j-aE-yW2"/>
+                        <constraint firstAttribute="height" constant="30" id="r4j-aE-yW2"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CgU-dC-6wK">
-                    <rect key="frame" x="0.0" y="55" width="327" height="36"/>
+                    <rect key="frame" x="0.0" y="45" width="327" height="30"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="36" id="3m0-kS-Wy3"/>
+                        <constraint firstAttribute="height" constant="30" id="3m0-kS-Wy3"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kdl-Tq-dI1">
-                    <rect key="frame" x="0.0" y="91" width="327" height="1"/>
+                    <rect key="frame" x="0.0" y="75" width="327" height="1"/>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="1" id="kpi-Rt-hFl"/>
@@ -52,7 +52,7 @@
                 <constraint firstItem="kdl-Tq-dI1" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="FdM-MQ-K60"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="kdl-Tq-dI1" secondAttribute="bottom" constant="10" id="Udh-yF-9Tg"/>
                 <constraint firstItem="CgU-dC-6wK" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Z6A-5U-S8z"/>
-                <constraint firstItem="N8t-9n-b4C" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="b7b-Vv-01k"/>
+                <constraint firstItem="N8t-9n-b4C" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="b7b-Vv-01k"/>
                 <constraint firstItem="CgU-dC-6wK" firstAttribute="top" secondItem="N8t-9n-b4C" secondAttribute="bottom" id="cjd-Yg-lFD"/>
                 <constraint firstItem="kdl-Tq-dI1" firstAttribute="top" secondItem="CgU-dC-6wK" secondAttribute="bottom" id="fok-HJ-IvU"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="CgU-dC-6wK" secondAttribute="trailing" id="g9S-cV-dKq"/>

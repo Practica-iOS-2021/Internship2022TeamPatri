@@ -99,6 +99,8 @@ class LogInViewController: UIViewController {
     }
     
     @IBAction private func signupTapped(_ sender: Any) {
+        let myViewController = RegisterViewController.loadFromNib()
+        self.navigationController?.pushViewController(myViewController, animated: true)
     }
     
     //Email validation
@@ -110,7 +112,7 @@ class LogInViewController: UIViewController {
     
     //Password validation
     private func isValidPassword(password: String?) ->Bool{
-        let passwordReg = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]{8,}$"
+        let passwordReg = "(?=.*[A-Z])(?=.*[0-9])(?=.*[a-z])(?=.*[@#$%^&*]).{8,}"
         let passwordTest = NSPredicate(format: "SELF MATCHES %@", passwordReg)
         return passwordTest.evaluate(with: password)
     }

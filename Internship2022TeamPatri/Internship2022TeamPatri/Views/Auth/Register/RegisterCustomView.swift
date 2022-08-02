@@ -13,7 +13,7 @@ final class RegisterCustomView: UIView {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var contentTextField: UITextField!
     @IBOutlet private weak var lineView: UIView!
-    @IBOutlet private var backgroundView: UIView!
+    @IBOutlet private var backgroundCustomView: UIView!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -32,7 +32,7 @@ final class RegisterCustomView: UIView {
         titleLabel.text = title
         titleLabel.textColor = UIColor.colorText
         lineView.backgroundColor = UIColor.colorView
-        backgroundView.backgroundColor = UIColor.colorBackground
+        backgroundCustomView.backgroundColor = UIColor.colorBackground
     }
 }
 
