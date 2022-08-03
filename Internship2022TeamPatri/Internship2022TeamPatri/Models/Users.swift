@@ -8,10 +8,6 @@
 import Foundation
 import UIKit
 
-struct ParentUser {
-    let user: [Users]
-}
-
 struct Users {
     let name: String
     let email: String
@@ -27,3 +23,5 @@ struct Users {
         let semester: Int
     }
 }
+
+let testUser = Users(name: "Alexandra", email: "ale@yahoo.com", personalID: "12345678", studentID: "12345678", photo: nil, grades: Users.Grades(chapter: "C++", courses: "Informatics", grade: 9, semester: 1))
