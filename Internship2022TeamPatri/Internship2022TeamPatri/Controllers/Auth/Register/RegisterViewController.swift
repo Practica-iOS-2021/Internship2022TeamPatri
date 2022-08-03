@@ -76,7 +76,7 @@ class RegisterViewController: UIViewController {
                     // register data is all good
                     view2.titleLabel.textColor = UIColor.colorText
                     view5.titleLabel.textColor = UIColor.colorText
-                    let user = User(email: userEmail, name: userName, personalID: userPersonalID, studentID: userStudentID, password: userPassword)
+                    let user = User(email: userEmail, name: userName, personalID: userPersonalID, studentID: userStudentID, password: userPassword, photo: "")
                     registerUser(user: user)
                 }
             }
@@ -129,4 +129,4 @@ extension RegisterViewController: UITextFieldDelegate {
         return true
     }
 }
- 
+
