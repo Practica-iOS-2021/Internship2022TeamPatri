@@ -14,15 +14,15 @@ class AuthApiManager {
     static let sharedInstance = AuthApiManager()
     private let db = Firestore.firestore()
     
-    func loginAPI(email: String?, password: String?) {
+    func loginAPI(email: String?, password: String?, completion:  @escaping (Bool, Error?) -> Void) {
         
         FirebaseAuth.Auth.auth().signIn(withEmail: email ?? "default", password: password ?? "default", completion: { result, error in
             if error != nil  {
-                print(error!.localizedDescription)
-                //  self.alertMessage(title: "Something went wrong", userMessage: error!.localizedDescription)
+                //print(error!.localizedDescription)
+                completion(false, error )
             } else {
-                print("Succesfully logged in")
-                //self.alertMessage(title: "You are successfully logged in", userMessage: "Success!")
+                //print("Succesfully logged in")
+                completion(true, error)
             }
         })
     }
