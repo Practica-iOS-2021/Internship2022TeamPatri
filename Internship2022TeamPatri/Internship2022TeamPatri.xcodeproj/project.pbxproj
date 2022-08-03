@@ -39,6 +39,8 @@
 		B074013128916C2400965072 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B074013028916C2400965072 /* FirebaseAuth */; };
 		B074013328916C2400965072 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = B074013228916C2400965072 /* FirebaseFirestore */; };
 		B074013528916C8E00965072 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B074013428916C8D00965072 /* GoogleService-Info.plist */; };
+		E4677FF9289A45B2007690D7 /* AuthApiRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4677FF8289A45B2007690D7 /* AuthApiRegister.swift */; };
+		E4677FFD289A954A007690D7 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4677FFC289A954A007690D7 /* UserModel.swift */; };
 		E490A8022892AEAE0056EC8C /* GradesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E490A8012892AEAE0056EC8C /* GradesViewController.swift */; };
 		E490A8042892AF2C0056EC8C /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E490A8032892AF2C0056EC8C /* CustomTableViewCell.swift */; };
 		E490A8062892AF3D0056EC8C /* CourseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E490A8052892AF3D0056EC8C /* CourseModel.swift */; };
@@ -78,6 +80,8 @@
 		AF79B867288E7BD900AA99BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF79B869288E7BD900AA99BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B074013428916C8D00965072 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E4677FF8289A45B2007690D7 /* AuthApiRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthApiRegister.swift; sourceTree = "<group>"; };
+		E4677FFC289A954A007690D7 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		E490A8012892AEAE0056EC8C /* GradesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradesViewController.swift; sourceTree = "<group>"; };
 		E490A8032892AF2C0056EC8C /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		E490A8052892AF3D0056EC8C /* CourseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseModel.swift; sourceTree = "<group>"; };
@@ -192,6 +196,7 @@
 			isa = PBXGroup;
 			children = (
 				59B7E843288ED76300588C1F /* Services */,
+				E4677FF8289A45B2007690D7 /* AuthApiRegister.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -293,6 +298,7 @@
 			children = (
 				E490A8052892AF3D0056EC8C /* CourseModel.swift */,
 				E490A80B2894081E0056EC8C /* ColorExtension.swift */,
+				E4677FFC289A954A007690D7 /* UserModel.swift */,
 				596E9053289012A1000AF800 /* Model.md */,
 			);
 			path = Models;
@@ -460,6 +466,8 @@
 				69AD4C472893D6A40007731E /* RegisterCustomView.swift in Sources */,
 				E490A8022892AEAE0056EC8C /* GradesViewController.swift in Sources */,
 				AF79B860288E7BD800AA99BD /* ViewController.swift in Sources */,
+				E4677FFD289A954A007690D7 /* UserModel.swift in Sources */,
+				E4677FF9289A45B2007690D7 /* AuthApiRegister.swift in Sources */,
 				E490A8062892AF3D0056EC8C /* CourseModel.swift in Sources */,
 				E490A80C2894081E0056EC8C /* ColorExtension.swift in Sources */,
 				E490A8042892AF2C0056EC8C /* CustomTableViewCell.swift in Sources */,
