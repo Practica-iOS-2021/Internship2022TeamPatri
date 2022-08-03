@@ -7,6 +7,7 @@
 
 import UIKit
 import SnapKit
+import FirebaseAuth
 
 class LogInViewController: UIViewController {
     
@@ -91,8 +92,9 @@ class LogInViewController: UIViewController {
                     emailLabel.textColor = .colorText
                     passwordLabel.textColor = .red
                 } else {
-                    alertMessage(title: "You are successfully logged in", userMessage: "Success!")
                     passwordLabel.textColor = .colorText
+                    emailLabel.textColor = .colorText
+                    AuthApiManager.sharedInstance.loginAPI(email: userEmail, password: userPassword)
                 }
             }
         }
