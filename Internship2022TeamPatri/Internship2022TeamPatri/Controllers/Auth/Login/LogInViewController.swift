@@ -99,7 +99,7 @@ class LogInViewController: UIViewController {
                         if((error) != nil) {
                             self.alertMessage(title: "Something went wrong!", userMessage: error!.localizedDescription)
                         } else {
-                            self.alertMessage(title: "Success!", userMessage: "Succesfully logged in")
+                            print("Logged in")
                         }
                     }
                     
