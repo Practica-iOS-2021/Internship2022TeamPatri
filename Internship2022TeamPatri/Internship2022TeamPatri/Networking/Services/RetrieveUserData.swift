@@ -38,5 +38,6 @@ class RetrieveUserData: ObservableObject {
                 return Users(name: name, email: email, personalID: personalID, studentID: studentID, photo: photo, grades: Users.Grades(chapter: chapter, courses: courses, grade: grade, semester: semester))
             }
         }
+        print(user)
     }
 }

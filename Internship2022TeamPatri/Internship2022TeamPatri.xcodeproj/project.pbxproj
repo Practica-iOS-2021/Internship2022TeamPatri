@@ -169,8 +169,9 @@
 			isa = PBXGroup;
 			children = (
 				596E905F28901333000AF800 /* RegisterView.md */,
-				69AD4C462893D6A40007731E /* RegisterCustomView.swift */,
+				69C3B36128984F9B00BC697F /* RegisterViewController.xib */,
 				69AD4C482893D6D90007731E /* RegisterCustomView.xib */,
+				69AD4C462893D6A40007731E /* RegisterCustomView.swift */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -203,6 +204,7 @@
 		59B7E843288ED76300588C1F /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				6982D019289A43E4000A08BF /* RetrieveUserData.swift */,
 				596E9055289012BB000AF800 /* Service.md */,
 			);
 			path = Services;
@@ -267,7 +269,6 @@
 			isa = PBXGroup;
 			children = (
 				596E904D28901200000AF800 /* RegisterController.md */,
-				69C3B36128984F9B00BC697F /* RegisterViewController.xib */,
 				69AD4C4E2893FE680007731E /* RegisterViewController.swift */,
 				69AD4C4A2893D8020007731E /* UIRegisterViewExtension.swift */,
 				698FDFD128992C3C00299B7E /* UIViewControllerExtension.swift */,
@@ -296,7 +297,6 @@
 			isa = PBXGroup;
 			children = (
 				69F7E26A28994DB7008E8540 /* Users.swift */,
-				6982D019289A43E4000A08BF /* RetrieveUserData.swift */,
 				E490A8052892AF3D0056EC8C /* CourseModel.swift */,
 				E490A80B2894081E0056EC8C /* ColorExtension.swift */,
 				596E9053289012A1000AF800 /* Model.md */,
