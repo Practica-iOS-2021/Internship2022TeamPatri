@@ -11,10 +11,10 @@ import FirebaseAuth
 import UIKit
 import simd
 
-class RetrieveUserData: ObservableObject {
+class RetrieveUserData {
     
-    @Published var userPersonalInfo = [UserPersonalInfo]()
-    @Published var userGrades = [UserGrades]()
+    var userPersonalInfo = [UserPersonalInfo]()
+    var userGrades = [UserGrades]()
     private var db = Firestore.firestore()
     
     func fetchPersonalInfo() {
