@@ -28,14 +28,14 @@
 		AF79B863288E7BD800AA99BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF79B861288E7BD800AA99BD /* Main.storyboard */; };
 		AF79B865288E7BD900AA99BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF79B864288E7BD900AA99BD /* Assets.xcassets */; };
 		AF79B868288E7BD900AA99BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF79B866288E7BD900AA99BD /* LaunchScreen.storyboard */; };
+		B074013128916C2400965072 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B074013028916C2400965072 /* FirebaseAuth */; };
+		B074013328916C2400965072 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = B074013228916C2400965072 /* FirebaseFirestore */; };
+		B074013528916C8E00965072 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B074013428916C8D00965072 /* GoogleService-Info.plist */; };
 		E490A8022892AEAE0056EC8C /* GradesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E490A8012892AEAE0056EC8C /* GradesViewController.swift */; };
 		E490A8042892AF2C0056EC8C /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E490A8032892AF2C0056EC8C /* CustomTableViewCell.swift */; };
 		E490A8062892AF3D0056EC8C /* CourseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E490A8052892AF3D0056EC8C /* CourseModel.swift */; };
 		E490A8082892AF5D0056EC8C /* GradesView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E490A8072892AF5D0056EC8C /* GradesView.storyboard */; };
 		E490A80C2894081E0056EC8C /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E490A80B2894081E0056EC8C /* ColorExtension.swift */; };
-		B074013128916C2400965072 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B074013028916C2400965072 /* FirebaseAuth */; };
-		B074013328916C2400965072 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = B074013228916C2400965072 /* FirebaseFirestore */; };
-		B074013528916C8E00965072 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B074013428916C8D00965072 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,12 +61,12 @@
 		AF79B864288E7BD900AA99BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AF79B867288E7BD900AA99BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AF79B869288E7BD900AA99BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B074013428916C8D00965072 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E490A8012892AEAE0056EC8C /* GradesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradesViewController.swift; sourceTree = "<group>"; };
 		E490A8032892AF2C0056EC8C /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		E490A8052892AF3D0056EC8C /* CourseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseModel.swift; sourceTree = "<group>"; };
 		E490A8072892AF5D0056EC8C /* GradesView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GradesView.storyboard; sourceTree = "<group>"; };
 		E490A80B2894081E0056EC8C /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
-		B074013428916C8D00965072 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				E490A8072892AF5D0056EC8C /* GradesView.storyboard */,
+				E490A8032892AF2C0056EC8C /* CustomTableViewCell.swift */,
 				596E905928901303000AF800 /* GradesView.md */,
 			);
 			path = Grades;
@@ -209,7 +210,6 @@
 			isa = PBXGroup;
 			children = (
 				E490A8012892AEAE0056EC8C /* GradesViewController.swift */,
-				E490A8032892AF2C0056EC8C /* CustomTableViewCell.swift */,
 				596E90472890114A000AF800 /* GradesController.md */,
 			);
 			path = Grades;
