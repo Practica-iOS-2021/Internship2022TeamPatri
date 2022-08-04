@@ -95,22 +95,19 @@ class LogInViewController: UIViewController {
                     passwordLabel.textColor = .colorText
                     emailLabel.textColor = .colorText
                     AuthApiManager.sharedInstance.loginAPI(email: userEmail, password: userPassword) {
-                        success, error in
-                        if(success) {
-                            self.alertMessage(title: "Success!", userMessage: "Succesfully logged in")
-                        } else {
+                        error in
+                        if((error) != nil) {
                             self.alertMessage(title: "Something went wrong!", userMessage: error!.localizedDescription)
+                        } else {
+                            self.alertMessage(title: "Success!", userMessage: "Succesfully logged in")
                         }
                     }
                     
-                    transitionToTabbar()
                 }
             }
         }
     }
-    private func transitionToTabbar() {
-        
-    }
+   
     
     @IBAction private func signupTapped(_ sender: Any) {
         let registerViewController = RegisterViewController.loadFromNib()

@@ -24,10 +24,10 @@
             </objects>
             <point key="canvasLocation" x="-657" y="836"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Home Tab Bar Controller-->
         <scene sceneID="19C-iI-W76">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="en6-aS-RKq" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="HomeTabBarController" automaticallyAdjustsScrollViewInsets="NO" id="en6-aS-RKq" customClass="HomeTabBarController" customModule="Internship2022TeamPatri" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lXY-ow-DXz">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>

@@ -10,19 +10,27 @@ import FirebaseAuth
 import UIKit
 import FirebaseFirestore
 
+protocol AuthApiManagerDelegate: AnyObject {
+    func didLogIn()
+}
+
 class AuthApiManager {
     static let sharedInstance = AuthApiManager()
     private let db = Firestore.firestore()
+    public var isLoggedIn: Bool = false
+    weak var delegate : AuthApiManagerDelegate?
     
-    func loginAPI(email: String?, password: String?, completion:  @escaping (Bool, Error?) -> Void) {
-        
+    func loginAPI(email: String?, password: String?, completion:  @escaping (Error?) -> Void) {
         FirebaseAuth.Auth.auth().signIn(withEmail: email ?? "default", password: password ?? "default", completion: { result, error in
             if error != nil  {
-                //print(error!.localizedDescription)
-                completion(false, error )
+                self.isLoggedIn = false
+                print(error!.localizedDescription)
+                completion(error)
             } else {
-                //print("Succesfully logged in")
-                completion(true, error)
+                self.isLoggedIn = true
+                print("Succesfully logged in")
+                completion(error)
+                self.delegate?.didLogIn()
             }
         })
     }
