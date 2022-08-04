@@ -67,31 +67,11 @@ class RegisterViewController: UIViewController {
                 view3.titleLabel.textColor = UIColor.colorText
                 view5.titleLabel.textColor = UIColor.colorText
             } else {
-<<<<<<< HEAD
-<<<<<<< HEAD
-                if isValidID(personalID: userPersonalID ?? "") == false {
-                    alertMessage(userMessage: "Please enter a correct and unique ID")
-=======
-                // check for password validation
-                // minimum eight characters, at least one letter, one number and one special character
-                if isValidPassword(password: userPassword ?? "") == false {
-                    alertMessage(userMessage: "Please enter a valid password! (min 8 characters, one letter, one number and one special character)")
-                    view2.titleLabel.textColor = UIColor.colorText
-                    view5.titleLabel.textColor = .red
-                } else {
-                    // register data is all good
->>>>>>> origin/develop
-                    view2.titleLabel.textColor = UIColor.colorText
-                    view3.titleLabel.textColor = .red
-                    view5.titleLabel.textColor = UIColor.colorText
-<<<<<<< HEAD
-=======
                 if isValidID(personalID: userPersonalID ?? "") == false {
                     alertMessage(userMessage: "Please enter a correct and unique ID")
                     view2.titleLabel.textColor = UIColor.colorText
                     view3.titleLabel.textColor = .red
                     view5.titleLabel.textColor = UIColor.colorText
->>>>>>> a527779375d08a6c571d90d52a64578970fbe8ee
                 } else {
                     // check for password validation
                     // minimum eight characters, at least one letter, one number and one special character
@@ -107,14 +87,7 @@ class RegisterViewController: UIViewController {
                         view5.titleLabel.textColor = UIColor.colorText
                         let user = User(email: userEmail, name: userName, personalID: userPersonalID, studentID: userStudentID, password: userPassword, photo: "")
                         registerUser(user: user)
-                    }
-<<<<<<< HEAD
-=======
-                    let user = User(email: userEmail, name: userName, personalID: userPersonalID, studentID: userStudentID, password: userPassword, photo: "")
-                    registerUser(user: user)
->>>>>>> origin/develop
-=======
->>>>>>> a527779375d08a6c571d90d52a64578970fbe8ee
+                        }
                 }
             }
         }
