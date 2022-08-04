@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D31C5E228913DC1002A670B /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D31C5E128913DC1002A670B /* LogInViewController.swift */; };
+		4D31C5E428913E2F002A670B /* LogIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D31C5E328913E2F002A670B /* LogIn.storyboard */; };
 		59233BF6288FD96E00C34D6C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 59233BF5288FD96E00C34D6C /* SnapKit */; };
 		596E90482890114A000AF800 /* GradesController.md in Resources */ = {isa = PBXBuildFile; fileRef = 596E90472890114A000AF800 /* GradesController.md */; };
 		596E904A2890119A000AF800 /* CoursesController.md in Resources */ = {isa = PBXBuildFile; fileRef = 596E90492890119A000AF800 /* CoursesController.md */; };
@@ -23,6 +25,12 @@
 		596E906028901333000AF800 /* RegisterView.md in Resources */ = {isa = PBXBuildFile; fileRef = 596E905F28901333000AF800 /* RegisterView.md */; };
 		596E90622890133F000AF800 /* LoginView.md in Resources */ = {isa = PBXBuildFile; fileRef = 596E90612890133F000AF800 /* LoginView.md */; };
 		596E90642890134C000AF800 /* TestsView.md in Resources */ = {isa = PBXBuildFile; fileRef = 596E90632890134C000AF800 /* TestsView.md */; };
+		698FDFD228992C3C00299B7E /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698FDFD128992C3C00299B7E /* UIViewControllerExtension.swift */; };
+		69AD4C472893D6A40007731E /* RegisterCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AD4C462893D6A40007731E /* RegisterCustomView.swift */; };
+		69AD4C492893D6D90007731E /* RegisterCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69AD4C482893D6D90007731E /* RegisterCustomView.xib */; };
+		69AD4C4B2893D8020007731E /* UIRegisterViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AD4C4A2893D8020007731E /* UIRegisterViewExtension.swift */; };
+		69AD4C4F2893FE680007731E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AD4C4E2893FE680007731E /* RegisterViewController.swift */; };
+		69C3B36228984F9B00BC697F /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69C3B36128984F9B00BC697F /* RegisterViewController.xib */; };
 		AF79B85C288E7BD800AA99BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF79B85B288E7BD800AA99BD /* AppDelegate.swift */; };
 		AF79B860288E7BD800AA99BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF79B85F288E7BD800AA99BD /* ViewController.swift */; };
 		AF79B863288E7BD800AA99BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF79B861288E7BD800AA99BD /* Main.storyboard */; };
@@ -39,6 +47,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D31C5E128913DC1002A670B /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		4D31C5E328913E2F002A670B /* LogIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LogIn.storyboard; sourceTree = "<group>"; };
 		596E90472890114A000AF800 /* GradesController.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = GradesController.md; sourceTree = "<group>"; };
 		596E90492890119A000AF800 /* CoursesController.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CoursesController.md; sourceTree = "<group>"; };
 		596E904B289011BB000AF800 /* ProfileController.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ProfileController.md; sourceTree = "<group>"; };
@@ -54,6 +64,12 @@
 		596E905F28901333000AF800 /* RegisterView.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = RegisterView.md; sourceTree = "<group>"; };
 		596E90612890133F000AF800 /* LoginView.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LoginView.md; sourceTree = "<group>"; };
 		596E90632890134C000AF800 /* TestsView.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = TestsView.md; sourceTree = "<group>"; };
+		698FDFD128992C3C00299B7E /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		69AD4C462893D6A40007731E /* RegisterCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCustomView.swift; sourceTree = "<group>"; };
+		69AD4C482893D6D90007731E /* RegisterCustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterCustomView.xib; sourceTree = "<group>"; };
+		69AD4C4A2893D8020007731E /* UIRegisterViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIRegisterViewExtension.swift; sourceTree = "<group>"; };
+		69AD4C4E2893FE680007731E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		69C3B36128984F9B00BC697F /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		AF79B858288E7BD800AA99BD /* Internship2022TeamPatri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Internship2022TeamPatri.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF79B85B288E7BD800AA99BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF79B85F288E7BD800AA99BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +132,7 @@
 			children = (
 				E490A8072892AF5D0056EC8C /* GradesView.storyboard */,
 				E490A8032892AF2C0056EC8C /* CustomTableViewCell.swift */,
+
 				596E905928901303000AF800 /* GradesView.md */,
 			);
 			path = Grades;
@@ -150,6 +167,8 @@
 			isa = PBXGroup;
 			children = (
 				596E905F28901333000AF800 /* RegisterView.md */,
+				69AD4C462893D6A40007731E /* RegisterCustomView.swift */,
+				69AD4C482893D6D90007731E /* RegisterCustomView.xib */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -158,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				596E90612890133F000AF800 /* LoginView.md */,
+				4D31C5E328913E2F002A670B /* LogIn.storyboard */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -210,6 +230,8 @@
 			isa = PBXGroup;
 			children = (
 				E490A8012892AEAE0056EC8C /* GradesViewController.swift */,
+
+				E490A8032892AF2C0056EC8C /* CustomTableViewCell.swift */,
 				596E90472890114A000AF800 /* GradesController.md */,
 			);
 			path = Grades;
@@ -244,6 +266,10 @@
 			isa = PBXGroup;
 			children = (
 				596E904D28901200000AF800 /* RegisterController.md */,
+				69C3B36128984F9B00BC697F /* RegisterViewController.xib */,
+				69AD4C4E2893FE680007731E /* RegisterViewController.swift */,
+				69AD4C4A2893D8020007731E /* UIRegisterViewExtension.swift */,
+				698FDFD128992C3C00299B7E /* UIViewControllerExtension.swift */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -251,6 +277,7 @@
 		59B7E84B288ED76300588C1F /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				4D31C5E128913DC1002A670B /* LogInViewController.swift */,
 				596E904F28901249000AF800 /* LoginController.md */,
 			);
 			path = Login;
@@ -381,6 +408,8 @@
 				AF79B868288E7BD900AA99BD /* LaunchScreen.storyboard in Resources */,
 				AF79B865288E7BD900AA99BD /* Assets.xcassets in Resources */,
 				596E90522890126E000AF800 /* TestsController.md in Resources */,
+				69C3B36228984F9B00BC697F /* RegisterViewController.xib in Resources */,
+				4D31C5E428913E2F002A670B /* LogIn.storyboard in Resources */,
 				596E90622890133F000AF800 /* LoginView.md in Resources */,
 				596E904E28901200000AF800 /* RegisterController.md in Resources */,
 				AF79B863288E7BD800AA99BD /* Main.storyboard in Resources */,
@@ -393,6 +422,7 @@
 				596E905028901249000AF800 /* LoginController.md in Resources */,
 				596E905C28901313000AF800 /* CoursesView.md in Resources */,
 				596E904A2890119A000AF800 /* CoursesController.md in Resources */,
+				69AD4C492893D6D90007731E /* RegisterCustomView.xib in Resources */,
 				596E905A28901303000AF800 /* GradesView.md in Resources */,
 				596E9056289012BB000AF800 /* Service.md in Resources */,
 				596E906028901333000AF800 /* RegisterView.md in Resources */,
@@ -428,12 +458,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+
+				69AD4C4B2893D8020007731E /* UIRegisterViewExtension.swift in Sources */,
+				69AD4C4F2893FE680007731E /* RegisterViewController.swift in Sources */,
+				69AD4C472893D6A40007731E /* RegisterCustomView.swift in Sources */,
 				E490A8022892AEAE0056EC8C /* GradesViewController.swift in Sources */,
 				AF79B860288E7BD800AA99BD /* ViewController.swift in Sources */,
 				E490A8062892AF3D0056EC8C /* CourseModel.swift in Sources */,
 				E490A80C2894081E0056EC8C /* ColorExtension.swift in Sources */,
 				E490A8042892AF2C0056EC8C /* CustomTableViewCell.swift in Sources */,
 				AF79B85C288E7BD800AA99BD /* AppDelegate.swift in Sources */,
+				4D31C5E228913DC1002A670B /* LogInViewController.swift in Sources */,
+				698FDFD228992C3C00299B7E /* UIViewControllerExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -587,9 +623,11 @@
 				INFOPLIST_KEY_CFBundleDisplayName = Internship2022;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LogIn;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -618,9 +656,11 @@
 				INFOPLIST_KEY_CFBundleDisplayName = Internship2022;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = LogIn;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
