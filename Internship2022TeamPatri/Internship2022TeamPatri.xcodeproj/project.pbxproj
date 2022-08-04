@@ -32,7 +32,7 @@
 		69AD4C4B2893D8020007731E /* UIRegisterViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AD4C4A2893D8020007731E /* UIRegisterViewExtension.swift */; };
 		69AD4C4F2893FE680007731E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AD4C4E2893FE680007731E /* RegisterViewController.swift */; };
 		69C3B36228984F9B00BC697F /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69C3B36128984F9B00BC697F /* RegisterViewController.xib */; };
-		69F7E26B28994DB7008E8540 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F7E26A28994DB7008E8540 /* Users.swift */; };
+		69F7E26B28994DB7008E8540 /* UsersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69F7E26A28994DB7008E8540 /* UsersModel.swift */; };
 		AF79B85C288E7BD800AA99BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF79B85B288E7BD800AA99BD /* AppDelegate.swift */; };
 		AF79B860288E7BD800AA99BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF79B85F288E7BD800AA99BD /* ViewController.swift */; };
 		AF79B863288E7BD800AA99BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF79B861288E7BD800AA99BD /* Main.storyboard */; };
@@ -73,7 +73,7 @@
 		69AD4C4A2893D8020007731E /* UIRegisterViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIRegisterViewExtension.swift; sourceTree = "<group>"; };
 		69AD4C4E2893FE680007731E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		69C3B36128984F9B00BC697F /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
-		69F7E26A28994DB7008E8540 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		69F7E26A28994DB7008E8540 /* UsersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersModel.swift; sourceTree = "<group>"; };
 		AF79B858288E7BD800AA99BD /* Internship2022TeamPatri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Internship2022TeamPatri.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF79B85B288E7BD800AA99BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AF79B85F288E7BD800AA99BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -296,7 +296,7 @@
 		59B7E84D288ED76300588C1F /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				69F7E26A28994DB7008E8540 /* Users.swift */,
+				69F7E26A28994DB7008E8540 /* UsersModel.swift */,
 				E490A8052892AF3D0056EC8C /* CourseModel.swift */,
 				E490A80B2894081E0056EC8C /* ColorExtension.swift */,
 				596E9053289012A1000AF800 /* Model.md */,
@@ -465,7 +465,7 @@
 				69AD4C4F2893FE680007731E /* RegisterViewController.swift in Sources */,
 				69AD4C472893D6A40007731E /* RegisterCustomView.swift in Sources */,
 				E490A8022892AEAE0056EC8C /* GradesViewController.swift in Sources */,
-				69F7E26B28994DB7008E8540 /* Users.swift in Sources */,
+				69F7E26B28994DB7008E8540 /* UsersModel.swift in Sources */,
 				AF79B860288E7BD800AA99BD /* ViewController.swift in Sources */,
 				E490A8062892AF3D0056EC8C /* CourseModel.swift in Sources */,
 				E490A80C2894081E0056EC8C /* ColorExtension.swift in Sources */,
