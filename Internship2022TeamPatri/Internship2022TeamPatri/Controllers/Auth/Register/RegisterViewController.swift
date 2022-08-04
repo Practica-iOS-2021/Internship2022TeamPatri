@@ -64,19 +64,30 @@ class RegisterViewController: UIViewController {
             if isValidEmail(emailID: userEmail ?? "") == false {
                 alertMessage(userMessage: "Please enter valid email address!")
                 view2.titleLabel.textColor = .red
+                view3.titleLabel.textColor = UIColor.colorText
                 view5.titleLabel.textColor = UIColor.colorText
             } else {
-                // check for password validation
-                // minimum eight characters, at least one letter, one number and one special character
-                if isValidPassword(password: userPassword ?? "") == false {
-                    alertMessage(userMessage: "Please enter a valid password! (min 8 characters, one letter, one number and one special character)")
+                if isValidID(personalID: userPersonalID ?? "") == false {
+                    alertMessage(userMessage: "Please enter a correct and unique ID")
                     view2.titleLabel.textColor = UIColor.colorText
-                    view5.titleLabel.textColor = .red
-                } else {
-                    // register data is all good
-                    alertMessage(userMessage: "All good! :)")
-                    view2.titleLabel.textColor = UIColor.colorText
+                    view3.titleLabel.textColor = .red
                     view5.titleLabel.textColor = UIColor.colorText
+                } else {
+                
+                    // check for password validation
+                    // minimum eight characters, at least one letter, one number and one special character
+                    if isValidPassword(password: userPassword ?? "") == false {
+                        alertMessage(userMessage: "Please enter a valid password! (min 8 characters, one letter, one number and one special character)")
+                        view2.titleLabel.textColor = UIColor.colorText
+                        view3.titleLabel.textColor = UIColor.colorText
+                        view5.titleLabel.textColor = .red
+                    } else {
+                        // register data is all good
+                        alertMessage(userMessage: "All good! :)")
+                        view2.titleLabel.textColor = UIColor.colorText
+                        view3.titleLabel.textColor = UIColor.colorText
+                        view5.titleLabel.textColor = UIColor.colorText
+                    }
                 }
             }
         }
@@ -88,6 +99,13 @@ class RegisterViewController: UIViewController {
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
         let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailTest.evaluate(with: emailID)
+    }
+    
+    // personalID validation
+    func isValidID(personalID:String) -> Bool {
+        let idRegEx = "^[1-9]\\d{2}(0[1-9]|1[0-2])(0[1-9]|[12]\\d|3[01])(0[1-9]|[1-4]\\d|5[0-2]|99)(00[1-9]|0[1-9]\\d|[1-9]\\d\\d)\\d$"
+        let idTest = NSPredicate(format:"SELF MATCHES %@", idRegEx)
+        return idTest.evaluate(with: personalID)
     }
     
     // password validation

@@ -85,6 +85,7 @@ class LogInViewController: UIViewController {
             if mail == false {
                 alertMessage(title: "Something went wrong!", userMessage: "Please enter a valid email addres!")
                 emailLabel.textColor = .red
+                passwordLabel.textColor = .colorText
             } else {
                 if isValidPassword(password: userPassword) == false {
                     alertMessage(title: "Something went wrong!", userMessage: "Please enter a valid password!")
@@ -93,6 +94,7 @@ class LogInViewController: UIViewController {
                 } else {
                     alertMessage(title: "You are successfully logged in", userMessage: "Success!")
                     passwordLabel.textColor = .colorText
+                    emailLabel.textColor = .colorText
                 }
             }
         }
