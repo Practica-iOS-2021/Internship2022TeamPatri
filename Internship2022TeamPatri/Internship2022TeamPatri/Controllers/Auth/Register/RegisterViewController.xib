@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController" customModule="Internship2022TeamPatri" customModuleProvider="target">
+            <connections>
+                <outlet property="backgroundView" destination="kVT-hD-xAY" id="6ql-Jk-zEV"/>
+                <outlet property="registerButton" destination="L4L-Lf-zjR" id="bxk-nU-OMt"/>
+                <outlet property="view" destination="kVT-hD-xAY" id="6Wd-ub-A1D"/>
+                <outlet property="view1" destination="SAW-fM-g3w" id="xe1-gJ-1VV"/>
+                <outlet property="view2" destination="osk-CP-MHt" id="ecP-h1-sNu"/>
+                <outlet property="view3" destination="299-Cm-JdE" id="WGF-hE-A26"/>
+                <outlet property="view4" destination="qZy-Ud-FpR" id="PJM-Bw-qJq"/>
+                <outlet property="view5" destination="IT8-Uw-OFo" id="2nr-Wu-xms"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="kVT-hD-xAY">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ALP-hw-HvS">
+                    <rect key="frame" x="55" y="134" width="327" height="430"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SAW-fM-g3w" customClass="RegisterCustomView" customModule="Internship2022TeamPatri" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="327" height="86"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="327" id="PT8-LA-u1U"/>
+                                <constraint firstAttribute="height" constant="86" id="WHD-GI-Wh6"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="osk-CP-MHt" customClass="RegisterCustomView" customModule="Internship2022TeamPatri" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="86" width="327" height="86"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="327" id="cxl-Oe-k0P"/>
+                                <constraint firstAttribute="height" constant="86" id="hNO-2a-ge1"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="299-Cm-JdE" customClass="RegisterCustomView" customModule="Internship2022TeamPatri" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="172" width="327" height="86"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="86" id="2dX-Cf-y4B"/>
+                                <constraint firstAttribute="width" constant="327" id="bq5-RT-UMg"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qZy-Ud-FpR" customClass="RegisterCustomView" customModule="Internship2022TeamPatri" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="258" width="327" height="86"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="86" id="VEq-22-6Ie"/>
+                                <constraint firstAttribute="width" constant="327" id="vYo-Yh-7Xf"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IT8-Uw-OFo" customClass="RegisterCustomView" customModule="Internship2022TeamPatri" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="344" width="327" height="86"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="86" id="0cy-8x-AuF"/>
+                                <constraint firstAttribute="width" constant="327" id="tS5-Go-yNp"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="299-Cm-JdE" secondAttribute="trailing" id="78H-4u-bDd"/>
+                        <constraint firstItem="299-Cm-JdE" firstAttribute="leading" secondItem="ALP-hw-HvS" secondAttribute="leading" id="7ok-Dc-9Gw"/>
+                        <constraint firstItem="qZy-Ud-FpR" firstAttribute="top" secondItem="299-Cm-JdE" secondAttribute="bottom" id="8Md-Ld-Jwr"/>
+                        <constraint firstAttribute="trailing" secondItem="qZy-Ud-FpR" secondAttribute="trailing" id="NP2-Ud-07A"/>
+                        <constraint firstItem="qZy-Ud-FpR" firstAttribute="leading" secondItem="ALP-hw-HvS" secondAttribute="leading" id="RbJ-Ei-ZgB"/>
+                        <constraint firstAttribute="trailing" secondItem="SAW-fM-g3w" secondAttribute="trailing" id="RjG-xf-s1k"/>
+                        <constraint firstItem="SAW-fM-g3w" firstAttribute="leading" secondItem="ALP-hw-HvS" secondAttribute="leading" id="RxN-LI-swe"/>
+                        <constraint firstItem="osk-CP-MHt" firstAttribute="top" secondItem="SAW-fM-g3w" secondAttribute="bottom" id="SE5-2q-KtZ"/>
+                        <constraint firstAttribute="trailing" secondItem="IT8-Uw-OFo" secondAttribute="trailing" id="T0F-bQ-mfo"/>
+                        <constraint firstAttribute="bottom" secondItem="IT8-Uw-OFo" secondAttribute="bottom" id="VSn-rk-OQK"/>
+                        <constraint firstAttribute="trailing" secondItem="osk-CP-MHt" secondAttribute="trailing" id="XNY-xX-uPZ"/>
+                        <constraint firstItem="IT8-Uw-OFo" firstAttribute="leading" secondItem="ALP-hw-HvS" secondAttribute="leading" id="aYu-8G-1c6"/>
+                        <constraint firstItem="SAW-fM-g3w" firstAttribute="top" secondItem="ALP-hw-HvS" secondAttribute="top" id="bqB-6O-vQT"/>
+                        <constraint firstItem="299-Cm-JdE" firstAttribute="top" secondItem="osk-CP-MHt" secondAttribute="bottom" id="mqg-nK-5uZ"/>
+                        <constraint firstItem="IT8-Uw-OFo" firstAttribute="top" secondItem="qZy-Ud-FpR" secondAttribute="bottom" id="sas-HH-ccj"/>
+                        <constraint firstItem="osk-CP-MHt" firstAttribute="leading" secondItem="ALP-hw-HvS" secondAttribute="leading" id="uyn-pA-tUG"/>
+                    </constraints>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Liw-KO-AQj">
+                    <rect key="frame" x="82.5" y="64" width="249" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="5R2-Ml-bR0"/>
+                        <constraint firstAttribute="width" constant="249" id="JR7-hs-zY3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L4L-Lf-zjR">
+                    <rect key="frame" x="67" y="584" width="280" height="62"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="62" id="meH-b0-Npg"/>
+                        <constraint firstAttribute="width" constant="280" id="rAV-bW-yHH"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Register">
+                        <backgroundConfiguration key="background">
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </backgroundConfiguration>
+                        <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="20"/>
+                        <color key="baseForegroundColor" systemColor="labelColor"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="registerFunction:" destination="-1" eventType="touchUpInside" id="cTj-4y-8v7"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="rcl-Xb-P1R"/>
+            <color key="backgroundColor" red="1" green="0.97092924059999997" blue="0.74135047519999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="ALP-hw-HvS" firstAttribute="leading" secondItem="rcl-Xb-P1R" secondAttribute="leading" constant="55" id="0sI-Ts-ngQ"/>
+                <constraint firstItem="Liw-KO-AQj" firstAttribute="centerX" secondItem="kVT-hD-xAY" secondAttribute="centerX" id="4Yp-0G-vzs"/>
+                <constraint firstItem="L4L-Lf-zjR" firstAttribute="centerX" secondItem="kVT-hD-xAY" secondAttribute="centerX" id="9iM-Lv-ou5"/>
+                <constraint firstItem="Liw-KO-AQj" firstAttribute="top" secondItem="rcl-Xb-P1R" secondAttribute="top" constant="20" id="bDw-Ea-epC"/>
+                <constraint firstItem="rcl-Xb-P1R" firstAttribute="trailing" secondItem="ALP-hw-HvS" secondAttribute="trailing" constant="32" id="f0c-8R-S4l"/>
+                <constraint firstItem="ALP-hw-HvS" firstAttribute="top" secondItem="rcl-Xb-P1R" secondAttribute="top" constant="90" id="fx5-GX-RCd"/>
+                <constraint firstItem="L4L-Lf-zjR" firstAttribute="top" secondItem="ALP-hw-HvS" secondAttribute="bottom" constant="20" id="tD8-WG-sOz"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="613" y="-583"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

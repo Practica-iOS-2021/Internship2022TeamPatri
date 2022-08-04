@@ -113,6 +113,8 @@ class LogInViewController: UIViewController {
     }
     
     @IBAction private func signupTapped(_ sender: Any) {
+        let registerViewController = RegisterViewController.loadFromNib()
+        self.navigationController?.pushViewController(registerViewController, animated: true)
     }
     
     //Email validation
@@ -124,7 +126,7 @@ class LogInViewController: UIViewController {
     
     //Password validation
     private func isValidPassword(password: String?) ->Bool{
-        let passwordReg = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)[a-zA-Z\\d]{8,}$"
+        let passwordReg = "(?=.*[A-Z])(?=.*[0-9])(?=.*[a-z])(?=.*[@#$%^&*]).{8,}"
         let passwordTest = NSPredicate(format: "SELF MATCHES %@", passwordReg)
         return passwordTest.evaluate(with: password)
     }
@@ -168,9 +170,3 @@ class LogInViewController: UIViewController {
         }
     }
 }
-
-extension UIColor{
-    static let colorText = UIColor(red: 37/255, green: 22/255, blue: 5/255, alpha: 1)
-    static let colorView = UIColor(red: 124/255, green: 122/255, blue: 122/255, alpha: 1)
-}
-
