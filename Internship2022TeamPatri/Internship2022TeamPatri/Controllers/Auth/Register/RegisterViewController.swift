@@ -8,7 +8,7 @@
 import UIKit
 
 class RegisterViewController: UIViewController {
-
+    
     @IBOutlet private weak var view1: RegisterCustomView!
     @IBOutlet private weak var view2: RegisterCustomView!
     @IBOutlet private weak var view3: RegisterCustomView!
@@ -19,7 +19,7 @@ class RegisterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         view1.configureView(title: "Name:")
         view2.configureView(title: "Email:")
         view3.configureView(title: "Personal ID:")
@@ -38,7 +38,7 @@ class RegisterViewController: UIViewController {
         registerButton.backgroundColor = .white
         registerButton.layer.cornerRadius = 20
         registerButton.clipsToBounds = true
- 
+        
         // set the shadow for the register button
         registerButton.layer.masksToBounds = false
         registerButton.layer.shadowRadius = 0.0
@@ -48,7 +48,7 @@ class RegisterViewController: UIViewController {
     }
     
     @IBAction private func registerFunction(_ sender: Any) {
-
+        
         let userName = view1.contentTextField.text
         let userEmail = view2.contentTextField.text
         let userPersonalID = view3.contentTextField.text
@@ -74,13 +74,13 @@ class RegisterViewController: UIViewController {
                     view5.titleLabel.textColor = .red
                 } else {
                     // register data is all good
-                    alertMessage(userMessage: "All good! :)")
                     view2.titleLabel.textColor = UIColor.colorText
                     view5.titleLabel.textColor = UIColor.colorText
+                    let user = User(email: userEmail, name: userName, personalID: userPersonalID, studentID: userStudentID, password: userPassword, photo: "")
+                    registerUser(user: user)
                 }
             }
         }
-        alertMessage(userMessage: "Something is not working")
     }
     
     // email validation
@@ -94,7 +94,7 @@ class RegisterViewController: UIViewController {
     func isValidPassword(password: String) -> Bool {
         let passwordreg =  ("(?=.*[A-Z])(?=.*[0-9])(?=.*[a-z])(?=.*[@#$%^&*]).{8,}")
         let passwordtesting = NSPredicate(format: "SELF MATCHES %@", passwordreg)
-            return passwordtesting.evaluate(with: password)
+        return passwordtesting.evaluate(with: password)
     }
     
     // alert for text fields
@@ -103,6 +103,17 @@ class RegisterViewController: UIViewController {
         let ok = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil)
         myAllert.addAction(ok)
         present(myAllert, animated: true, completion: nil)
+    }
+    
+    // FireBase register User
+    private func registerUser(user: User) {
+        AuthApiRegister.sharedInstance.register(user: user) { success in
+            if success {
+                self.navigationController?.popViewController(animated: true)
+            } else {
+                self.alertMessage(userMessage: "Register Failed")
+            }
+        }
     }
 }
 
@@ -118,3 +129,4 @@ extension RegisterViewController: UITextFieldDelegate {
         return true
     }
 }
+
