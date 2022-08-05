@@ -55,6 +55,9 @@ class RegisterViewController: UIViewController {
         let userStudentID = view4.contentTextField.text
         let userPassword = view5.contentTextField.text
         
+        [view2.titleLabel, view3.titleLabel, view5.titleLabel].forEach {
+                $0.textColor = UIColor.colorText
+         }
         // check for empty fields
         if userName?.isEmpty == true || userEmail?.isEmpty == true || userPersonalID?.isEmpty == true || userStudentID?.isEmpty == true || userPassword?.isEmpty == true {
             alertMessage(userMessage: "All fields are required !!!")
@@ -64,31 +67,18 @@ class RegisterViewController: UIViewController {
             if isValidEmail(emailID: userEmail ?? "") == false {
                 alertMessage(userMessage: "Please enter valid email address!")
                 view2.titleLabel.textColor = .red
-                [view3.titleLabel, view5.titleLabel].forEach {
-                    $0.textColor = UIColor.colorText
-                }
             } else {
                 // check for personal ID validation
                 if isValidID(personalID: userPersonalID ?? "") == false {
                     alertMessage(userMessage: "Please enter a correct and unique ID")
                     view3.titleLabel.textColor = .red
-                    [view2.titleLabel, view5.titleLabel].forEach {
-                        $0.textColor = UIColor.colorText
-                    }
                 } else {
                     // check for password validation
                     // minimum eight characters, at least one letter, one number and one special character
                     if isValidPassword(password: userPassword ?? "") == false {
                         alertMessage(userMessage: "Please enter a valid password! (min 8 characters, one letter, one number and one special character)")
                         view5.titleLabel.textColor = .red
-                        [view2.titleLabel, view3.titleLabel].forEach {
-                            $0.textColor = UIColor.colorText
-                        }
                     } else {
-                        // register data is all good
-                        [view2.titleLabel, view3.titleLabel, view5.titleLabel].forEach {
-                            $0.textColor = UIColor.colorText
-                        }
                         let user = User(email: userEmail, name: userName, personalID: userPersonalID, studentID: userStudentID, password: userPassword, photo: "")
                         registerUser(user: user)
                     }
