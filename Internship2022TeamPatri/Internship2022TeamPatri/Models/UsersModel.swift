@@ -24,6 +24,3 @@ struct Grade {
     let grade: Int
     let semester: Int
 }
-
-
-let user = User(name: "ALexandru", email: "alex@yahoo.com", personalID: "2990324125748", studentID: "2345", photo: nil, grades: [Grade(chapter: "C++", course: "Informatics", grade: 9, semester: 1)])
