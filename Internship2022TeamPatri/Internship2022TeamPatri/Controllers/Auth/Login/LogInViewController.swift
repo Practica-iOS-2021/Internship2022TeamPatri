@@ -32,7 +32,6 @@ class LogInViewController: UIViewController {
         super.viewDidLoad()
         
         let x = RetrieveUserData()
-        //x.fetchUserData()
         x.fetchPersonalInfo()
         x.fetchGrades()
 
