@@ -32,8 +32,9 @@ class LogInViewController: UIViewController {
         super.viewDidLoad()
         
         var x = RetrieveUserData()
-        x.fetchPersonalInfo()
-        x.fetchGrades()
+        x.fetchUserData()
+        //x.fetchPersonalInfo()
+        //x.fetchGrades()
 
         //Make the keyboard disappear touching anywhere
         let tapGesture = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
