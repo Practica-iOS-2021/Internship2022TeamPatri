@@ -9,58 +9,46 @@ import Foundation
 import FirebaseFirestore
 import FirebaseAuth
 import UIKit
-/*
+
+
 class RetrieveUserData {
     
-    var userPersonalInfo = [UserPersonalInfo]()
-    var userGrades = [UserGrades]()
+    var userInfo = [User]()
     private var db = Firestore.firestore()
     
     func fetchPersonalInfo() {
-        db.collection("users").addSnapshotListener { [self](QuerySnapshot, error) in
-            guard let documents = QuerySnapshot?.documents else {
-                print("No documents")
-                return
-            }
-            
-            self.userPersonalInfo = documents.map {(QueryDocumentSnapshot) -> UserPersonalInfo in
-                
-                let data = QueryDocumentSnapshot.data()
-                
-                let name = data["Name"] as? String ?? ""
-                let email = data["Email"] as? String ?? ""
-                let personalID = data["PersonalID"] as? String ?? ""
-                let studentID = data["StudentID"] as? String ?? ""
-                let photo = data[""] as? UIImage ?? nil
-                
-                return UserPersonalInfo(name: name, email: email, personalID: personalID, studentID: studentID, photo: photo)
-            }
+        self.db.collectionGroup("users").getDocuments { (snapshot, error) in
+            if let err = error {
+                print(err)
+            }else
+             {
+                if let snapshot = snapshot,snapshot.documents.count > 0 {
+                    for document in snapshot.documents {
+                        print(document.data())
+                    }
+                }
+             }
         }
     }
-
+    
     func fetchGrades() {
-        db.collection("users").addSnapshotListener {(QuerySnapshot, error) in
-            guard let documents = QuerySnapshot?.documents else {
-                print("No documents")
-                return
-            }
-                
-            self.userGrades = documents.map {(QueryDocumentSnapshot) -> UserGrades in
-                        
-                let data = QueryDocumentSnapshot.data()
-                
-                let chapter = data["Chapter"] as? String ?? ""
-                let course = data["Course"] as? String ?? ""
-                let grade = data["Grade"] as? Int ?? 0
-                let semester = data["Semester"] as? Int ?? 0
-                        
-                return UserGrades(grades: [UserGrades.Grade(chapter: chapter, course: course, grade: grade, semester: semester)])
-            }
-        }
+        self.db.collection("users").document("6qHknXlDHCcFhBVxZpXBcD5eJJH2").collection("grades").getDocuments { (snapshot, error) in
+                if let err = error {
+                    print(err)
+                } else
+                 {
+                    if let snapshot = snapshot,snapshot.documents.count > 0 {
+                        for document in snapshot.documents {
+                            print(document.data())
+                        }
+                    }
+                }
+         }
     }
 }
-*/
 
+
+/*
 class RetrieveUserData {
     
     var user = [User]()
@@ -92,33 +80,9 @@ class RetrieveUserData {
         }
     }
 }
-
-
-/*
-class RetrieveUserData {
-    
-    var user = [User]()
-    private var db = Firestore.firestore()
-    
-    func fetchUserData() {
-        let docRef = db.collection("users").document("grades")
-
-        docRef.getDocument { (document, error) in
-            if let document = document, document.exists {
-                let dataDescription = document.data().map(String.init(describing:)) ?? "nil"
-                print("Document data: \(dataDescription)")
-            } else {
-                print("Document does not exist")
-            }
-        }
-    }
-}
 */
 
-
 /*
-class RetrieveUserData {
-    
     func getDocument() {
         //Get specific document from current user
         let docRef = Firestore.firestore()
@@ -139,6 +103,4 @@ class RetrieveUserData {
             }
         }
     }
-     
-}
 */
