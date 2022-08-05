@@ -18,21 +18,25 @@ class RetrieveUserData {
     // guard let userID = Auth.auth().currentUser?.uid else { return }
     
     func fetchPersonalInfo() {
-        /*
-         self.db.collection("users").document("6qHknXlDHCcFhBVxZpXBcD5eJJH2").collection("name").getDocuments { (snapshot, error) in
-             if let err = error {
-                 print(err)
-             }else
-              {
-                 if let snapshot = snapshot,snapshot.documents.count > 0 {
-                     for document in snapshot.documents {
-                         print(document.data())
-                     }
-                 }
-              }
-         }
-        */
         
+        let docRef = db.collection("users").document("6qHknXlDHCcFhBVxZpXBcD5eJJH2")
+
+        docRef.getDocument { (document, error) in
+            guard error == nil else {
+                print("error", error ?? "")
+                return
+            }
+
+            if let document = document, document.exists {
+                let data = document.data()
+                if let data = data {
+                    print(data)
+                }
+            }
+
+        }
+        
+        /*
         db.collection("users").addSnapshotListener { [self](QuerySnapshot, error) in
             guard let documents = QuerySnapshot?.documents else {
                 print("No documents")
@@ -56,10 +60,11 @@ class RetrieveUserData {
                 return User(name: name, email: email, personalID: personalID, studentID: studentID, photo: photo, grades: [Grade(chapter: chapter, course: course, grade: grade, semester: semester)])
             }
         }
+         */
     }
     
     func fetchGrades() {
-        /*
+    
         self.db.collection("users").document("6qHknXlDHCcFhBVxZpXBcD5eJJH2").collection("grades").getDocuments { (snapshot, error) in
                 if let err = error {
                     print(err)
@@ -72,8 +77,8 @@ class RetrieveUserData {
                     }
                 }
          }
-         */
-        
+         
+        /*
         db.collection("users").document("6qHknXlDHCcFhBVxZpXBcD5eJJH2").collection("grades").addSnapshotListener { [self](QuerySnapshot, error) in
             guard let documents = QuerySnapshot?.documents else {
                 print("No documents")
@@ -97,6 +102,7 @@ class RetrieveUserData {
                 return User(name: name, email: email, personalID: personalID, studentID: studentID, photo: photo, grades: [Grade(chapter: chapter, course: course, grade: grade, semester: semester)])
             }
         }
+         */
     }
 }
 
