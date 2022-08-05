@@ -87,7 +87,7 @@ class RegisterViewController: UIViewController {
                         view5.titleLabel.textColor = UIColor.colorText
                         let user = User(email: userEmail, name: userName, personalID: userPersonalID, studentID: userStudentID, password: userPassword, photo: "")
                         registerUser(user: user)
-                        }
+                    }
                 }
             }
         }
