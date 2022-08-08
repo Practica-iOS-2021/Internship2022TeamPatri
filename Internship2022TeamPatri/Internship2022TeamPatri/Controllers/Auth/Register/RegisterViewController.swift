@@ -20,11 +20,11 @@ class RegisterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        viewName.configureView(title: "Name:")
-        viewEmail.configureView(title: "Email:")
-        viewPersonalID.configureView(title: "Personal ID:")
-        viewStudentID.configureView(title: "Student ID:")
-        viewPassword.configureView(title: "Password:")
+        viewName.configureView(title: "Name")
+        viewEmail.configureView(title: "Email")
+        viewPersonalID.configureView(title: "Personal ID")
+        viewStudentID.configureView(title: "Student ID")
+        viewPassword.configureView(title: "Password")
         viewPassword.contentTextField.isSecureTextEntry = true
         config()
     }
