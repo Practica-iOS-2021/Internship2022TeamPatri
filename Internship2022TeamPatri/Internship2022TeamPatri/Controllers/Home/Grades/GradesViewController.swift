@@ -4,7 +4,7 @@
 //
 //  Created by Eduard Sorin Caragea on 26.07.2022.
 //
-
+/*
 import UIKit
 
 class GradesViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
@@ -27,3 +27,4 @@ class GradesViewController: UIViewController, UITableViewDataSource, UITableView
         return CustomTableViewCell(course: Course(iconName: course.iconName, title: course.title, grade: course.grade))
     }
 }
+*/
