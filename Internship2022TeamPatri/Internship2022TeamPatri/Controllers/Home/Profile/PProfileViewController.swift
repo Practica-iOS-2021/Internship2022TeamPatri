@@ -21,6 +21,12 @@ class PProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configure()
+        /*
+        let profileViewController = PProfileViewController.loadFromNib()
+        self.navigationController?.pushViewController(profileViewController, animated: true)
+        self.navigationController?.navigationBar.tintColor = UIColor.colorText
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Profile", style: UIBarButtonItem.Style.plain, target: nil, action: nil)
+         */
     }
 
     // making the image round and set colors to labels

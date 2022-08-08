@@ -99,7 +99,7 @@ class LogInViewController: UIViewController {
     }
     
     @IBAction private func signupTapped(_ sender: Any) {
-        let registerViewController = RegisterViewController.loadFromNib()
+        let registerViewController = PProfileViewController.loadFromNib()
         self.navigationController?.pushViewController(registerViewController, animated: true)
     }
     
