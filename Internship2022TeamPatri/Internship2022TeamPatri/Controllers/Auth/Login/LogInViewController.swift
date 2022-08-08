@@ -100,9 +100,16 @@ class LogInViewController: UIViewController {
         }
     }
     
+    // sign up button (going to register screen)
     @IBAction private func signupTapped(_ sender: Any) {
+        // moving through a navigation controller and having a customed back button
         let registerViewController = RegisterViewController.loadFromNib()
         self.navigationController?.pushViewController(registerViewController, animated: true)
+        let backButtonArrow = UIImage(named: "Vector")
+        self.navigationController?.navigationBar.backIndicatorImage = backButtonArrow
+        self.navigationController?.navigationBar.tintColor = UIColor.colorText
+        self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = backButtonArrow
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItem.Style.plain, target: nil, action: nil)
     }
     
     //Email validation
