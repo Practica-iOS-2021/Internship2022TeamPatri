@@ -14,5 +14,4 @@ import UIKit
      static let colorBackground = UIColor(red: 0.752, green: 0.937, blue: 0.952, alpha: 1)
      static let colorLabelProfile = UIColor(red: 0.164, green: 0.097, blue: 0.022, alpha: 1)
      static let colorTextProfile = UIColor(red: 0.551, green: 0.542, blue: 0.542, alpha: 1)
-     static let colorLogOut = UIColor(red: 0.533, green: 0.897, blue: 0.933, alpha: 1)
 }

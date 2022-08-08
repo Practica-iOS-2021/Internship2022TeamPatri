@@ -1,13 +1,13 @@
 //
-//  MyProfileViewController.swift
+//  PProfileViewController.swift
 //  Internship2022TeamPatri
 //
-//  Created by Coralia Diana Muresan on 05.08.2022.
+//  Created by Coralia Diana Muresan on 08.08.2022.
 //
 
 import UIKit
 
-class MyProfileViewController: UIViewController {
+class PProfileViewController: UIViewController {
     
     @IBOutlet private weak var profileImage: UIImageView!
     @IBOutlet private weak var userNameProfile: UILabel!
@@ -17,15 +17,13 @@ class MyProfileViewController: UIViewController {
     @IBOutlet private weak var studentIDTextLabel: UILabel!
     @IBOutlet private weak var emailLabel: UILabel!
     @IBOutlet private weak var emailTextLabel: UILabel!
-    @IBOutlet private weak var logOutButton: UIButton!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         configure()
     }
-    
-    // making the image round and set colors to labels and button
+
+    // making the image round and set colors to labels
     private func configure(){
         profileImage.layer.cornerRadius = profileImage.frame.height/2
         profileImage.clipsToBounds = true
@@ -35,7 +33,6 @@ class MyProfileViewController: UIViewController {
         [personalIDTextLabel, studentIDTextLabel, emailTextLabel].forEach {
             $0.textColor = UIColor.colorTextProfile
         }
-        logOutButton.titleLabel?.textColor = UIColor.colorLogOut
     }
     
     // sign out button
