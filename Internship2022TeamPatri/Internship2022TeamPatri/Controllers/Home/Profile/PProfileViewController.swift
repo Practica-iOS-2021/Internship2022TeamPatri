@@ -21,12 +21,7 @@ class PProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configure()
-        /*
-        let profileViewController = PProfileViewController.loadFromNib()
-        self.navigationController?.pushViewController(profileViewController, animated: true)
-        self.navigationController?.navigationBar.tintColor = UIColor.colorText
-        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Profile", style: UIBarButtonItem.Style.plain, target: nil, action: nil)
-         */
+        //navController()
     }
 
     // making the image round and set colors to labels
@@ -39,6 +34,28 @@ class PProfileViewController: UIViewController {
         [personalIDTextLabel, studentIDTextLabel, emailTextLabel].forEach {
             $0.textColor = UIColor.colorTextProfile
         }
+    }
+    
+    // making the customized navigation controller
+    private func navController() {
+        // adding the bottom shadow
+        let shadowView = UIView(frame: self.navigationController!.navigationBar.frame)
+            shadowView.backgroundColor = UIColor.white
+            shadowView.layer.masksToBounds = false
+            shadowView.layer.shadowOpacity = 0.15
+            shadowView.layer.shadowOffset = CGSize(width: 0, height: 10)
+            shadowView.layer.shadowRadius = 3
+        self.view.addSubview(shadowView)
+        
+        // adding the title
+        let lbNavTitle = UILabel (frame: CGRect(x: 0, y: 0, width: 320, height: 50))
+            lbNavTitle.textColor = UIColor.colorText
+            lbNavTitle.numberOfLines = 0
+            lbNavTitle.center = CGPoint(x: 0, y: 0)
+            lbNavTitle.textAlignment = .center
+            lbNavTitle.text = "Profile"
+            lbNavTitle.font = lbNavTitle.font.withSize(32)
+        self.navigationItem.titleView = lbNavTitle
     }
     
     // sign out button
