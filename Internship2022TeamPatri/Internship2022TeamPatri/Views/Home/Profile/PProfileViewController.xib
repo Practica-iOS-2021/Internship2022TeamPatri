@@ -17,7 +17,7 @@
                 <outlet property="studentIDLabel" destination="PRS-gJ-1cA" id="UWf-gA-Op5"/>
                 <outlet property="studentIDTextLabel" destination="0Fs-aY-l20" id="rtg-gL-GHu"/>
                 <outlet property="userNameProfile" destination="YpA-KP-Xkc" id="hB0-hd-02x"/>
-                <outlet property="view" destination="iN0-l3-epB" id="WHc-iE-XHX"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Yxf-LS-yBc"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

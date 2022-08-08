@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4D31A0A928929B1B00250E35 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D31A0A828929B1B00250E35 /* Home.storyboard */; };
-		4D31A0AB28929C1100250E35 /* GradesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D31A0AA28929C1100250E35 /* GradesViewController.swift */; };
 		4D31A0AD28929C2400250E35 /* CoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D31A0AC28929C2400250E35 /* CoursesViewController.swift */; };
 		4D31A0AF28929C3200250E35 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D31A0AE28929C3200250E35 /* ProfileViewController.swift */; };
 		4D31C5E228913DC1002A670B /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D31C5E128913DC1002A670B /* LogInViewController.swift */; };
@@ -30,6 +29,7 @@
 		596E90622890133F000AF800 /* LoginView.md in Resources */ = {isa = PBXBuildFile; fileRef = 596E90612890133F000AF800 /* LoginView.md */; };
 		596E90642890134C000AF800 /* TestsView.md in Resources */ = {isa = PBXBuildFile; fileRef = 596E90632890134C000AF800 /* TestsView.md */; };
 		69249549289D5DAF0037772F /* PProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69249548289D5DAF0037772F /* PProfileViewController.xib */; };
+		69483E8328A152650055F05A /* GradesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69483E8228A152650055F05A /* GradesViewController.swift */; };
 		698FDFD228992C3C00299B7E /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698FDFD128992C3C00299B7E /* UIViewControllerExtension.swift */; };
 		69AD4C472893D6A40007731E /* RegisterCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AD4C462893D6A40007731E /* RegisterCustomView.swift */; };
 		69AD4C492893D6D90007731E /* RegisterCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69AD4C482893D6D90007731E /* RegisterCustomView.xib */; };
@@ -47,7 +47,6 @@
 		B074013528916C8E00965072 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B074013428916C8D00965072 /* GoogleService-Info.plist */; };
 		E4677FF9289A45B2007690D7 /* AuthApiRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4677FF8289A45B2007690D7 /* AuthApiRegister.swift */; };
 		E4677FFD289A954A007690D7 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4677FFC289A954A007690D7 /* UserModel.swift */; };
-		E490A8022892AEAE0056EC8C /* GradesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E490A8012892AEAE0056EC8C /* GradesViewController.swift */; };
 		E490A8042892AF2C0056EC8C /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E490A8032892AF2C0056EC8C /* CustomTableViewCell.swift */; };
 		E490A8062892AF3D0056EC8C /* CourseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E490A8052892AF3D0056EC8C /* CourseModel.swift */; };
 		E490A8082892AF5D0056EC8C /* GradesView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E490A8072892AF5D0056EC8C /* GradesView.storyboard */; };
@@ -56,7 +55,6 @@
 
 /* Begin PBXFileReference section */
 		4D31A0A828929B1B00250E35 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
-		4D31A0AA28929C1100250E35 /* GradesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradesViewController.swift; sourceTree = "<group>"; };
 		4D31A0AC28929C2400250E35 /* CoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesViewController.swift; sourceTree = "<group>"; };
 		4D31A0AE28929C3200250E35 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		4D31C5E128913DC1002A670B /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +75,7 @@
 		596E90612890133F000AF800 /* LoginView.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LoginView.md; sourceTree = "<group>"; };
 		596E90632890134C000AF800 /* TestsView.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = TestsView.md; sourceTree = "<group>"; };
 		69249548289D5DAF0037772F /* PProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PProfileViewController.xib; sourceTree = "<group>"; };
+		69483E8228A152650055F05A /* GradesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GradesViewController.swift; path = ../../../../../../../.Trash/GradesViewController.swift; sourceTree = "<group>"; };
 		698FDFD128992C3C00299B7E /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		69AD4C462893D6A40007731E /* RegisterCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCustomView.swift; sourceTree = "<group>"; };
 		69AD4C482893D6D90007731E /* RegisterCustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterCustomView.xib; sourceTree = "<group>"; };
@@ -94,7 +93,6 @@
 		B074013428916C8D00965072 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E4677FF8289A45B2007690D7 /* AuthApiRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthApiRegister.swift; sourceTree = "<group>"; };
 		E4677FFC289A954A007690D7 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
-		E490A8012892AEAE0056EC8C /* GradesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradesViewController.swift; sourceTree = "<group>"; };
 		E490A8032892AF2C0056EC8C /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		E490A8052892AF3D0056EC8C /* CourseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseModel.swift; sourceTree = "<group>"; };
 		E490A8072892AF5D0056EC8C /* GradesView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GradesView.storyboard; sourceTree = "<group>"; };
@@ -246,10 +244,9 @@
 		59B7E846288ED76300588C1F /* Grades */ = {
 			isa = PBXGroup;
 			children = (
-				E490A8012892AEAE0056EC8C /* GradesViewController.swift */,
+				69483E8228A152650055F05A /* GradesViewController.swift */,
 				E490A8032892AF2C0056EC8C /* CustomTableViewCell.swift */,
 				596E90472890114A000AF800 /* GradesController.md */,
-				4D31A0AA28929C1100250E35 /* GradesViewController.swift */,
 			);
 			path = Grades;
 			sourceTree = "<group>";
@@ -481,15 +478,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D31A0AB28929C1100250E35 /* GradesViewController.swift in Sources */,
 				4D31A0AD28929C2400250E35 /* CoursesViewController.swift in Sources */,
 				4D31A0AF28929C3200250E35 /* ProfileViewController.swift in Sources */,
 				69AD4C4B2893D8020007731E /* UIRegisterViewExtension.swift in Sources */,
 				69AD4C4F2893FE680007731E /* RegisterViewController.swift in Sources */,
 				69AD4C472893D6A40007731E /* RegisterCustomView.swift in Sources */,
-				E490A8022892AEAE0056EC8C /* GradesViewController.swift in Sources */,
 				AF79B860288E7BD800AA99BD /* ViewController.swift in Sources */,
 				E4677FFD289A954A007690D7 /* UserModel.swift in Sources */,
+				69483E8328A152650055F05A /* GradesViewController.swift in Sources */,
 				E4677FF9289A45B2007690D7 /* AuthApiRegister.swift in Sources */,
 				E490A8062892AF3D0056EC8C /* CourseModel.swift in Sources */,
 				E490A80C2894081E0056EC8C /* ColorExtension.swift in Sources */,
@@ -651,7 +647,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = Internship2022;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Home;
+				INFOPLIST_KEY_UIMainStoryboardFile = LogIn;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
@@ -684,7 +680,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = Internship2022;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Home;
+				INFOPLIST_KEY_UIMainStoryboardFile = LogIn;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;

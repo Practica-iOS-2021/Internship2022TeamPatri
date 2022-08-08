@@ -21,7 +21,7 @@ class PProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configure()
-        //navController()
+        navController(title: "Profile")
     }
 
     // making the image round and set colors to labels
@@ -37,7 +37,7 @@ class PProfileViewController: UIViewController {
     }
     
     // making the customized navigation controller
-    private func navController() {
+    public func navController(title: String) {
         // adding the bottom shadow
         let shadowView = UIView(frame: self.navigationController!.navigationBar.frame)
             shadowView.backgroundColor = UIColor.white
@@ -53,7 +53,7 @@ class PProfileViewController: UIViewController {
             lbNavTitle.numberOfLines = 0
             lbNavTitle.center = CGPoint(x: 0, y: 0)
             lbNavTitle.textAlignment = .center
-            lbNavTitle.text = "Profile"
+            lbNavTitle.text = title
             lbNavTitle.font = lbNavTitle.font.withSize(32)
         self.navigationItem.titleView = lbNavTitle
     }

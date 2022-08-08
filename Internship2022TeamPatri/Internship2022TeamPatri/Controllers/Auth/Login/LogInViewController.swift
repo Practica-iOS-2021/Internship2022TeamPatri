@@ -99,11 +99,10 @@ class LogInViewController: UIViewController {
     }
     
     @IBAction private func signupTapped(_ sender: Any) {
-        let registerViewController = RegisterViewController.loadFromNib()
-        self.navigationController?.pushViewController(registerViewController, animated: true)
-        
-        //let profileViewController = PProfileViewController.loadFromNib()
-        //self.navigationController?.pushViewController(profileViewController, animated: true)
+        //let registerViewController = RegisterViewController.loadFromNib()
+        //self.navigationController?.pushViewController(registerViewController, animated: true)
+        let profileViewController = PProfileViewController.loadFromNib()
+        self.navigationController?.pushViewController(profileViewController, animated: true)
     }
     
     //Email validation
