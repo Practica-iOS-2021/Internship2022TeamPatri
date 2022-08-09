@@ -30,7 +30,7 @@
 		596E906028901333000AF800 /* RegisterView.md in Resources */ = {isa = PBXBuildFile; fileRef = 596E905F28901333000AF800 /* RegisterView.md */; };
 		596E90622890133F000AF800 /* LoginView.md in Resources */ = {isa = PBXBuildFile; fileRef = 596E90612890133F000AF800 /* LoginView.md */; };
 		596E90642890134C000AF800 /* TestsView.md in Resources */ = {isa = PBXBuildFile; fileRef = 596E90632890134C000AF800 /* TestsView.md */; };
-		6918DD8028A258E900556AF2 /* GradesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6918DD7F28A258E900556AF2 /* GradesViewController.swift */; };
+		69505EE028A28667001A76EF /* GradesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69505EDF28A28666001A76EF /* GradesViewController.swift */; };
 		6982D01A289A43E4000A08BF /* RetrieveUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6982D019289A43E4000A08BF /* RetrieveUserData.swift */; };
 		698FDFD228992C3C00299B7E /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698FDFD128992C3C00299B7E /* UIViewControllerExtension.swift */; };
 		69AD4C472893D6A40007731E /* RegisterCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AD4C462893D6A40007731E /* RegisterCustomView.swift */; };
@@ -49,7 +49,6 @@
 		B074013528916C8E00965072 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B074013428916C8D00965072 /* GoogleService-Info.plist */; };
 		E4677FF9289A45B2007690D7 /* AuthApiRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4677FF8289A45B2007690D7 /* AuthApiRegister.swift */; };
 		E4677FFD289A954A007690D7 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4677FFC289A954A007690D7 /* UserModel.swift */; };
-		E490A8022892AEAE0056EC8C /* GradesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E490A8012892AEAE0056EC8C /* GradesViewController.swift */; };
 		E490A8042892AF2C0056EC8C /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E490A8032892AF2C0056EC8C /* CustomTableViewCell.swift */; };
 		E490A8062892AF3D0056EC8C /* CourseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E490A8052892AF3D0056EC8C /* CourseModel.swift */; };
 		E490A8082892AF5D0056EC8C /* GradesView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E490A8072892AF5D0056EC8C /* GradesView.storyboard */; };
@@ -79,7 +78,7 @@
 		596E905F28901333000AF800 /* RegisterView.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = RegisterView.md; sourceTree = "<group>"; };
 		596E90612890133F000AF800 /* LoginView.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LoginView.md; sourceTree = "<group>"; };
 		596E90632890134C000AF800 /* TestsView.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = TestsView.md; sourceTree = "<group>"; };
-		6918DD7F28A258E900556AF2 /* GradesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GradesViewController.swift; path = ../../../../../../../.Trash/GradesViewController.swift; sourceTree = "<group>"; };
+		69505EDF28A28666001A76EF /* GradesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradesViewController.swift; sourceTree = "<group>"; };
 		6982D019289A43E4000A08BF /* RetrieveUserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrieveUserData.swift; sourceTree = "<group>"; };
 		698FDFD128992C3C00299B7E /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		69AD4C462893D6A40007731E /* RegisterCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCustomView.swift; sourceTree = "<group>"; };
@@ -98,7 +97,6 @@
 		B074013428916C8D00965072 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E4677FF8289A45B2007690D7 /* AuthApiRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthApiRegister.swift; sourceTree = "<group>"; };
 		E4677FFC289A954A007690D7 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
-		E490A8012892AEAE0056EC8C /* GradesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradesViewController.swift; sourceTree = "<group>"; };
 		E490A8032892AF2C0056EC8C /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		E490A8052892AF3D0056EC8C /* CourseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseModel.swift; sourceTree = "<group>"; };
 		E490A8072892AF5D0056EC8C /* GradesView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GradesView.storyboard; sourceTree = "<group>"; };
@@ -253,7 +251,7 @@
 		59B7E846288ED76300588C1F /* Grades */ = {
 			isa = PBXGroup;
 			children = (
-				6918DD7F28A258E900556AF2 /* GradesViewController.swift */,
+				69505EDF28A28666001A76EF /* GradesViewController.swift */,
 				E490A8032892AF2C0056EC8C /* CustomTableViewCell.swift */,
 				596E90472890114A000AF800 /* GradesController.md */,
 			);
@@ -330,7 +328,6 @@
 		6918DD7E28A257E100556AF2 /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
-				E490A8012892AEAE0056EC8C /* GradesViewController.swift */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -495,11 +492,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D31A0AD28929C2400250E35 /* CoursesViewController.swift in Sources */,
+				69505EE028A28667001A76EF /* GradesViewController.swift in Sources */,
 				4D31A0AF28929C3200250E35 /* ProfileViewController.swift in Sources */,
 				69AD4C4B2893D8020007731E /* UIRegisterViewExtension.swift in Sources */,
 				69AD4C4F2893FE680007731E /* RegisterViewController.swift in Sources */,
 				69AD4C472893D6A40007731E /* RegisterCustomView.swift in Sources */,
-				E490A8022892AEAE0056EC8C /* GradesViewController.swift in Sources */,
 				69F7E26B28994DB7008E8540 /* UsersDataModel.swift in Sources */,
 				AF79B860288E7BD800AA99BD /* ViewController.swift in Sources */,
 				E4677FFD289A954A007690D7 /* UserModel.swift in Sources */,
@@ -508,7 +505,6 @@
 				E490A80C2894081E0056EC8C /* ColorExtension.swift in Sources */,
 				E490A8042892AF2C0056EC8C /* CustomTableViewCell.swift in Sources */,
 				6982D01A289A43E4000A08BF /* RetrieveUserData.swift in Sources */,
-				6918DD8028A258E900556AF2 /* GradesViewController.swift in Sources */,
 				AF79B85C288E7BD800AA99BD /* AppDelegate.swift in Sources */,
 				4D428C312899308400A5311F /* AuthApiManager.swift in Sources */,
 				4D31C5E228913DC1002A670B /* LogInViewController.swift in Sources */,
