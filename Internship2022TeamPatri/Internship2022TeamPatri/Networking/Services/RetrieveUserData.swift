@@ -7,7 +7,6 @@
 
 import Foundation
 import FirebaseFirestore
-import FirebaseAuth
 import UIKit
 
 
@@ -31,23 +30,21 @@ class RetrieveUserData {
                     print(data)
                 }
             }
-
         }
     }
     
     // function to get user grades
     func fetchGrades() {
         self.db.collection("users").document("6qHknXlDHCcFhBVxZpXBcD5eJJH2").collection("grades").getDocuments { (snapshot, error) in
-                if let err = error {
-                    print(err)
-                } else
-                 {
-                    if let snapshot = snapshot,snapshot.documents.count > 0 {
-                        for document in snapshot.documents {
-                            print(document.data())
-                        }
+            if let err = error {
+                print(err)
+            } else {
+                if let snapshot = snapshot,snapshot.documents.count > 0 {
+                    for document in snapshot.documents {
+                        print(document.data())
                     }
-                 }
-          }
+                }
+            }
+        }
     }
 }

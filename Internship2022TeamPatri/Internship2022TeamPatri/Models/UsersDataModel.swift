@@ -14,7 +14,6 @@ struct Users {
     let personalID: String
     let studentID: String
     let photo: UIImage?
-    
     let grades: [Grade]?
 }
 
