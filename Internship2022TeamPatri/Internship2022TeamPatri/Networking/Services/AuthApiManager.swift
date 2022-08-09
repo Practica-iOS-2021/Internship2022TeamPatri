@@ -25,29 +25,12 @@ class AuthApiManager {
             if error != nil  {
                 self.isLoggedIn = false
                 print(error!.localizedDescription)
-                completion(error)
             } else {
                 self.isLoggedIn = true
                 print("Succesfully logged in")
-                completion(error)
                 self.delegate?.didLogIn()
             }
+            completion(error)
         })
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
