@@ -33,7 +33,7 @@ class CoursesCollectionViewCell: UICollectionViewCell {
 
 private extension CoursesCollectionViewCell {
     func styleCell() {
-        contentView.layoutMargins = UIEdgeInsets(top: 14, left: 10, bottom: 0, right: 10)
+        contentView.layoutMargins = UIEdgeInsets(top: 15, left: 10, bottom: 0, right: 10)
         
         containerView.snp.makeConstraints { make in
             make.top.trailing.leading.bottom.equalTo(contentView.layoutMargins)

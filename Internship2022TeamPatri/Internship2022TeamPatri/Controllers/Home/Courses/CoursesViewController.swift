@@ -16,7 +16,8 @@ final class CoursesViewController: UIViewController, UICollectionViewDelegate, U
         courseCollectionView.dataSource = self
         courseCollectionView.delegate = self
         courseCollectionViewCells()
-        navigationItem.title = "Courses"
+        navController(title: "Courses")
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -35,7 +36,30 @@ final class CoursesViewController: UIViewController, UICollectionViewDelegate, U
         let textFieldCell = UINib(nibName: "CoursesCollectionViewCell", bundle: nil)
         self.courseCollectionView.register(textFieldCell, forCellWithReuseIdentifier: "CoursesCollectionViewCell")
     }
+    
+    // making the customized navigation controller
+    public func navController(title: String) {
+        // adding the bottom shadow
+        let shadowView = UIView(frame: self.navigationController!.navigationBar.frame)
+        shadowView.backgroundColor = UIColor.white
+        shadowView.layer.masksToBounds = false
+        shadowView.layer.shadowOpacity = 0.15
+        shadowView.layer.shadowOffset = CGSize(width: 0, height: 10)
+        shadowView.layer.shadowRadius = 3
+        self.view.addSubview(shadowView)
+        
+        // adding the title
+        let lbNavTitle = UILabel (frame: CGRect(x: 0, y: 0, width: 320, height: 50))
+        lbNavTitle.textColor = UIColor.colorText
+        lbNavTitle.numberOfLines = 0
+        lbNavTitle.center = CGPoint(x: 0, y: 0)
+        lbNavTitle.textAlignment = .center
+        lbNavTitle.text = title
+        lbNavTitle.font = lbNavTitle.font.withSize(32)
+        self.navigationItem.titleView = lbNavTitle
+    }
 }
+
 extension CoursesViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = self.view.frame.size.width / 2.2
