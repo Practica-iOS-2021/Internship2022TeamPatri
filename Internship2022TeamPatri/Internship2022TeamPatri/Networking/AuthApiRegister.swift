@@ -9,9 +9,12 @@ import Foundation
 import FirebaseAuth
 import Firebase
 
+
 class AuthApiRegister {
     
+    var coursesList = [Courses]()
     static let sharedInstance = AuthApiRegister()
+    
     func register(user: User, completion: @escaping (Bool) -> Void) {
         
         guard let email = user.email?.trimmingCharacters(in: .whitespacesAndNewlines),
@@ -37,5 +40,59 @@ class AuthApiRegister {
             completion(true)
         }
     }
+    
+    func getCourses(completion: @escaping ([Courses]?) -> Void) {
+        let db = Firestore.firestore()
+        
+        db.collection("courses").getDocuments { snapshot, error in
+            if error == nil {
+                if let snapshot = snapshot {
+                    
+                    let courses = snapshot.documents.map { document -> Courses in
+                        
+//                        let chapters = document.collection("chapters").map { chapters -> ChapterModel in
+//                            return ChapterModel(
+//                                id: (chapters as AnyObject).documentID,
+//                                name: chapters["name"] as? String ?? "",
+//                                questions: chapters["questions"] as? [Question])
+//                        }
+//
+//                        let questions = chapters["questions"].map { question ->
+//                            Question in
+//                            return Question(
+//                                id: question.documentID,
+//                                question: question["question"],
+//                                answers: question["answers"],
+//                                correctAnswer: question["correctAnswer"])
+//
+//                        }
+                        return Courses(
+                            id: document.documentID,
+                            name: document["name"] as? String ?? "",
+                            semester: document["semester"] as? Int ?? 0,
+                            chapters: document["chapters"] as? [ChapterModel])
+                        
+                    }
+                    completion(courses)
+                } else {
+                    completion(nil)
+                }
+            } else {
+                completion(nil)
+            }
+        }
+    }
 }
 
+
+//if let snapshot = snapshot {
+//    DispatchQueue.main.async {
+//        self.coursesList = snapshot.documents.map { document in
+//            return Courses(id: document.documentID,
+//                           name: document["name"] as? String ?? "",
+//                           semester: document["semester"] as? Int ?? 0,
+//                           chapters: document["chapters"] as! [Chapter] )
+//        }
+//    }
+//}
+//print(self.coursesList)

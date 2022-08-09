@@ -48,6 +48,18 @@ class LogInViewController: UIViewController {
         forgotPasswordButton.setAttributedTitle(attributeStringForgotPassword, for: .normal)
         
         setUpElements()
+        testingUserData()
+    }
+    
+    func testingUserData(){
+        AuthApiRegister.sharedInstance.getCourses { result in
+            if let courses = result {
+                print("NUmber of courses : \(courses.count)")
+            } else {
+                print("No courses")
+            }
+        }
+        
     }
     
     private func setUpElements() {
