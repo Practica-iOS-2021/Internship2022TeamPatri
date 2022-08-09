@@ -13,11 +13,11 @@
                 <outlet property="backgroundView" destination="kVT-hD-xAY" id="6ql-Jk-zEV"/>
                 <outlet property="registerButton" destination="L4L-Lf-zjR" id="bxk-nU-OMt"/>
                 <outlet property="view" destination="kVT-hD-xAY" id="6Wd-ub-A1D"/>
-                <outlet property="view1" destination="SAW-fM-g3w" id="xe1-gJ-1VV"/>
-                <outlet property="view2" destination="osk-CP-MHt" id="ecP-h1-sNu"/>
-                <outlet property="view3" destination="299-Cm-JdE" id="WGF-hE-A26"/>
-                <outlet property="view4" destination="qZy-Ud-FpR" id="PJM-Bw-qJq"/>
-                <outlet property="view5" destination="IT8-Uw-OFo" id="2nr-Wu-xms"/>
+                <outlet property="viewEmail" destination="osk-CP-MHt" id="UWm-fP-kka"/>
+                <outlet property="viewName" destination="SAW-fM-g3w" id="jbm-uM-YYg"/>
+                <outlet property="viewPassword" destination="IT8-Uw-OFo" id="4lD-Ez-jcR"/>
+                <outlet property="viewPersonalID" destination="299-Cm-JdE" id="Tfb-vW-ho6"/>
+                <outlet property="viewStudentID" destination="qZy-Ud-FpR" id="OXZ-CM-fvo"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -26,45 +26,45 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ALP-hw-HvS">
-                    <rect key="frame" x="55" y="134" width="327" height="430"/>
+                    <rect key="frame" x="43.5" y="134" width="327" height="380"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SAW-fM-g3w" customClass="RegisterCustomView" customModule="Internship2022TeamPatri" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="0.0" width="327" height="86"/>
+                            <rect key="frame" x="0.0" y="0.0" width="327" height="76"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="327" id="PT8-LA-u1U"/>
-                                <constraint firstAttribute="height" constant="86" id="WHD-GI-Wh6"/>
+                                <constraint firstAttribute="height" constant="76" id="WHD-GI-Wh6"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="osk-CP-MHt" customClass="RegisterCustomView" customModule="Internship2022TeamPatri" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="86" width="327" height="86"/>
+                            <rect key="frame" x="0.0" y="76" width="327" height="76"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="327" id="cxl-Oe-k0P"/>
-                                <constraint firstAttribute="height" constant="86" id="hNO-2a-ge1"/>
+                                <constraint firstAttribute="height" constant="76" id="hNO-2a-ge1"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="299-Cm-JdE" customClass="RegisterCustomView" customModule="Internship2022TeamPatri" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="172" width="327" height="86"/>
+                            <rect key="frame" x="0.0" y="152" width="327" height="76"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="86" id="2dX-Cf-y4B"/>
+                                <constraint firstAttribute="height" constant="76" id="2dX-Cf-y4B"/>
                                 <constraint firstAttribute="width" constant="327" id="bq5-RT-UMg"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qZy-Ud-FpR" customClass="RegisterCustomView" customModule="Internship2022TeamPatri" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="258" width="327" height="86"/>
+                            <rect key="frame" x="0.0" y="228" width="327" height="76"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="86" id="VEq-22-6Ie"/>
+                                <constraint firstAttribute="height" constant="76" id="VEq-22-6Ie"/>
                                 <constraint firstAttribute="width" constant="327" id="vYo-Yh-7Xf"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IT8-Uw-OFo" customClass="RegisterCustomView" customModule="Internship2022TeamPatri" customModuleProvider="target">
-                            <rect key="frame" x="0.0" y="344" width="327" height="86"/>
+                            <rect key="frame" x="0.0" y="304" width="327" height="76"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="86" id="0cy-8x-AuF"/>
+                                <constraint firstAttribute="height" constant="76" id="0cy-8x-AuF"/>
                                 <constraint firstAttribute="width" constant="327" id="tS5-Go-yNp"/>
                             </constraints>
                         </view>
@@ -89,7 +89,7 @@
                     </constraints>
                 </stackView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Liw-KO-AQj">
-                    <rect key="frame" x="82.5" y="64" width="249" height="50"/>
+                    <rect key="frame" x="82.5" y="49" width="249" height="50"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="5R2-Ml-bR0"/>
                         <constraint firstAttribute="width" constant="249" id="JR7-hs-zY3"/>
@@ -98,7 +98,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L4L-Lf-zjR">
-                    <rect key="frame" x="67" y="584" width="280" height="62"/>
+                    <rect key="frame" x="67" y="564" width="280" height="62"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="62" id="meH-b0-Npg"/>
                         <constraint firstAttribute="width" constant="280" id="rAV-bW-yHH"/>
@@ -119,13 +119,12 @@
             <viewLayoutGuide key="safeArea" id="rcl-Xb-P1R"/>
             <color key="backgroundColor" red="1" green="0.97092924059999997" blue="0.74135047519999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
-                <constraint firstItem="ALP-hw-HvS" firstAttribute="leading" secondItem="rcl-Xb-P1R" secondAttribute="leading" constant="55" id="0sI-Ts-ngQ"/>
                 <constraint firstItem="Liw-KO-AQj" firstAttribute="centerX" secondItem="kVT-hD-xAY" secondAttribute="centerX" id="4Yp-0G-vzs"/>
                 <constraint firstItem="L4L-Lf-zjR" firstAttribute="centerX" secondItem="kVT-hD-xAY" secondAttribute="centerX" id="9iM-Lv-ou5"/>
-                <constraint firstItem="Liw-KO-AQj" firstAttribute="top" secondItem="rcl-Xb-P1R" secondAttribute="top" constant="20" id="bDw-Ea-epC"/>
-                <constraint firstItem="rcl-Xb-P1R" firstAttribute="trailing" secondItem="ALP-hw-HvS" secondAttribute="trailing" constant="32" id="f0c-8R-S4l"/>
+                <constraint firstItem="ALP-hw-HvS" firstAttribute="centerX" secondItem="kVT-hD-xAY" secondAttribute="centerX" id="M67-f8-iP3"/>
+                <constraint firstItem="Liw-KO-AQj" firstAttribute="top" secondItem="rcl-Xb-P1R" secondAttribute="top" constant="5" id="bDw-Ea-epC"/>
+                <constraint firstItem="L4L-Lf-zjR" firstAttribute="top" secondItem="ALP-hw-HvS" secondAttribute="bottom" constant="50" id="cGe-Fv-YjB"/>
                 <constraint firstItem="ALP-hw-HvS" firstAttribute="top" secondItem="rcl-Xb-P1R" secondAttribute="top" constant="90" id="fx5-GX-RCd"/>
-                <constraint firstItem="L4L-Lf-zjR" firstAttribute="top" secondItem="ALP-hw-HvS" secondAttribute="bottom" constant="20" id="tD8-WG-sOz"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="613" y="-583"/>
