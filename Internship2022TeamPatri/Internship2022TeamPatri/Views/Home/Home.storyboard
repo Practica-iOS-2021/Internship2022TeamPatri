@@ -8,26 +8,20 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Grades View Controller-->
-        <scene sceneID="s0d-6b-0kx">
+        <!--GradesViewController-->
+        <scene sceneID="p5J-Jd-Hr2">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="GradesViewController" customModule="Internship2022TeamPatri" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="" image="grades" id="dYf-n4-n5r"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="GradesView" referencedIdentifier="GradesViewController" id="Xbd-ge-5gR" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="Acy-43-xYM"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3B6-pa-fAA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-657" y="836"/>
+            <point key="canvasLocation" x="-1092" y="479"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Home Tab Bar Controller-->
         <scene sceneID="19C-iI-W76">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="en6-aS-RKq" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="HomeTabBarController" automaticallyAdjustsScrollViewInsets="NO" id="en6-aS-RKq" customClass="HomeTabBarController" customModule="Internship2022TeamPatri" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lXY-ow-DXz">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -38,9 +32,9 @@
                         <tabBarAppearance key="scrollEdgeAppearance"/>
                     </tabBar>
                     <connections>
-                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="viewControllers" id="ghd-Yh-oT9"/>
                         <segue destination="QD4-pP-Xdf" kind="relationship" relationship="viewControllers" id="awD-ec-4Os"/>
                         <segue destination="uXj-qN-X2m" kind="relationship" relationship="viewControllers" id="RBx-EK-duq"/>
+                        <segue destination="Xbd-ge-5gR" kind="relationship" relationship="viewControllers" id="egq-MY-d5I"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oC2-Jr-qZh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -82,7 +76,6 @@
     </scenes>
     <resources>
         <image name="courses" width="40" height="40"/>
-        <image name="grades" width="44" height="36"/>
         <image name="profile" width="32" height="31"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
