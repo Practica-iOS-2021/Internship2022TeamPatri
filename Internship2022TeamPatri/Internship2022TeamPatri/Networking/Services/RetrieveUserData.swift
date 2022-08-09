@@ -13,7 +13,7 @@ import UIKit
 
 class RetrieveUserData {
     
-    var userInfo = [User]()
+    var userInfo = [Users]()
     private var db = Firestore.firestore()
     
     // function to get user personal information

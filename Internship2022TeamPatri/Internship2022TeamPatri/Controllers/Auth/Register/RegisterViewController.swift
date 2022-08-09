@@ -117,7 +117,7 @@ class RegisterViewController: UIViewController {
     }
     
     // FireBase register User
-    private func registerUser(user: User) {
+    private func registerUser(user: User) { 
         AuthApiRegister.sharedInstance.register(user: user) { success in
             if success {
                 self.navigationController?.popViewController(animated: true)
