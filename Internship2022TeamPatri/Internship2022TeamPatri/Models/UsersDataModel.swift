@@ -13,7 +13,7 @@ struct Users {
     let email: String
     let personalID: String
     let studentID: String
-    let photo: UIImage?
+    let photo: String?
     let grades: [Grade]?
 }
 

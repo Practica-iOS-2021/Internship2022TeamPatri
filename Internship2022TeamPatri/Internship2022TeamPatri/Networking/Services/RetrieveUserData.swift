@@ -7,8 +7,8 @@
 
 import Foundation
 import FirebaseFirestore
+import FirebaseAuth
 import UIKit
-
 
 class RetrieveUserData {
     
@@ -17,33 +17,53 @@ class RetrieveUserData {
     
     // function to get user personal information
     func fetchPersonalInfo() {
-        let docRef = db.collection("users").document("6qHknXlDHCcFhBVxZpXBcD5eJJH2")
-
-        docRef.getDocument { (document, error) in
-            guard error == nil else {
-                print("error", error ?? "")
+        db.collection("users").addSnapshotListener { [self](QuerySnapshot, error) in
+            guard let documents = QuerySnapshot?.documents else {
+                print("No documents")
                 return
             }
-            if let document = document, document.exists {
-                let data = document.data()
-                if let data = data {
-                    print(data)
-                }
+            self.userInfo = documents.map {(QueryDocumentSnapshot) -> Users in
+                       
+            let data = QueryDocumentSnapshot.data()
+                       
+            let name = data["Name"] as? String ?? ""
+            let email = data["Email"] as? String ?? ""
+            let personalID = data["PersonalID"] as? String ?? ""
+            let studentID = data["StudentID"] as? String ?? ""
+            let photo = data["Photo"] as? String ?? ""
+            let chapter = data["Chapter"] as? String ?? ""
+            let course = data["Course"] as? String ?? ""
+            let grade = data["Grade"] as? Int ?? 0
+            let semester = data["Semester"] as? Int ?? 0
+                       
+            return Users(name: name, email: email, personalID: personalID, studentID: studentID, photo: photo, grades: [Grade(chapter: chapter, course: course, grade: grade, semester: semester)])
             }
         }
+
     }
     
     // function to get user grades
     func fetchGrades() {
-        self.db.collection("users").document("6qHknXlDHCcFhBVxZpXBcD5eJJH2").collection("grades").getDocuments { (snapshot, error) in
-            if let err = error {
-                print(err)
-            } else {
-                if let snapshot = snapshot,snapshot.documents.count > 0 {
-                    for document in snapshot.documents {
-                        print(document.data())
-                    }
+        db.collection("users").document("6qHknXlDHCcFhBVxZpXBcD5eJJH2").collection("grades").addSnapshotListener { [self](QuerySnapshot, error) in
+                guard let documents = QuerySnapshot?.documents else {
+                    print("No documents")
+                    return
                 }
+                self.userInfo = documents.map {(QueryDocumentSnapshot) -> Users in
+                      
+                let data = QueryDocumentSnapshot.data()
+                    
+                let name = data["Name"] as? String ?? ""
+                let email = data["Email"] as? String ?? ""
+                let personalID = data["PersonalID"] as? String ?? ""
+                let studentID = data["StudentID"] as? String ?? ""
+                let photo = data["Photo"] as? String ?? ""
+                let chapter = data["Chapter"] as? String ?? ""
+                let course = data["Course"] as? String ?? ""
+                let grade = data["Grade"] as? Int ?? 0
+                let semester = data["Semester"] as? Int ?? 0
+                      
+                return Users(name: name, email: email, personalID: personalID, studentID: studentID, photo: photo, grades: [Grade(chapter: chapter, course: course, grade: grade, semester: semester)])
             }
         }
     }
