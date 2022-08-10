@@ -7,7 +7,7 @@
 
 import UIKit
 
-class PProfileViewController: UIViewController {
+class ProfileViewController: UIViewController {
     
     @IBOutlet private weak var profileImage: UIImageView!
     @IBOutlet private weak var userNameProfile: UILabel!
