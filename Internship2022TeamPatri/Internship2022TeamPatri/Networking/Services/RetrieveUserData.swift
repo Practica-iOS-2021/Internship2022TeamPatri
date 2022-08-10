@@ -17,20 +17,32 @@ class RetrieveUserData {
     
     // function to get user personal information
     func fetchPersonalInfo() {
-        guard let uid = Auth.auth().currentUser?.uid else {return}
-         let docRef = db.collection("users").document(uid)
-         docRef.getDocument { (document, error) in
-             guard error == nil else {
-                 print("error", error ?? "")
-                 return
-             }
-             if let document = document, document.exists {
-                 let data = document.data()
-                 if let data = data {
-                     print(data)
-                 }
-             }
-         }
+        // Check that there's a logged in user
+        guard Auth.auth().currentUser != nil else {return}
+        // Get the meta data for that user
+        let ref = db.collection("users").document(Auth.auth().currentUser!.uid)
+        ref.getDocument { (document, error) in
+            guard error == nil else {
+                print("error", error ?? "")
+                return
+            }
+            if let document = document, document.exists {
+                let data = document.data()
+                if let data = data {
+                    let name = data["Name"] as? String ?? ""
+                    let email = data["Email"] as? String ?? ""
+                    let personalID = data["PersonalID"] as? String ?? ""
+                    let studentID = data["StudentID"] as? String ?? ""
+                    let photo = data["Photo"] as? String ?? ""
+                    let chapter = data["Chapter"] as? String ?? ""
+                    let course = data["Course"] as? String ?? ""
+                    let grade = data["Grade"] as? Int ?? 0
+                    let semester = data["Semester"] as? Int ?? 0
+                    
+                    print("Personal data: ", data)
+                }
+            }
+        }
      }
      
      // function to get user grades // show user info data I need to change
