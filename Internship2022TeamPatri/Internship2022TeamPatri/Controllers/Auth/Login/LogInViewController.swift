@@ -108,7 +108,6 @@ class LogInViewController: UIViewController {
         }
     }
    
-    
     // sign up button (going to register screen)
     @IBAction private func signupTapped(_ sender: Any) {
         // moving through a navigation controller and having a customed back button

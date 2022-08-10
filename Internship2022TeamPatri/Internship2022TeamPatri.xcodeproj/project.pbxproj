@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4D31A0A928929B1B00250E35 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D31A0A828929B1B00250E35 /* Home.storyboard */; };
-		4D31A0AD28929C2400250E35 /* CoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D31A0AC28929C2400250E35 /* CoursesViewController.swift */; };
 		4D31A0AF28929C3200250E35 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D31A0AE28929C3200250E35 /* ProfileViewController.swift */; };
 		4D31C5E228913DC1002A670B /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D31C5E128913DC1002A670B /* LogInViewController.swift */; };
 		4D31C5E428913E2F002A670B /* LogIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D31C5E328913E2F002A670B /* LogIn.storyboard */; };
@@ -47,7 +46,9 @@
 		B074013528916C8E00965072 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B074013428916C8D00965072 /* GoogleService-Info.plist */; };
 		E4677FF9289A45B2007690D7 /* AuthApiRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4677FF8289A45B2007690D7 /* AuthApiRegister.swift */; };
 		E4677FFD289A954A007690D7 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4677FFC289A954A007690D7 /* UserModel.swift */; };
-		E490A8022892AEAE0056EC8C /* GradesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E490A8012892AEAE0056EC8C /* GradesViewController.swift */; };
+		E477EDF4289BF284003A6CE1 /* CoursesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E477EDF2289BF284003A6CE1 /* CoursesCollectionViewCell.swift */; };
+		E477EDFC289C1AD7003A6CE1 /* CoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E477EDFA289C1AD7003A6CE1 /* CoursesViewController.swift */; };
+		E477EDFD289C1AD7003A6CE1 /* CoursesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E477EDFB289C1AD7003A6CE1 /* CoursesViewController.xib */; };
 		E490A8042892AF2C0056EC8C /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E490A8032892AF2C0056EC8C /* CustomTableViewCell.swift */; };
 		E490A8062892AF3D0056EC8C /* CourseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E490A8052892AF3D0056EC8C /* CourseModel.swift */; };
 		E490A8082892AF5D0056EC8C /* GradesView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E490A8072892AF5D0056EC8C /* GradesView.storyboard */; };
@@ -56,7 +57,6 @@
 
 /* Begin PBXFileReference section */
 		4D31A0A828929B1B00250E35 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
-		4D31A0AC28929C2400250E35 /* CoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesViewController.swift; sourceTree = "<group>"; };
 		4D31A0AE28929C3200250E35 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		4D31C5E128913DC1002A670B /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		4D31C5E328913E2F002A670B /* LogIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LogIn.storyboard; sourceTree = "<group>"; };
@@ -94,7 +94,9 @@
 		B074013428916C8D00965072 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E4677FF8289A45B2007690D7 /* AuthApiRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthApiRegister.swift; sourceTree = "<group>"; };
 		E4677FFC289A954A007690D7 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
-		E490A8012892AEAE0056EC8C /* GradesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradesViewController.swift; sourceTree = "<group>"; };
+		E477EDF2289BF284003A6CE1 /* CoursesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesCollectionViewCell.swift; sourceTree = "<group>"; };
+		E477EDFA289C1AD7003A6CE1 /* CoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesViewController.swift; sourceTree = "<group>"; };
+		E477EDFB289C1AD7003A6CE1 /* CoursesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoursesViewController.xib; sourceTree = "<group>"; };
 		E490A8032892AF2C0056EC8C /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		E490A8052892AF3D0056EC8C /* CourseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseModel.swift; sourceTree = "<group>"; };
 		E490A8072892AF5D0056EC8C /* GradesView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GradesView.storyboard; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 		59B7E83B288ED76300588C1F /* Grades */ = {
 			isa = PBXGroup;
 			children = (
+				E490A8032892AF2C0056EC8C /* CustomTableViewCell.swift */,
 				E490A8072892AF5D0056EC8C /* GradesView.storyboard */,
 				596E905928901303000AF800 /* GradesView.md */,
 			);
@@ -156,6 +159,8 @@
 		59B7E83C288ED76300588C1F /* Courses */ = {
 			isa = PBXGroup;
 			children = (
+				E477EDF2289BF284003A6CE1 /* CoursesCollectionViewCell.swift */,
+				E477EDFB289C1AD7003A6CE1 /* CoursesViewController.xib */,
 				596E905B28901313000AF800 /* CoursesView.md */,
 			);
 			path = Courses;
@@ -249,7 +254,6 @@
 			isa = PBXGroup;
 			children = (
 				4DEE6155289BFF1300612B1B /* GradesViewController.swift */,
-				E490A8032892AF2C0056EC8C /* CustomTableViewCell.swift */,
 				596E90472890114A000AF800 /* GradesController.md */,
 			);
 			path = Grades;
@@ -258,8 +262,8 @@
 		59B7E847288ED76300588C1F /* Courses */ = {
 			isa = PBXGroup;
 			children = (
+				E477EDFA289C1AD7003A6CE1 /* CoursesViewController.swift */,
 				596E90492890119A000AF800 /* CoursesController.md */,
-				4D31A0AC28929C2400250E35 /* CoursesViewController.swift */,
 			);
 			path = Courses;
 			sourceTree = "<group>";
@@ -440,6 +444,7 @@
 				596E904C289011BB000AF800 /* ProfileController.md in Resources */,
 				B074013528916C8E00965072 /* GoogleService-Info.plist in Resources */,
 				596E905028901249000AF800 /* LoginController.md in Resources */,
+				E477EDFD289C1AD7003A6CE1 /* CoursesViewController.xib in Resources */,
 				596E905C28901313000AF800 /* CoursesView.md in Resources */,
 				596E904A2890119A000AF800 /* CoursesController.md in Resources */,
 				69AD4C492893D6D90007731E /* RegisterCustomView.xib in Resources */,
@@ -479,10 +484,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D31A0AD28929C2400250E35 /* CoursesViewController.swift in Sources */,
 				4D31A0AF28929C3200250E35 /* ProfileViewController.swift in Sources */,
+				E477EDFC289C1AD7003A6CE1 /* CoursesViewController.swift in Sources */,
 				69AD4C4B2893D8020007731E /* UIRegisterViewExtension.swift in Sources */,
 				69AD4C4F2893FE680007731E /* RegisterViewController.swift in Sources */,
+				E477EDF4289BF284003A6CE1 /* CoursesCollectionViewCell.swift in Sources */,
 				69AD4C472893D6A40007731E /* RegisterCustomView.swift in Sources */,
 				AF79B860288E7BD800AA99BD /* ViewController.swift in Sources */,
 				E4677FFD289A954A007690D7 /* UserModel.swift in Sources */,

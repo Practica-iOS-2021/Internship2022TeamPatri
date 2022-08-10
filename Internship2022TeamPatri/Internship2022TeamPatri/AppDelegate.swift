@@ -27,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AuthApiManagerDelegate {
             return tabBar
         } else {
             let storyboard = UIStoryboard(name: "LogIn", bundle: nil)
-            let loginViewController = storyboard.instantiateViewController(withIdentifier: "LogInViewController")
+            let loginViewController = storyboard.instantiateViewController(withIdentifier: "NavigationController")
             return loginViewController
         }
     }
