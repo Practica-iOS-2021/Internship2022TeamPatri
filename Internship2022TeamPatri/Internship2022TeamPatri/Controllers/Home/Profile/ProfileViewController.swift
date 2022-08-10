@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class ProfileViewController: UIViewController {
     @IBOutlet private weak var profileImage: UIImageView!
@@ -59,6 +60,15 @@ class ProfileViewController: UIViewController {
         
     // sign out button
     @IBAction func logOut(_ sender: Any) {
-            
+        do {
+            try Auth.auth().signOut()
+        } catch let logOutError {
+            print(logOutError)
+        }
+        
+        let storyboard = UIStoryboard(name: "LogIn", bundle: nil)
+        let signInVc = storyboard.instantiateViewController(withIdentifier: "LogInViewController")
+        self.navigationController?.pushViewController(signInVc, animated: true)
+        navigationController?.setNavigationBarHidden(true, animated: true)
     }
 }
