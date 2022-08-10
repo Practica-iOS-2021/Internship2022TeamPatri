@@ -12,35 +12,34 @@ class HomeTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let storyboard = UIStoryboard(name: "GradesView", bundle: nil)
-        let gradesViewController = storyboard.instantiateViewController(withIdentifier: "GradesViewController")
-        
-        let navController = UINavigationController()
-        let coursesViewController = CoursesViewController.loadFromNib()
-        navController.pushViewController(coursesViewController, animated: false)
-        let profileViewController = ProfileViewController()
-        
-        self.setViewControllers([ gradesViewController,navController, profileViewController], animated: false)
+        setViewController()
         setTabBarItems()
     }
     
-    func setTabBarItems(){
-        let gradesViewController = (self.tabBar.items?[0])! as UITabBarItem
-        gradesViewController.image = UIImage(named: "grades")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
-        gradesViewController.selectedImage = UIImage(named: "Selected ")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
-        gradesViewController.title = ""
-        gradesViewController.imageInsets = UIEdgeInsets(top: 6, left: 0, bottom: -6, right: 0)
+    private func setViewController() {
+        let storyboard = UIStoryboard(name: "GradesView", bundle: nil)
+        let gradesViewController = storyboard.instantiateViewController(withIdentifier: "GradesViewController")
         
-        let coursesViewController = (self.tabBar.items?[1])! as UITabBarItem
-        coursesViewController.image = UIImage(named: "courses")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
-        coursesViewController.selectedImage = UIImage(named: "Selected")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
-        coursesViewController.title = ""
-        coursesViewController.imageInsets = UIEdgeInsets(top: 6, left: 0, bottom: -6, right: 0)
+        let coursesViewController = CoursesViewController.loadFromNib()
+        let navController = UINavigationController(rootViewController: coursesViewController)
+        let profileViewController = ProfileViewController()
         
-        let profileViewController = (self.tabBar.items?[2])! as UITabBarItem
-        profileViewController.image = UIImage(named: "profile")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
-        profileViewController.selectedImage = UIImage(named: "Selected")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
-        profileViewController.title = ""
-        profileViewController.imageInsets = UIEdgeInsets(top: 6, left: 0, bottom: -6, right: 0)
+        self.setViewControllers([ gradesViewController,navController, profileViewController], animated: false)
     }
+    
+    func setTabBarItems() {
+        setItem(imageName: "grades", tabBarItem: tabBar.items?[0])
+        setItem(imageName: "courses", tabBarItem: tabBar.items?[1])
+        setItem(imageName: "profile", tabBarItem: tabBar.items?[2])
+    }
+    
+    private func setItem(imageName: String, tabBarItem: UITabBarItem?){
+        guard let tabBarItem = tabBarItem else {
+            return
+        }
+        tabBarItem.image = UIImage(named: imageName)?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
+        tabBarItem.imageInsets = UIEdgeInsets(top: 6, left: 0, bottom: -6, right: 0)
+        tabBarItem.selectedImage = UIImage(named: "Selected ")?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
+    }
+    
 }
