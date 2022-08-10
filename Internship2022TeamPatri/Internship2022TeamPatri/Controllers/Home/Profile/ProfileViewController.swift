@@ -17,7 +17,5 @@ class ProfileViewController: UIViewController {
         //let profileViewController = PProfileViewController.loadFromNib()
         //self.navigationController?.pushViewController(profileViewController, animated: true)
         //present(profileViewController, animated: false, completion: nil)
-        
     }
-
 }

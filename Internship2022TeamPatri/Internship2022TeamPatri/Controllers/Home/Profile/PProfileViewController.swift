@@ -21,7 +21,7 @@ class PProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configure()
-        navController(title: "Profile") 
+        navController(title: "Profile")
     }
 
     // making the image round and set colors to labels
