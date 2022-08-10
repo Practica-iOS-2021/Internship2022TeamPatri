@@ -42,8 +42,8 @@ class PProfileViewController: UIViewController {
         let shadowView = UIView(frame: self.navigationController!.navigationBar.frame)
             shadowView.backgroundColor = UIColor.white
             shadowView.layer.masksToBounds = false
-            shadowView.layer.shadowOpacity = 0.15
-            shadowView.layer.shadowOffset = CGSize(width: 0, height: 10)
+            shadowView.layer.shadowOpacity = 0.22
+            shadowView.layer.shadowOffset = CGSize(width: 0, height: 5)
             shadowView.layer.shadowRadius = 3
         self.view.addSubview(shadowView)
         
