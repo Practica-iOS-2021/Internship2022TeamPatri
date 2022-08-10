@@ -9,10 +9,10 @@ import Foundation
 import UIKit
 
 struct Users {
-    let name: String
-    let email: String
-    let personalID: String
-    let studentID: String
+    let name: String?
+    let email: String?
+    let personalID: String?
+    let studentID: String?
     let photo: String?
     let grades: [Grade]?
 }

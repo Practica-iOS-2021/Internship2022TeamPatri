@@ -228,8 +228,8 @@
 			isa = PBXGroup;
 			children = (
 				596E9055289012BB000AF800 /* Service.md */,
-				4D428C302899308400A5311F /* AuthApiManager.swift */,
 				694C1B3528A3E6BA0020E83D /* RetrieveUserData.swift */,
+				4D428C302899308400A5311F /* AuthApiManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
