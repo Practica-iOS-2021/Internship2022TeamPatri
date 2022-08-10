@@ -39,21 +39,21 @@ class ProfileViewController: UIViewController {
     public func navController(title: String) {
         // adding the bottom shadow
         let shadowView = UIView(frame: self.navigationController!.navigationBar.frame)
-            shadowView.backgroundColor = UIColor.white
-            shadowView.layer.masksToBounds = false
-            shadowView.layer.shadowOpacity = 0.22
-            shadowView.layer.shadowOffset = CGSize(width: 0, height: 5)
-            shadowView.layer.shadowRadius = 3
+        shadowView.backgroundColor = UIColor.white
+        shadowView.layer.masksToBounds = false
+        shadowView.layer.shadowOpacity = 0.22
+        shadowView.layer.shadowOffset = CGSize(width: 0, height: 5)
+        shadowView.layer.shadowRadius = 3
         self.view.addSubview(shadowView)
-            
+        
         // adding the title
         let lbNavTitle = UILabel (frame: CGRect(x: 0, y: 0, width: 320, height: 50))
-            lbNavTitle.textColor = UIColor.colorText
-            lbNavTitle.numberOfLines = 0
-            lbNavTitle.center = CGPoint(x: 0, y: 0)
-            lbNavTitle.textAlignment = .center
-            lbNavTitle.text = title
-            lbNavTitle.font = lbNavTitle.font.withSize(32)
+        lbNavTitle.textColor = UIColor.colorText
+        lbNavTitle.numberOfLines = 0
+        lbNavTitle.center = CGPoint(x: 0, y: 0)
+        lbNavTitle.textAlignment = .center
+        lbNavTitle.text = title
+        lbNavTitle.font = lbNavTitle.font.withSize(32)
         self.navigationItem.titleView = lbNavTitle
     }
         
