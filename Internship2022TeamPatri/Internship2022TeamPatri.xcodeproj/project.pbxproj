@@ -30,6 +30,8 @@
 		596E906028901333000AF800 /* RegisterView.md in Resources */ = {isa = PBXBuildFile; fileRef = 596E905F28901333000AF800 /* RegisterView.md */; };
 		596E90622890133F000AF800 /* LoginView.md in Resources */ = {isa = PBXBuildFile; fileRef = 596E90612890133F000AF800 /* LoginView.md */; };
 		596E90642890134C000AF800 /* TestsView.md in Resources */ = {isa = PBXBuildFile; fileRef = 596E90632890134C000AF800 /* TestsView.md */; };
+		694C1B3428A3E6940020E83D /* UserDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694C1B3328A3E6940020E83D /* UserDataModel.swift */; };
+		694C1B3628A3E6BA0020E83D /* RetrieveUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694C1B3528A3E6BA0020E83D /* RetrieveUserData.swift */; };
 		698FDFD228992C3C00299B7E /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698FDFD128992C3C00299B7E /* UIViewControllerExtension.swift */; };
 		69AD4C472893D6A40007731E /* RegisterCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69AD4C462893D6A40007731E /* RegisterCustomView.swift */; };
 		69AD4C492893D6D90007731E /* RegisterCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69AD4C482893D6D90007731E /* RegisterCustomView.xib */; };
@@ -78,6 +80,8 @@
 		596E905F28901333000AF800 /* RegisterView.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = RegisterView.md; sourceTree = "<group>"; };
 		596E90612890133F000AF800 /* LoginView.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LoginView.md; sourceTree = "<group>"; };
 		596E90632890134C000AF800 /* TestsView.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = TestsView.md; sourceTree = "<group>"; };
+		694C1B3328A3E6940020E83D /* UserDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataModel.swift; sourceTree = "<group>"; };
+		694C1B3528A3E6BA0020E83D /* RetrieveUserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrieveUserData.swift; sourceTree = "<group>"; };
 		698FDFD128992C3C00299B7E /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		69AD4C462893D6A40007731E /* RegisterCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterCustomView.swift; sourceTree = "<group>"; };
 		69AD4C482893D6D90007731E /* RegisterCustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterCustomView.xib; sourceTree = "<group>"; };
@@ -225,6 +229,7 @@
 			children = (
 				596E9055289012BB000AF800 /* Service.md */,
 				4D428C302899308400A5311F /* AuthApiManager.swift */,
+				694C1B3528A3E6BA0020E83D /* RetrieveUserData.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -317,6 +322,7 @@
 		59B7E84D288ED76300588C1F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				694C1B3328A3E6940020E83D /* UserDataModel.swift */,
 				E490A8052892AF3D0056EC8C /* CourseModel.swift */,
 				E490A80B2894081E0056EC8C /* ColorExtension.swift */,
 				E4677FFC289A954A007690D7 /* UserModel.swift */,
@@ -489,8 +495,10 @@
 				69AD4C4B2893D8020007731E /* UIRegisterViewExtension.swift in Sources */,
 				69AD4C4F2893FE680007731E /* RegisterViewController.swift in Sources */,
 				E477EDF4289BF284003A6CE1 /* CoursesCollectionViewCell.swift in Sources */,
+				694C1B3428A3E6940020E83D /* UserDataModel.swift in Sources */,
 				69AD4C472893D6A40007731E /* RegisterCustomView.swift in Sources */,
 				AF79B860288E7BD800AA99BD /* ViewController.swift in Sources */,
+				694C1B3628A3E6BA0020E83D /* RetrieveUserData.swift in Sources */,
 				E4677FFD289A954A007690D7 /* UserModel.swift in Sources */,
 				E4677FF9289A45B2007690D7 /* AuthApiRegister.swift in Sources */,
 				E490A8062892AF3D0056EC8C /* CourseModel.swift in Sources */,
