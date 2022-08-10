@@ -12,49 +12,33 @@ import UIKit
 
 class RetrieveUserData {
     
-    var userInfo = [Users]()
+    static let shared = RetrieveUserData()
     private var db = Firestore.firestore()
     
     // function to get user personal information
-    func fetchPersonalInfo() {
-        let docRef = db.collection("users").document("6qHknXlDHCcFhBVxZpXBcD5eJJH2")
+    func fetchPersonalInfo(completion: @escaping (Users?, String?) -> Void) {
+        guard let uid = Auth.auth().currentUser?.uid else {return}
+        let docRef = db.collection("users").document(uid)
         docRef.getDocument { (document, error) in
             guard error == nil else {
                 print("error", error ?? "")
+                completion(nil, error?.localizedDescription)
                 return
             }
-            if let document = document, document.exists {
-                let data = document.data()
-                if let data = data {
-                    print(data)
-                }
+            guard let document = document, document.exists else {
+                completion(nil, "Could not get user document")
+                return }
+            let data = document.data()
+            if let data = data {
+                let name = data["name"] as? String ?? ""
+                let email = data["email"] as? String ?? ""
+                let personalID = data["personalID"] as? String ?? ""
+                let studentID = data["studentID"] as? String ?? ""
+                let photo = data["photo"] as? String ?? ""
+                
+                let currentUser = Users(name: name, email: email, personalID: personalID, studentID: studentID, photo: photo)
+                completion(currentUser, nil)
             }
         }
     }
-     
-     // function to get user grades // show user info data I need to change
-     func fetchGrades() {
-         //guard let uid = Auth.auth().currentUser?.uid else {return}
-         db.collection("users").document("6qHknXlDHCcFhBVxZpXBcD5eJJH2").collection("grades").addSnapshotListener { [self](QuerySnapshot, error) in
-             guard let documents = QuerySnapshot?.documents else {
-                 print("No documents")
-                 return
-             }
-             self.userInfo = documents.map {(QueryDocumentSnapshot) -> Users in
-                 let data = QueryDocumentSnapshot.data()
-                 
-                 let name = data["Name"] as? String ?? ""
-                 let email = data["Email"] as? String ?? ""
-                 let personalID = data["PersonalID"] as? String ?? ""
-                 let studentID = data["StudentID"] as? String ?? ""
-                 let photo = data[""] as? String ?? ""
-                 let chapter = data["Chapter"] as? String ?? ""
-                 let course = data["Course"] as? String ?? ""
-                 let grade = data["Grade"] as? Int ?? 0
-                 let semester = data["Semester"] as? Int ?? 0
-                 
-                 return Users(name: name, email: email, personalID: personalID, studentID: studentID, photo: photo, grades: [Grade(chapter: chapter, course: course, grade: grade, semester: semester)])
-             }
-         }
-     }
 }
