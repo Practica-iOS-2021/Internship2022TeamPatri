@@ -17,7 +17,6 @@ final class CoursesViewController: UIViewController, UICollectionViewDelegate, U
         courseCollectionView.delegate = self
         courseCollectionViewCells()
         navController(title: "Courses")
-        
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -25,16 +24,14 @@ final class CoursesViewController: UIViewController, UICollectionViewDelegate, U
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if let cell = courseCollectionView.dequeueReusableCell(withReuseIdentifier: "CoursesCollectionViewCell", for: indexPath) as? CoursesCollectionViewCell {
-            cell.setup(iconName: Course.mock[indexPath.row].iconName, title: Course.mock[indexPath.row].title)
-            return cell
-        }
-        return UICollectionViewCell()
+        let cell = courseCollectionView.dequeueReusableCell(withReuseIdentifier: CoursesCollectionViewCell.identifier, for: indexPath) as! CoursesCollectionViewCell
+        let course = Course.mock[indexPath.row]
+        cell.setup(course: course)
+        return cell
     }
     
     private func courseCollectionViewCells() {
-        let textFieldCell = UINib(nibName: "CoursesCollectionViewCell", bundle: nil)
-        self.courseCollectionView.register(textFieldCell, forCellWithReuseIdentifier: "CoursesCollectionViewCell")
+        self.courseCollectionView.register(CoursesCollectionViewCell.self, forCellWithReuseIdentifier: CoursesCollectionViewCell.identifier)
     }
     
     // making the customized navigation controller
@@ -43,8 +40,8 @@ final class CoursesViewController: UIViewController, UICollectionViewDelegate, U
         let shadowView = UIView(frame: self.navigationController!.navigationBar.frame)
         shadowView.backgroundColor = UIColor.white
         shadowView.layer.masksToBounds = false
-        shadowView.layer.shadowOpacity = 0.15
-        shadowView.layer.shadowOffset = CGSize(width: 0, height: 10)
+        shadowView.layer.shadowOpacity = 0.22
+        shadowView.layer.shadowOffset = CGSize(width: 0, height: 4)
         shadowView.layer.shadowRadius = 3
         self.view.addSubview(shadowView)
         
@@ -62,7 +59,7 @@ final class CoursesViewController: UIViewController, UICollectionViewDelegate, U
 
 extension CoursesViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = self.view.frame.size.width / 2.2
-        return CGSize(width: width, height: 160)
+        let width = self.view.frame.size.width / 2.1
+        return CGSize(width: width, height: 185)
     }
 }

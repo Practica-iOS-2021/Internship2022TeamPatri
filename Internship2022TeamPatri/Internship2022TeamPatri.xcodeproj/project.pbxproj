@@ -47,7 +47,6 @@
 		E4677FF9289A45B2007690D7 /* AuthApiRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4677FF8289A45B2007690D7 /* AuthApiRegister.swift */; };
 		E4677FFD289A954A007690D7 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4677FFC289A954A007690D7 /* UserModel.swift */; };
 		E477EDF4289BF284003A6CE1 /* CoursesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E477EDF2289BF284003A6CE1 /* CoursesCollectionViewCell.swift */; };
-		E477EDF5289BF284003A6CE1 /* CoursesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E477EDF3289BF284003A6CE1 /* CoursesCollectionViewCell.xib */; };
 		E477EDFC289C1AD7003A6CE1 /* CoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E477EDFA289C1AD7003A6CE1 /* CoursesViewController.swift */; };
 		E477EDFD289C1AD7003A6CE1 /* CoursesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E477EDFB289C1AD7003A6CE1 /* CoursesViewController.xib */; };
 		E490A8042892AF2C0056EC8C /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E490A8032892AF2C0056EC8C /* CustomTableViewCell.swift */; };
@@ -96,7 +95,6 @@
 		E4677FF8289A45B2007690D7 /* AuthApiRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthApiRegister.swift; sourceTree = "<group>"; };
 		E4677FFC289A954A007690D7 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		E477EDF2289BF284003A6CE1 /* CoursesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesCollectionViewCell.swift; sourceTree = "<group>"; };
-		E477EDF3289BF284003A6CE1 /* CoursesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoursesCollectionViewCell.xib; sourceTree = "<group>"; };
 		E477EDFA289C1AD7003A6CE1 /* CoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesViewController.swift; sourceTree = "<group>"; };
 		E477EDFB289C1AD7003A6CE1 /* CoursesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoursesViewController.xib; sourceTree = "<group>"; };
 		E490A8032892AF2C0056EC8C /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
@@ -163,7 +161,6 @@
 			children = (
 				E477EDF2289BF284003A6CE1 /* CoursesCollectionViewCell.swift */,
 				E477EDFB289C1AD7003A6CE1 /* CoursesViewController.xib */,
-				E477EDF3289BF284003A6CE1 /* CoursesCollectionViewCell.xib */,
 				596E905B28901313000AF800 /* CoursesView.md */,
 			);
 			path = Courses;
@@ -443,7 +440,6 @@
 				596E9058289012EC000AF800 /* Storage.md in Resources */,
 				596E9054289012A1000AF800 /* Model.md in Resources */,
 				596E90642890134C000AF800 /* TestsView.md in Resources */,
-				E477EDF5289BF284003A6CE1 /* CoursesCollectionViewCell.xib in Resources */,
 				E490A8082892AF5D0056EC8C /* GradesView.storyboard in Resources */,
 				596E904C289011BB000AF800 /* ProfileController.md in Resources */,
 				B074013528916C8E00965072 /* GoogleService-Info.plist in Resources */,

@@ -9,31 +9,36 @@ import UIKit
 import SnapKit
 
 class CoursesCollectionViewCell: UICollectionViewCell {
+    static var identifier: String {
+        return String(describing: self)
+    }
     
-    @IBOutlet weak var containerView: UIView!
-    @IBOutlet weak var courseName: UILabel!
-    @IBOutlet weak var courseIcon: UIImageView!
-    @IBOutlet weak var courseButon: UIButton!
+    let containerView = UIView()
+    let courseName = UILabel()
+    let courseIcon = UIImageView(image: nil)
+    let courseButton = UIButton()
     
-    func setup(iconName: String, title: String) {
-        courseIcon.image = UIImage(named: iconName)
-        courseName.text = title
-        courseName.font = courseName.font.withSize(16)
+    func setup(course: Course){
+        courseName.text = course.title
+        courseName.font = courseName.font.withSize(17)
+        courseIcon.image = UIImage(named: course.iconName)
+        courseButton.setTitle(course.grade, for: .normal)
+        courseButton.backgroundColor = UIColor.white
+        courseButton.layer.cornerRadius = 15
         containerView.backgroundColor = UIColor.themeColor
         containerView.layer.cornerRadius = 20
-        courseButon.backgroundColor = UIColor.white
-        courseButon.layer.cornerRadius = 20
+        
         contentView.addSubview(containerView)
         containerView.addSubview(courseName)
         containerView.addSubview(courseIcon)
-        containerView.addSubview(courseButon)
+        containerView.addSubview(courseButton)
         styleCell()
     }
 }
 
 private extension CoursesCollectionViewCell {
     func styleCell() {
-        contentView.layoutMargins = UIEdgeInsets(top: 15, left: 10, bottom: 0, right: 10)
+        contentView.layoutMargins = UIEdgeInsets(top: 30, left: 10, bottom: 0, right: 10)
         
         containerView.snp.makeConstraints { make in
             make.top.trailing.leading.bottom.equalTo(contentView.layoutMargins)
@@ -45,18 +50,19 @@ private extension CoursesCollectionViewCell {
         }
         
         courseIcon.snp.makeConstraints { make in
-            make.width.equalTo(70)
-            make.height.equalTo(50)
+            make.width.equalTo(60)
+            make.height.equalTo(55)
             make.centerX.equalTo(courseName.snp.centerX)
             make.top.equalTo(courseName.snp.bottom).offset(10)
         }
         
-        courseButon.snp.makeConstraints { make in
+        courseButton.snp.makeConstraints { make in
             make.top.equalTo(courseIcon.snp.bottom).offset(10)
             make.centerX.equalTo(courseIcon.snp.centerX)
-            make.height.equalTo(37)
-            make.width.equalTo(120)
+            make.height.equalTo(30)
+            make.width.equalTo(125)
             make.bottom.equalToSuperview().inset(10)
         }
     }
 }
+
