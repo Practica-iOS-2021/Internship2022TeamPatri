@@ -119,8 +119,6 @@ class LogInViewController: UIViewController {
         self.navigationController?.navigationBar.tintColor = UIColor.colorText
         self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = backButtonArrow
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItem.Style.plain, target: nil, action: nil)
-        //let profileViewController = PProfileViewController.loadFromNib()
-        //self.navigationController?.pushViewController(profileViewController, animated: true)
     }
     
     //Email validation
