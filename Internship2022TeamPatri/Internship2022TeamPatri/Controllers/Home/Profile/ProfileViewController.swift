@@ -40,6 +40,7 @@ class ProfileViewController: UIViewController {
     // showing the personal info of the user
     private func fetchData() {
         RetrieveUserData.shared.fetchPersonalInfo { users, error in
+            self.profileImage.image = UIImage(named: users?.photo ?? "")
             self.userNameProfile.text = users?.name
             self.personalIDTextLabel.text = users?.personalID
             self.studentIDTextLabel.text = users?.studentID
@@ -47,7 +48,6 @@ class ProfileViewController: UIViewController {
         }
     }
     
-        
     // making the customized navigation controller
     public func navController(title: String) {
         // adding the bottom shadow
@@ -77,10 +77,5 @@ class ProfileViewController: UIViewController {
         } catch let logOutError {
             print(logOutError)
         }
-        
-        let storyboard = UIStoryboard(name: "LogIn", bundle: nil)
-        let signInVc = storyboard.instantiateViewController(withIdentifier: "LogInViewController")
-        self.navigationController?.pushViewController(signInVc, animated: true)
-        navigationController?.setNavigationBarHidden(true, animated: true)
     }
 }
