@@ -17,7 +17,7 @@ class RetrieveUserData {
     
     // function to get user personal information
     func fetchPersonalInfo(completion: @escaping (Users?, String?) -> Void) {
-        guard let uid = Auth.auth().currentUser?.uid else {return}
+        guard let uid = Auth.auth().currentUser?.uid else { return }
         let docRef = db.collection("users").document(uid)
         docRef.getDocument { (document, error) in
             guard error == nil else {
