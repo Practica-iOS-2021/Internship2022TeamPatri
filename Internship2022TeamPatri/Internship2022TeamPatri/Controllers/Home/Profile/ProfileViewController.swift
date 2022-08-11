@@ -25,7 +25,7 @@ class ProfileViewController: UIViewController {
     }
 
     // making the image round and set colors to labels
-    private func configure(){
+    private func configure() {
         profileImage.layer.cornerRadius = profileImage.frame.height/2
         profileImage.clipsToBounds = true
         [personalIDLabel, studentIDLabel, emailLabel, userNameProfile].forEach {
