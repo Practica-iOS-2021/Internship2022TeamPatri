@@ -12,6 +12,7 @@
 		4D31C5E228913DC1002A670B /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D31C5E128913DC1002A670B /* LogInViewController.swift */; };
 		4D31C5E428913E2F002A670B /* LogIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D31C5E328913E2F002A670B /* LogIn.storyboard */; };
 		4D428C312899308400A5311F /* AuthApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D428C302899308400A5311F /* AuthApiManager.swift */; };
+		4DCE55DC28A3DF7600D4403C /* CoursesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCE55DB28A3DF7600D4403C /* CoursesModel.swift */; };
 		4DEE6152289BC44B00612B1B /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEE6151289BC44B00612B1B /* HomeTabBarController.swift */; };
 		4DEE6156289BFF1300612B1B /* GradesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEE6155289BFF1300612B1B /* GradesViewController.swift */; };
 		59233BF6288FD96E00C34D6C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 59233BF5288FD96E00C34D6C /* SnapKit */; };
@@ -61,6 +62,7 @@
 		4D31C5E128913DC1002A670B /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		4D31C5E328913E2F002A670B /* LogIn.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LogIn.storyboard; sourceTree = "<group>"; };
 		4D428C302899308400A5311F /* AuthApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthApiManager.swift; sourceTree = "<group>"; };
+		4DCE55DB28A3DF7600D4403C /* CoursesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesModel.swift; sourceTree = "<group>"; };
 		4DEE6151289BC44B00612B1B /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
 		4DEE6155289BFF1300612B1B /* GradesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradesViewController.swift; sourceTree = "<group>"; };
 		596E90472890114A000AF800 /* GradesController.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = GradesController.md; sourceTree = "<group>"; };
@@ -321,6 +323,7 @@
 				E490A80B2894081E0056EC8C /* ColorExtension.swift */,
 				E4677FFC289A954A007690D7 /* UserModel.swift */,
 				596E9053289012A1000AF800 /* Model.md */,
+				4DCE55DB28A3DF7600D4403C /* CoursesModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -497,6 +500,7 @@
 				E490A80C2894081E0056EC8C /* ColorExtension.swift in Sources */,
 				E490A8042892AF2C0056EC8C /* CustomTableViewCell.swift in Sources */,
 				4DEE6156289BFF1300612B1B /* GradesViewController.swift in Sources */,
+				4DCE55DC28A3DF7600D4403C /* CoursesModel.swift in Sources */,
 				AF79B85C288E7BD800AA99BD /* AppDelegate.swift in Sources */,
 				4D428C312899308400A5311F /* AuthApiManager.swift in Sources */,
 				4D31C5E228913DC1002A670B /* LogInViewController.swift in Sources */,
