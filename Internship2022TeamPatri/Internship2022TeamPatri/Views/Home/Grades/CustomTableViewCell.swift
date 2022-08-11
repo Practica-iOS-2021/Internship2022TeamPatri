@@ -14,7 +14,7 @@ class CustomTableViewCell: UITableViewCell {
     let title = UILabel()
     let grade = UILabel()
     
-    init(course: Course) {
+    init(course: Grade) {
         iconImageView.image = UIImage(named: course.iconName)
         title.text = course.title
         title.font = title.font.withSize(20)

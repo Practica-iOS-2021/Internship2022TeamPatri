@@ -18,7 +18,7 @@ class CoursesCollectionViewCell: UICollectionViewCell {
     let courseIcon = UIImageView(image: nil)
     let courseButton = UIButton()
     
-    func setup(course: Courses){
+    func setup(course: Course){
         courseIcon.image = UIImage(named: course.name)
         courseName.text = course.name
         courseName.font = courseName.font.withSize(17)

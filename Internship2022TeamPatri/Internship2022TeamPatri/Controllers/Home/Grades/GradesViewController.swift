@@ -19,11 +19,11 @@ class GradesViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return Course.mock.count
+        return Grade.mock.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let course = Course.mock[indexPath.row]
-        return CustomTableViewCell(course: Course(iconName: course.iconName, title: course.title, grade: course.grade))
+        let course = Grade.mock[indexPath.row]
+        return CustomTableViewCell(course: Grade(iconName: course.iconName, title: course.title, grade: course.grade))
     }
 }

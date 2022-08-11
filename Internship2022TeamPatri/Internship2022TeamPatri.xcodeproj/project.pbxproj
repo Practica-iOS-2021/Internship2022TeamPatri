@@ -51,7 +51,7 @@
 		E477EDFC289C1AD7003A6CE1 /* CoursesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E477EDFA289C1AD7003A6CE1 /* CoursesViewController.swift */; };
 		E477EDFD289C1AD7003A6CE1 /* CoursesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E477EDFB289C1AD7003A6CE1 /* CoursesViewController.xib */; };
 		E490A8042892AF2C0056EC8C /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E490A8032892AF2C0056EC8C /* CustomTableViewCell.swift */; };
-		E490A8062892AF3D0056EC8C /* CourseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E490A8052892AF3D0056EC8C /* CourseModel.swift */; };
+		E490A8062892AF3D0056EC8C /* GradeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E490A8052892AF3D0056EC8C /* GradeModel.swift */; };
 		E490A8082892AF5D0056EC8C /* GradesView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E490A8072892AF5D0056EC8C /* GradesView.storyboard */; };
 		E490A80C2894081E0056EC8C /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E490A80B2894081E0056EC8C /* ColorExtension.swift */; };
 /* End PBXBuildFile section */
@@ -100,7 +100,7 @@
 		E477EDFA289C1AD7003A6CE1 /* CoursesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesViewController.swift; sourceTree = "<group>"; };
 		E477EDFB289C1AD7003A6CE1 /* CoursesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoursesViewController.xib; sourceTree = "<group>"; };
 		E490A8032892AF2C0056EC8C /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
-		E490A8052892AF3D0056EC8C /* CourseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseModel.swift; sourceTree = "<group>"; };
+		E490A8052892AF3D0056EC8C /* GradeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradeModel.swift; sourceTree = "<group>"; };
 		E490A8072892AF5D0056EC8C /* GradesView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GradesView.storyboard; sourceTree = "<group>"; };
 		E490A80B2894081E0056EC8C /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -319,7 +319,7 @@
 		59B7E84D288ED76300588C1F /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				E490A8052892AF3D0056EC8C /* CourseModel.swift */,
+				E490A8052892AF3D0056EC8C /* GradeModel.swift */,
 				E490A80B2894081E0056EC8C /* ColorExtension.swift */,
 				E4677FFC289A954A007690D7 /* UserModel.swift */,
 				596E9053289012A1000AF800 /* Model.md */,
@@ -496,7 +496,7 @@
 				AF79B860288E7BD800AA99BD /* ViewController.swift in Sources */,
 				E4677FFD289A954A007690D7 /* UserModel.swift in Sources */,
 				E4677FF9289A45B2007690D7 /* AuthApiRegister.swift in Sources */,
-				E490A8062892AF3D0056EC8C /* CourseModel.swift in Sources */,
+				E490A8062892AF3D0056EC8C /* GradeModel.swift in Sources */,
 				E490A80C2894081E0056EC8C /* ColorExtension.swift in Sources */,
 				E490A8042892AF2C0056EC8C /* CustomTableViewCell.swift in Sources */,
 				4DEE6156289BFF1300612B1B /* GradesViewController.swift in Sources */,

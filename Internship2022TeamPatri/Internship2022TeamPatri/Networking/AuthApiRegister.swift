@@ -12,7 +12,7 @@ import Firebase
 class AuthApiRegister {
     
     static let sharedInstance = AuthApiRegister()
-    private var courses: [Courses] = []
+    private var courses: [Course] = []
     func register(user: User, completion: @escaping (Bool) -> Void) {
         
         guard let email = user.email?.trimmingCharacters(in: .whitespacesAndNewlines),
@@ -38,7 +38,7 @@ class AuthApiRegister {
             completion(true)
         }
     }
-    func getCoursesData(completion: @escaping ([Courses]?) -> Void) {
+    func getCoursesData(completion: @escaping ([Course]?) -> Void) {
         let db = Firestore.firestore()
         
         if !courses.isEmpty {
@@ -49,7 +49,7 @@ class AuthApiRegister {
                 completion(nil)
             } else {
                 guard let self =  self else {return}
-                var courses: [Courses] = []
+                var courses: [Course] = []
                 for document in querySnapshor?.documents ?? [] {
                     print("\(document.documentID) => \(document.data())")
                     
@@ -57,11 +57,10 @@ class AuthApiRegister {
                     let name = data["name"] as? String ?? ""
                     let semester = data["semester"] as? Int ?? 0
                     
-                    let currentCourse = Courses(name: name, semester: semester)
+                    let currentCourse = Course(name: name, semester: semester)
                     courses.append(currentCourse)
                 }
                 self.courses = courses
-                print(courses.count)
             }
             
         }

@@ -10,7 +10,7 @@ import UIKit
 final class CoursesViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     @IBOutlet private var courseCollectionView: UICollectionView!
-    private var listCourse: [Courses] = []
+    private var courseData: [Course] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,21 +24,21 @@ final class CoursesViewController: UIViewController, UICollectionViewDelegate, U
         getCourses()
     }
     
-    private func getCourses() {
+    private func getCourses() { 
         AuthApiRegister.sharedInstance.getCoursesData { [weak self] courses in
             guard let courses = courses, let self = self else { return }
-            self.listCourse = courses
+            self.courseData = courses
             self.courseCollectionView.reloadData()
         }
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return listCourse.count
+        return courseData.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = courseCollectionView.dequeueReusableCell(withReuseIdentifier: CoursesCollectionViewCell.identifier, for: indexPath) as! CoursesCollectionViewCell
-        cell.setup(course: listCourse[indexPath.row])
+        cell.setup(course: courseData[indexPath.row])
         return cell
     }
     
