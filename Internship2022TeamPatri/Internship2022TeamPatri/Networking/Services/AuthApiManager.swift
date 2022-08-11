@@ -33,6 +33,7 @@ class AuthApiManager {
             completion(error)
         })
     }
+    
     func logOut() {
         do {
             try Auth.auth().signOut()
