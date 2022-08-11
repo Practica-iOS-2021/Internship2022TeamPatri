@@ -22,6 +22,7 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
         configure()
         navController(title: "Profile")
+        fetchData()
     }
 
     // making the image round and set colors to labels
@@ -35,6 +36,17 @@ class ProfileViewController: UIViewController {
             $0.textColor = UIColor.colorTextProfile
         }
     }
+    
+    // showing the personal info of the user
+    private func fetchData() {
+        RetrieveUserData.shared.fetchPersonalInfo { users, error in
+            self.userNameProfile.text = users?.name
+            self.personalIDTextLabel.text = users?.personalID
+            self.studentIDTextLabel.text = users?.studentID
+            self.emailTextLabel.text = users?.email
+        }
+    }
+    
         
     // making the customized navigation controller
     public func navController(title: String) {
