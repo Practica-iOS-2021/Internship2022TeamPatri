@@ -10,6 +10,7 @@ import UIKit
 final class CoursesViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
     @IBOutlet private var courseCollectionView: UICollectionView!
+    private var listCourse: [Courses] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,15 +19,26 @@ final class CoursesViewController: UIViewController, UICollectionViewDelegate, U
         courseCollectionViewCells()
         navController(title: "Courses")
     }
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        getCourses()
+    }
+    
+    private func getCourses() {
+        AuthApiRegister.sharedInstance.getCoursesData { [weak self] courses in
+            guard let courses = courses, let self = self else { return }
+            self.listCourse = courses
+            self.courseCollectionView.reloadData()
+        }
+    }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return Course.mock.count
+        return listCourse.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = courseCollectionView.dequeueReusableCell(withReuseIdentifier: CoursesCollectionViewCell.identifier, for: indexPath) as! CoursesCollectionViewCell
-        let course = Course.mock[indexPath.row]
-        cell.setup(course: course)
+        cell.setup(course: listCourse[indexPath.row])
         return cell
     }
     

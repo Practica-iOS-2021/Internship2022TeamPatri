@@ -18,11 +18,10 @@ class CoursesCollectionViewCell: UICollectionViewCell {
     let courseIcon = UIImageView(image: nil)
     let courseButton = UIButton()
     
-    func setup(course: Course){
-        courseName.text = course.title
+    func setup(course: Courses){
+        courseIcon.image = UIImage(named: course.name)
+        courseName.text = course.name
         courseName.font = courseName.font.withSize(17)
-        courseIcon.image = UIImage(named: course.iconName)
-        courseButton.setTitle(course.grade, for: .normal)
         courseButton.backgroundColor = UIColor.white
         courseButton.layer.cornerRadius = 15
         containerView.backgroundColor = UIColor.themeColor
