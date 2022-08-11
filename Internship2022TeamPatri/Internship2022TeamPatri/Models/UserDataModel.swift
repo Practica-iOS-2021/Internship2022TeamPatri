@@ -1,0 +1,24 @@
+//
+//  UserDataModel.swift
+//  Internship2022TeamPatri
+//
+//  Created by Coralia Diana Muresan on 10.08.2022.
+//
+
+import Foundation
+import UIKit
+
+struct Users {
+    let name: String
+    let email: String
+    let personalID: String
+    let studentID: String
+    let photo: String?
+}
+
+struct Grade {
+    let chapter: String
+    let course: String
+    let grade: Int
+    let semester: Int
+}
