@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import FirebaseAuth
 
 class ProfileViewController: UIViewController {
     @IBOutlet private weak var profileImage: UIImageView!
@@ -72,7 +71,6 @@ class ProfileViewController: UIViewController {
         
     // sign out button
     @IBAction func logOut(_ sender: Any) {
-        let userLogesOut = AppDelegate()
-        userLogesOut.logOut()
+        AuthApiManager.sharedInstance.logOut()
     }
 }

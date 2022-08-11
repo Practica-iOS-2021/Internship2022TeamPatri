@@ -40,13 +40,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AuthApiManagerDelegate {
     func didLogIn() {
         resetRoot()
     }
-    func logOut() {
-        do {
-            try Auth.auth().signOut()
-            print("Succesfully logged out")
-            resetRoot()
-        } catch let logOutError {
-            print(logOutError)
-        }
-    }
 }

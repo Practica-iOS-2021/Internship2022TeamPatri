@@ -12,7 +12,6 @@ import FirebaseFirestore
 
 protocol AuthApiManagerDelegate: AnyObject {
     func didLogIn()
-    func logOut()
 }
 
 class AuthApiManager {
@@ -33,5 +32,16 @@ class AuthApiManager {
             }
             completion(error)
         })
+    }
+    func logOut() {
+        do {
+            try Auth.auth().signOut()
+            isLoggedIn = false
+            let userIsLoggedOut = AppDelegate()
+            userIsLoggedOut.resetRoot()
+            print("Succesfully logged out")
+        } catch let logOutError {
+            print(logOutError)
+        }
     }
 }
