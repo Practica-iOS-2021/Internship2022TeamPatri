@@ -12,6 +12,7 @@ import FirebaseFirestore
 
 protocol AuthApiManagerDelegate: AnyObject {
     func didLogIn()
+    func logOut()
 }
 
 class AuthApiManager {

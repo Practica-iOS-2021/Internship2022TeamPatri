@@ -72,10 +72,7 @@ class ProfileViewController: UIViewController {
         
     // sign out button
     @IBAction func logOut(_ sender: Any) {
-        do {
-            try Auth.auth().signOut()
-        } catch let logOutError {
-            print(logOutError)
-        }
+        let userLogesOut = AppDelegate()
+        userLogesOut.logOut()
     }
 }
