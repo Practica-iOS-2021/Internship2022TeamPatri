@@ -23,6 +23,7 @@ class CoursesCollectionViewCell: UICollectionViewCell {
         courseName.font = courseName.font.withSize(17)
         courseIcon.image = UIImage(named: course.iconName)
         courseButton.setTitle(course.grade, for: .normal)
+        courseButton.setTitleColor(.black, for: .normal)
         courseButton.backgroundColor = UIColor.white
         courseButton.layer.cornerRadius = 15
         containerView.backgroundColor = UIColor.themeColor
