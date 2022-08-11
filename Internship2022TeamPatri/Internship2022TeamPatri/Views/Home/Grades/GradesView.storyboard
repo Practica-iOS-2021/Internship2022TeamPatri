@@ -16,21 +16,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grades" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jib-0Z-gP6">
-                                <rect key="frame" x="125" y="71" width="164" height="38.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="WEp-0U-duM">
-                                <rect key="frame" x="0.0" y="119.5" width="414" height="32"/>
+                                <rect key="frame" x="0.0" y="54" width="414" height="32"/>
                                 <segments>
                                     <segment title="First"/>
                                     <segment title="Second"/>
                                 </segments>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="umg-v3-Y7t">
-                                <rect key="frame" x="0.0" y="150.5" width="414" height="711.5"/>
+                                <rect key="frame" x="0.0" y="85" width="414" height="777"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -39,13 +33,10 @@
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="umg-v3-Y7t" secondAttribute="bottom" id="07G-sv-xL1"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="WEp-0U-duM" secondAttribute="trailing" id="5dL-mT-IsV"/>
-                            <constraint firstItem="WEp-0U-duM" firstAttribute="top" secondItem="Jib-0Z-gP6" secondAttribute="bottom" constant="10" id="CK2-rx-lY5"/>
+                            <constraint firstItem="WEp-0U-duM" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="10" id="9p6-34-bXT"/>
                             <constraint firstItem="umg-v3-Y7t" firstAttribute="top" secondItem="WEp-0U-duM" secondAttribute="bottom" id="HNV-8a-mXx"/>
-                            <constraint firstItem="Jib-0Z-gP6" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="125" id="UAN-1w-QH5"/>
                             <constraint firstItem="WEp-0U-duM" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Y7M-yi-q1E"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Jib-0Z-gP6" secondAttribute="trailing" constant="125" id="cE7-ic-LfK"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="umg-v3-Y7t" secondAttribute="trailing" id="kux-W2-fuZ"/>
-                            <constraint firstItem="Jib-0Z-gP6" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="27" id="tIg-2W-6BU"/>
                             <constraint firstItem="umg-v3-Y7t" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="zSg-RO-e5e"/>
                         </constraints>
                     </view>

@@ -18,8 +18,8 @@ extension Course {
         return [
             Course(iconName: "Math", title: "Mathematics", grade: "10"),
             Course(iconName: "Biology", title: "Biology", grade: "9"),
-            Course(iconName: "Chemistry", title: "Chemistry", grade: "/"),
-            Course(iconName: "Informatics", title: "Informatics", grade: "/"),
+            Course(iconName: "Chemistry", title: "Chemistry", grade: "7"),
+            Course(iconName: "Informatics", title: "Informatics", grade: "9"),
         ]
     }
 }
