@@ -71,6 +71,6 @@ class ProfileViewController: UIViewController {
         
     // sign out button
     @IBAction func logOut(_ sender: Any) {
-        
+        AuthApiManager.sharedInstance.logOut()
     }
 }
