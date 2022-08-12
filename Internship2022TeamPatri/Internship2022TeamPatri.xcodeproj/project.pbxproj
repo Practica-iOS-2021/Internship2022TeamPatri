@@ -30,6 +30,7 @@
 		596E906028901333000AF800 /* RegisterView.md in Resources */ = {isa = PBXBuildFile; fileRef = 596E905F28901333000AF800 /* RegisterView.md */; };
 		596E90622890133F000AF800 /* LoginView.md in Resources */ = {isa = PBXBuildFile; fileRef = 596E90612890133F000AF800 /* LoginView.md */; };
 		596E90642890134C000AF800 /* TestsView.md in Resources */ = {isa = PBXBuildFile; fileRef = 596E90632890134C000AF800 /* TestsView.md */; };
+		6927CDF728A3C02500289493 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6927CDF628A3C02500289493 /* ProfileViewController.xib */; };
 		694C1B3428A3E6940020E83D /* UserDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694C1B3328A3E6940020E83D /* UserDataModel.swift */; };
 		694C1B3628A3E6BA0020E83D /* RetrieveUserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694C1B3528A3E6BA0020E83D /* RetrieveUserData.swift */; };
 		698FDFD228992C3C00299B7E /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698FDFD128992C3C00299B7E /* UIViewControllerExtension.swift */; };
@@ -80,6 +81,7 @@
 		596E905F28901333000AF800 /* RegisterView.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = RegisterView.md; sourceTree = "<group>"; };
 		596E90612890133F000AF800 /* LoginView.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LoginView.md; sourceTree = "<group>"; };
 		596E90632890134C000AF800 /* TestsView.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = TestsView.md; sourceTree = "<group>"; };
+		6927CDF628A3C02500289493 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		694C1B3328A3E6940020E83D /* UserDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataModel.swift; sourceTree = "<group>"; };
 		694C1B3528A3E6BA0020E83D /* RetrieveUserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetrieveUserData.swift; sourceTree = "<group>"; };
 		698FDFD128992C3C00299B7E /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				596E905D28901324000AF800 /* ProfileView.md */,
+				6927CDF628A3C02500289493 /* ProfileViewController.xib */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -440,6 +443,7 @@
 				596E90522890126E000AF800 /* TestsController.md in Resources */,
 				69C3B36228984F9B00BC697F /* RegisterViewController.xib in Resources */,
 				4D31C5E428913E2F002A670B /* LogIn.storyboard in Resources */,
+				6927CDF728A3C02500289493 /* ProfileViewController.xib in Resources */,
 				596E90622890133F000AF800 /* LoginView.md in Resources */,
 				596E904E28901200000AF800 /* RegisterController.md in Resources */,
 				AF79B863288E7BD800AA99BD /* Main.storyboard in Resources */,
