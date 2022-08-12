@@ -39,4 +39,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, AuthApiManagerDelegate {
     func didLogIn() {
         resetRoot()
     }
+    func didLogOut() {
+        resetRoot()
+    }
 }
